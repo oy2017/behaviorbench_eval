@@ -8,6 +8,10 @@ JSON files for leaderboard comparison.
 This release is scoped to the BehaviorBench evaluation artifact. It does not
 include model training code.
 
+Paper: https://arxiv.org/abs/2606.24162
+
+Dataset: https://huggingface.co/datasets/befm/BehaviorBench
+
 ## Included Tasks
 
 The command-line task IDs below are the stable identifiers used by
@@ -181,4 +185,20 @@ and token usage for supported API providers.
 uv run ruff format --check .
 uv run ruff check .
 uv run pytest
+```
+
+## Citation
+
+If you use BehaviorBench or BeFM in your work, please cite:
+
+```bibtex
+@misc{huang2026behaviorbenchbenchmarkingfoundationmodels,
+  title={BehaviorBench: Benchmarking Foundation Models for Behavioral Science Tasks},
+  author={Jin Huang and Yutong Xie and Wanli Song and Xingjian Zhang and Walter Yuan and Matthew O. Jackson and Qiaozhu Mei},
+  year={2026},
+  eprint={2606.24162},
+  archivePrefix={arXiv},
+  primaryClass={cs.CL},
+  url={https://arxiv.org/abs/2606.24162}
+}
 ```
