@@ -1,0 +1,295 @@
+===== game_behavior_dictator =====
+Running game_behavior_dictator
+  Wasserstein_with_ks_distance: 25.5150
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/game_behavior_dictator_20260719_182248.json
+
+===== game_behavior_bomb =====
+Running game_behavior_bomb
+  Wasserstein_with_ks_distance: 14.2990
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/game_behavior_bomb_20260719_182526.json
+
+===== game_behavior_guessing =====
+Running game_behavior_guessing
+  Wasserstein_with_ks_distance: 35.0280
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/game_behavior_guessing_20260719_182926.json
+
+===== game_behavior_public_goods =====
+Running game_behavior_public_goods
+  Wasserstein_with_ks_distance: 24.0650
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/game_behavior_public_goods_20260719_183854.json
+
+===== game_behavior_push_pull =====
+Running game_behavior_push_pull
+  Wasserstein_with_ks_distance: 50.3000
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/game_behavior_push_pull_20260719_185152.json
+
+===== game_behavior_trust_banker =====
+Running game_behavior_trust_banker
+  Wasserstein_with_ks_distance: 22.4420
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/game_behavior_trust_banker_20260719_185324.json
+
+===== game_behavior_trust_investor =====
+Running game_behavior_trust_investor
+  Wasserstein_with_ks_distance: 52.3801
+  num_failed_parses: 2
+Saved results to outputs/openrouter/tencent/hy3/game_behavior_trust_investor_20260719_185542.json
+
+===== game_behavior_ultimatum_proposer =====
+Running game_behavior_ultimatum_proposer
+  Wasserstein_with_ks_distance: 13.5600
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/game_behavior_ultimatum_proposer_20260719_185746.json
+
+===== game_behavior_ultimatum_responder =====
+Running game_behavior_ultimatum_responder
+  Wasserstein_with_ks_distance: 27.8090
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/game_behavior_ultimatum_responder_20260719_190111.json
+
+===== acrossgame_behavior_dictator =====
+Running acrossgame_behavior_dictator
+  MAE_with_normalization_mae: 24.7627
+  MAE_with_normalization_mae_raw: 24.7627
+  Wasserstein_with_ks_distance: 23.3733
+  num_samples: 750
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/acrossgame_behavior_dictator_20260719_190639.json
+
+===== acrossgame_behavior_ultimatum_proposer =====
+Running acrossgame_behavior_ultimatum_proposer
+  MAE_with_normalization_mae: 15.0453
+  MAE_with_normalization_mae_raw: 15.0453
+  Wasserstein_with_ks_distance: 8.9120
+  num_samples: 750
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/acrossgame_behavior_ultimatum_proposer_20260719_191229.json
+
+===== acrossgame_behavior_ultimatum_responder =====
+Running acrossgame_behavior_ultimatum_responder
+  MAE_with_normalization_mae: 20.0453
+  MAE_with_normalization_mae_raw: 20.0453
+  Wasserstein_with_ks_distance: 14.1600
+  num_samples: 750
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/acrossgame_behavior_ultimatum_responder_20260719_191729.json
+
+===== acrossgame_behavior_trust_investor =====
+Running acrossgame_behavior_trust_investor
+  MAE_with_normalization_mae: 49.7333
+  MAE_with_normalization_mae_raw: 49.7333
+  Wasserstein_with_ks_distance: 37.5947
+  num_samples: 750
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/acrossgame_behavior_trust_investor_20260719_192249.json
+
+===== acrossgame_behavior_trust_banker =====
+Running acrossgame_behavior_trust_banker
+  MAE_with_normalization_mae: 22.6514
+  MAE_with_normalization_mae_raw: 33.9771
+  Wasserstein_with_ks_distance: 20.2646
+  num_samples: 262
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/acrossgame_behavior_trust_banker_20260719_192444.json
+
+===== acrossgame_behavior_public_goods =====
+Running acrossgame_behavior_public_goods
+  MAE_with_normalization_mae: 28.3067
+  MAE_with_normalization_mae_raw: 5.6613
+  Wasserstein_with_ks_distance: 11.1867
+  num_samples: 750
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/acrossgame_behavior_public_goods_20260719_193149.json
+
+===== acrossgame_behavior_bomb =====
+Running acrossgame_behavior_bomb
+  MAE_with_normalization_mae: 33.4693
+  MAE_with_normalization_mae_raw: 33.4693
+  Wasserstein_with_ks_distance: 22.4800
+  num_samples: 750
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/acrossgame_behavior_bomb_20260719_193817.json
+
+===== acrossgame_behavior_guessing =====
+Running acrossgame_behavior_guessing
+  MAE_with_normalization_mae: 23.3373
+  MAE_with_normalization_mae_raw: 23.3373
+  Wasserstein_with_ks_distance: 15.9080
+  num_samples: 750
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/acrossgame_behavior_guessing_20260719_194423.json
+
+===== acrossgame_behavior_push_pull =====
+Running acrossgame_behavior_push_pull
+  Accuracy: 0.4480
+  MAE_with_normalization_mae: 55.2000
+  MAE_with_normalization_mae_raw: 0.5520
+  Wasserstein_with_ks_distance: 53.0667
+  num_samples: 750
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/acrossgame_behavior_push_pull_20260719_194956.json
+
+===== multiround_behavior_dictator =====
+Running multiround_behavior_dictator
+  MAE_with_normalization_mae: 12.1220
+  MAE_with_normalization_mae_raw: 12.1220
+  Wasserstein_with_ks_distance: 6.3300
+  num_samples: 500
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/multiround_behavior_dictator_20260719_195352.json
+
+===== multiround_behavior_trust_investor =====
+Running multiround_behavior_trust_investor
+  MAE_with_normalization_mae: 23.9720
+  MAE_with_normalization_mae_raw: 23.9720
+  Wasserstein_with_ks_distance: 6.9200
+  num_samples: 500
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/multiround_behavior_trust_investor_20260719_195716.json
+
+===== multiround_behavior_trust_banker_inv50 =====
+Running multiround_behavior_trust_banker_inv50
+  MAE_with_normalization_mae: 20.0320
+  MAE_with_normalization_mae_raw: 30.0480
+  Wasserstein_with_ks_distance: 18.3040
+  num_samples: 125
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/multiround_behavior_trust_banker_inv50_20260719_195821.json
+
+===== multiround_behavior_trust_banker_inv100 =====
+Running multiround_behavior_trust_banker_inv100
+  MAE_with_normalization_mae: 15.3795
+  MAE_with_normalization_mae_raw: 46.1386
+  Wasserstein_with_ks_distance: 10.6272
+  num_samples: 498
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/multiround_behavior_trust_banker_inv100_20260719_200240.json
+
+===== multiround_behavior_public_goods =====
+Running multiround_behavior_public_goods
+  MAE_with_normalization_mae: 18.2200
+  MAE_with_normalization_mae_raw: 3.6440
+  Wasserstein_with_ks_distance: 4.2000
+  num_samples: 500
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/multiround_behavior_public_goods_20260719_200719.json
+
+===== multiround_behavior_bomb =====
+Running multiround_behavior_bomb
+  MAE_with_normalization_mae: 17.7980
+  MAE_with_normalization_mae_raw: 17.7980
+  Wasserstein_with_ks_distance: 6.3860
+  num_samples: 500
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/multiround_behavior_bomb_20260719_201120.json
+
+===== multiround_behavior_guessing =====
+Running multiround_behavior_guessing
+  MAE_with_normalization_mae: 10.3760
+  MAE_with_normalization_mae_raw: 10.3760
+  Wasserstein_with_ks_distance: 7.5320
+  num_samples: 500
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/multiround_behavior_guessing_20260719_201933.json
+
+===== multiround_behavior_push_pull =====
+Running multiround_behavior_push_pull
+  Accuracy: 0.7020
+  MAE_with_normalization_mae: 29.8000
+  MAE_with_normalization_mae_raw: 0.2980
+  Wasserstein_with_ks_distance: 2.6000
+  num_samples: 500
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/multiround_behavior_push_pull_20260719_202737.json
+
+===== acrossdim_pers_score =====
+  Spearman_with_pvalue_pvalue_averaged: 0.1074
+  Wasserstein_with_ks_distance_averaged: 5.0500
+  Wasserstein_with_ks_distance_raw_averaged: 5.0500
+  Wasserstein_with_ks_ks_pvalue_averaged: 0.0818
+  Wasserstein_with_ks_ks_statistic_averaged: 0.3043
+  num_samples: 1000
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/acrossdim_pers_score_20260719_203632.json
+
+===== demo_pred_age =====
+Running demo_pred_age
+  MAE: 10.9420
+  Wasserstein_with_ks_distance: 5.0180
+  num_samples: 1000
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/demo_pred_age_20260719_204442.json
+
+===== missing_surv_resp =====
+  Spearman_with_pvalue_pvalue_averaged: 0.0996
+  Wasserstein_with_ks_distance_averaged: 0.4407
+  Wasserstein_with_ks_distance_raw_averaged: 0.4407
+  Wasserstein_with_ks_ks_pvalue_averaged: 1.0000
+  Wasserstein_with_ks_ks_statistic_averaged: 0.0000
+  num_samples: 1000
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/missing_surv_resp_20260719_205232.json
+
+===== pers_score_pred =====
+  Spearman_with_pvalue_pvalue_averaged: 0.2974
+  Wasserstein_with_ks_distance_averaged: 5.9465
+  Wasserstein_with_ks_distance_raw_averaged: 5.9465
+  Wasserstein_with_ks_ks_pvalue_averaged: 0.0000
+  Wasserstein_with_ks_ks_statistic_averaged: 0.3625
+  num_samples: 1000
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/pers_score_pred_20260719_210031.json
+
+===== seq_surv_resp =====
+  Spearman_with_pvalue_pvalue_averaged: 0.1872
+  Wasserstein_with_ks_distance_averaged: 0.4619
+  Wasserstein_with_ks_distance_raw_averaged: 0.4619
+  Wasserstein_with_ks_ks_pvalue_averaged: 1.0000
+  Wasserstein_with_ks_ks_statistic_averaged: 0.0000
+  num_samples: 1000
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/seq_surv_resp_20260719_211019.json
+
+===== surv_resp_pred =====
+  Spearman_with_pvalue_pvalue_averaged: 0.3952
+  Wasserstein_with_ks_distance_averaged: 0.8365
+  Wasserstein_with_ks_distance_raw_averaged: 0.8365
+  Wasserstein_with_ks_ks_pvalue_averaged: 1.0000
+  Wasserstein_with_ks_ks_statistic_averaged: 0.0000
+  num_samples: 1000
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/surv_resp_pred_20260719_211902.json
+
+===== strategic_gameplay_guessing =====
+Running strategic_gameplay_guessing
+  MAE_with_normalization_mae: 11.7450
+  MAE_with_normalization_mae_raw: 11.7450
+  Wasserstein_with_ks_distance: 9.6250
+  win_rate: 0.0980
+  num_samples: 1000
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/strategic_gameplay_guessing_20260719_213516.json
+
+===== ieo_economics =====
+Running ieo_economics
+  accuracy_multi_choice: 0.8306
+  num_samples: 124
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/ieo_economics_20260719_213750.json
+
+===== workflow_idea_generation workflow_method_recommendation workflow_outcome_prediction workflow_title_prediction workflow_impact_prediction =====
+  num_samples: 244
+  num_failed_parses: 0
+Running workflow_impact_prediction
+  BLEURT: 0.4348
+  ROUGE-1: 0.2530
+  num_samples: 116
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3/combined_5subtasks_20260719_224409.json
+
+===== PAID FULL RUN DONE: ok=35 failed=0  failed:[] =====
