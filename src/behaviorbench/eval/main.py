@@ -275,6 +275,13 @@ def create_dummy_model() -> Callable:
     return dummy_model
 
 
+# Default endpoint for a locally hosted OpenAI-compatible server (--model-type local).
+# For --model-type openai the client should fall back to the OpenAI SDK's own default
+# (api.openai.com), so --api-base defaults to None and only the local model types below
+# substitute this value when the user did not pass --api-base explicitly.
+DEFAULT_LOCAL_API_BASE = "http://localhost:8000/v1"
+
+
 def build_model(args: argparse.Namespace) -> Callable:
     """Build a model callable from CLI arguments."""
     if args.dummy_model:
@@ -288,7 +295,7 @@ def build_model(args: argparse.Namespace) -> Callable:
 
         return LocalModel(
             model_name=args.model_name,
-            api_base=args.api_base,
+            api_base=args.api_base or DEFAULT_LOCAL_API_BASE,
             max_tokens=args.max_tokens,
             temperature=args.temperature,
             top_p=args.top_p,
@@ -302,7 +309,7 @@ def build_model(args: argparse.Namespace) -> Callable:
 
         return CentaurLocalModel(
             model_name=args.model_name,
-            api_base=args.api_base,
+            api_base=args.api_base or DEFAULT_LOCAL_API_BASE,
             max_tokens=args.max_tokens,
             temperature=args.temperature if args.temperature is not None else 0.6,
             top_p=args.top_p,
@@ -323,6 +330,7 @@ def build_model(args: argparse.Namespace) -> Callable:
             api_base=args.api_base if args.api_base else None,
             max_tokens=args.max_tokens,
             temperature=args.temperature,
+            use_azure=False,
             concurrency=args.concurrency,
             reasoning_effort=args.reasoning_effort,
         )
@@ -397,7 +405,7 @@ def parse_args() -> argparse.Namespace:
         ],
     )
     parser.add_argument("--model-name")
-    parser.add_argument("--api-base", default="http://localhost:8000/v1")
+    parser.add_argument("--api-base", default=None)
     parser.add_argument("--max-tokens", type=int, default=16384)
     parser.add_argument("--timeout", type=float, default=1200.0)
     parser.add_argument("--temperature", type=float, default=None)
