@@ -1,7 +1,13 @@
 # Findings — why `tencent/hy3` scores poorly on distributional tasks
 
-Companion to [README.md](README.md). Every figure here comes from the raw JSONs in
-[`tencent/hy3/`](tencent/hy3) and appears as a column in [`summary.csv`](summary.csv).
+Companion to [README.md](README.md). **This file is interpretation, not program output** —
+read [`RESULTS.txt`](RESULTS.txt) for what the program itself reports.
+
+Every per-task figure quoted here is copied from the program's own output: the `W` column is
+`Wasserstein_with_ks_distance` from `metrics`, and the mean/SD columns are
+`model_action_mean`, `model_action_std`, `human_action_mean`, `human_action_std` from
+`metadata`. All are visible in [`RESULTS.txt`](RESULTS.txt) and in the raw JSONs. Rows
+labelled **mean** are the one thing computed here — a plain average across the nine games.
 
 ## Summary
 
@@ -88,7 +94,7 @@ The same model does well wherever the task is to *reason about* people rather th
 
 | task | score | note |
 |---|---|---|
-| `multiround_behavior` | MAE 18.46 (normalised) | predicting a specific person's next action |
+| `multiround_behavior` | MAE 10.4–29.8 across its 8 tasks | predicting a specific person's next action |
 | `ieo_economics` | accuracy **0.831** | economics knowledge, 124 items |
 | `big_five` | MAE 4.79 | personality-score prediction |
 | `workflow` (free-text) | BLEURT **0.443** | research-workflow generation |

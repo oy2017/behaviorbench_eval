@@ -1,0 +1,859 @@
+==============================================================================
+FILE: acrossdim_pers_score_20260719_203632.json
+run at: 2026-07-19T20:36:32.838059
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: acrossdim_pers_score
+Metrics:
+  MAE_averaged: 7.8796
+  Spearman_with_pvalue_correlation_averaged: 0.1924
+  Spearman_with_pvalue_pvalue_averaged: 0.1074
+  Spearman_with_pvalue_all_significant: 0
+  Wasserstein_with_ks_distance_averaged: 5.0500
+  Wasserstein_with_ks_distance_raw_averaged: 5.0500
+  Wasserstein_with_ks_all_ks_pass_test: 0
+  Wasserstein_with_ks_ks_pvalue_averaged: 0.0818
+  Wasserstein_with_ks_ks_statistic_averaged: 0.3043
+Metadata:
+  num_samples: 1000
+  num_valid_predictions: 1000
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+  group_by: bigfive_dimension
+  num_groups: 5
+
+==============================================================================
+FILE: acrossgame_behavior_bomb_20260719_193817.json
+run at: 2026-07-19T19:38:17.470557
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: acrossgame_behavior_bomb
+Metrics:
+  MAE_with_normalization_mae: 33.4693
+  MAE_with_normalization_mae_raw: 33.4693
+  Spearman_with_pvalue_correlation: -0.0225
+  Spearman_with_pvalue_pvalue: 0.5381
+  Spearman_with_pvalue_significant: 0
+  Wasserstein_with_ks_distance: 22.4800
+  Wasserstein_with_ks_distance_raw: 22.4800
+  Wasserstein_with_ks_ks_statistic: 0.4387
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_samples: 750
+  num_valid_predictions: 750
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+
+==============================================================================
+FILE: acrossgame_behavior_dictator_20260719_190639.json
+run at: 2026-07-19T19:06:39.673544
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: acrossgame_behavior_dictator
+Metrics:
+  MAE_with_normalization_mae: 24.7627
+  MAE_with_normalization_mae_raw: 24.7627
+  Spearman_with_pvalue_correlation: 0.0331
+  Spearman_with_pvalue_pvalue: 0.3650
+  Spearman_with_pvalue_significant: 0
+  Wasserstein_with_ks_distance: 23.3733
+  Wasserstein_with_ks_distance_raw: 23.3733
+  Wasserstein_with_ks_ks_statistic: 0.7653
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_samples: 750
+  num_valid_predictions: 750
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+
+==============================================================================
+FILE: acrossgame_behavior_guessing_20260719_194423.json
+run at: 2026-07-19T19:44:23.080133
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: acrossgame_behavior_guessing
+Metrics:
+  MAE_with_normalization_mae: 23.3373
+  MAE_with_normalization_mae_raw: 23.3373
+  Spearman_with_pvalue_correlation: 0.0730
+  Spearman_with_pvalue_pvalue: 0.0457
+  Spearman_with_pvalue_significant: 1
+  Wasserstein_with_ks_distance: 15.9080
+  Wasserstein_with_ks_distance_raw: 15.9080
+  Wasserstein_with_ks_ks_statistic: 0.3453
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_samples: 750
+  num_valid_predictions: 750
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+
+==============================================================================
+FILE: acrossgame_behavior_public_goods_20260719_193149.json
+run at: 2026-07-19T19:31:49.499994
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: acrossgame_behavior_public_goods
+Metrics:
+  MAE_with_normalization_mae: 28.3067
+  MAE_with_normalization_mae_raw: 5.6613
+  Spearman_with_pvalue_correlation: 0.1127
+  Spearman_with_pvalue_pvalue: 0.0020
+  Spearman_with_pvalue_significant: 1
+  Wasserstein_with_ks_distance: 11.1867
+  Wasserstein_with_ks_distance_raw: 2.2373
+  Wasserstein_with_ks_ks_statistic: 0.3813
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_samples: 750
+  num_valid_predictions: 750
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+
+==============================================================================
+FILE: acrossgame_behavior_push_pull_20260719_194956.json
+run at: 2026-07-19T19:49:56.805727
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: acrossgame_behavior_push_pull
+Metrics:
+  Accuracy: 0.4480
+  f1_macro: 0.3378
+  MAE_with_normalization_mae: 55.2000
+  MAE_with_normalization_mae_raw: 0.5520
+  Wasserstein_with_ks_distance: 53.0667
+  Wasserstein_with_ks_distance_raw: 0.5307
+  Wasserstein_with_ks_ks_statistic: 0.0000
+  Wasserstein_with_ks_ks_pvalue: 1.0000
+  Wasserstein_with_ks_ks_pass_test: 1
+Metadata:
+  num_samples: 750
+  num_valid_predictions: 750
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+
+==============================================================================
+FILE: acrossgame_behavior_trust_banker_20260719_192444.json
+run at: 2026-07-19T19:24:44.562873
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: acrossgame_behavior_trust_banker
+Metrics:
+  MAE_with_normalization_mae: 22.6514
+  MAE_with_normalization_mae_raw: 33.9771
+  Spearman_with_pvalue_correlation: -0.0288
+  Spearman_with_pvalue_pvalue: 0.6426
+  Spearman_with_pvalue_significant: 0
+  Wasserstein_with_ks_distance: 20.2646
+  Wasserstein_with_ks_distance_raw: 30.3969
+  Wasserstein_with_ks_ks_statistic: 0.5153
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_samples: 262
+  num_valid_predictions: 262
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+
+==============================================================================
+FILE: acrossgame_behavior_trust_investor_20260719_192249.json
+run at: 2026-07-19T19:22:49.285732
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: acrossgame_behavior_trust_investor
+Metrics:
+  MAE_with_normalization_mae: 49.7333
+  MAE_with_normalization_mae_raw: 49.7333
+  Spearman_with_pvalue_correlation: -0.0632
+  Spearman_with_pvalue_pvalue: 0.0835
+  Spearman_with_pvalue_significant: 0
+  Wasserstein_with_ks_distance: 37.5947
+  Wasserstein_with_ks_distance_raw: 37.5947
+  Wasserstein_with_ks_ks_statistic: 0.4973
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_samples: 750
+  num_valid_predictions: 750
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+
+==============================================================================
+FILE: acrossgame_behavior_ultimatum_proposer_20260719_191229.json
+run at: 2026-07-19T19:12:29.740808
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: acrossgame_behavior_ultimatum_proposer
+Metrics:
+  MAE_with_normalization_mae: 15.0453
+  MAE_with_normalization_mae_raw: 15.0453
+  Spearman_with_pvalue_correlation: 0.2346
+  Spearman_with_pvalue_pvalue: 0.0000
+  Spearman_with_pvalue_significant: 1
+  Wasserstein_with_ks_distance: 8.9120
+  Wasserstein_with_ks_distance_raw: 8.9120
+  Wasserstein_with_ks_ks_statistic: 0.2040
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_samples: 750
+  num_valid_predictions: 750
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+
+==============================================================================
+FILE: acrossgame_behavior_ultimatum_responder_20260719_191729.json
+run at: 2026-07-19T19:17:29.678365
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: acrossgame_behavior_ultimatum_responder
+Metrics:
+  MAE_with_normalization_mae: 20.0453
+  MAE_with_normalization_mae_raw: 20.0453
+  Spearman_with_pvalue_correlation: 0.1308
+  Spearman_with_pvalue_pvalue: 0.0003
+  Spearman_with_pvalue_significant: 1
+  Wasserstein_with_ks_distance: 14.1600
+  Wasserstein_with_ks_distance_raw: 14.1600
+  Wasserstein_with_ks_ks_statistic: 0.4080
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_samples: 750
+  num_valid_predictions: 750
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+
+==============================================================================
+FILE: combined_5subtasks_20260719_224409.json
+run at: 2026-07-19T22:44:09.988995
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: workflow_idea_generation
+Metrics:
+  BLEURT: 0.4066
+  ROUGE-1: 0.2816
+Metadata:
+  num_samples: 244
+  num_valid_predictions: 244
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+  group_by: journal
+  num_groups: 2
+
+Task: workflow_method_recommendation
+Metrics:
+  BLEURT: 0.4403
+  ROUGE-1: 0.3564
+Metadata:
+  num_samples: 240
+  num_valid_predictions: 240
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+  group_by: journal
+  num_groups: 2
+
+Task: workflow_outcome_prediction
+Metrics:
+  BLEURT: 0.5063
+  ROUGE-1: 0.4109
+Metadata:
+  num_samples: 240
+  num_valid_predictions: 240
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+  group_by: journal
+  num_groups: 2
+
+Task: workflow_title_prediction
+Metrics:
+  BLEURT: 0.4276
+  ROUGE-1: 0.4482
+Metadata:
+  num_samples: 244
+  num_valid_predictions: 244
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+  group_by: journal
+  num_groups: 2
+
+Task: workflow_impact_prediction
+Metrics:
+  BLEURT: 0.4348
+  ROUGE-1: 0.2530
+Metadata:
+  num_samples: 116
+  num_valid_predictions: 116
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+  group_by: journal
+  num_groups: 2
+
+==============================================================================
+FILE: demo_pred_age_20260719_204442.json
+run at: 2026-07-19T20:44:42.617579
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: demo_pred_age
+Metrics:
+  MAE: 10.9420
+  Spearman_with_pvalue_correlation: 0.0628
+  Spearman_with_pvalue_pvalue: 0.0470
+  Spearman_with_pvalue_significant: 1
+  Wasserstein_with_ks_distance: 5.0180
+  Wasserstein_with_ks_distance_raw: 5.0180
+  Wasserstein_with_ks_ks_statistic: 0.2310
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_samples: 1000
+  num_valid_predictions: 1000
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+
+==============================================================================
+FILE: game_behavior_bomb_20260719_182526.json
+run at: 2026-07-19T18:25:26.545506
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: game_behavior_bomb
+Metrics:
+  Wasserstein_with_ks_distance: 14.2990
+  Wasserstein_with_ks_distance_raw: 14.2990
+  Wasserstein_with_ks_ks_statistic: 0.5030
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_prompts: 1
+  num_total_attempts: 1000
+  num_model_samples: 1000
+  num_human_samples: 200
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+  model_action_mean: 57.144
+  model_action_std: 19.71718194874714
+  human_action_mean: 45.565
+  human_action_std: 23.09341410445844
+
+==============================================================================
+FILE: game_behavior_dictator_20260719_182248.json
+run at: 2026-07-19T18:22:48.689327
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: game_behavior_dictator
+Metrics:
+  Wasserstein_with_ks_distance: 25.5150
+  Wasserstein_with_ks_distance_raw: 25.5150
+  Wasserstein_with_ks_ks_statistic: 0.8070
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_prompts: 1
+  num_total_attempts: 1000
+  num_model_samples: 1000
+  num_human_samples: 200
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+  model_action_mean: 49.76
+  model_action_std: 2.478386571945547
+  human_action_mean: 24.715
+  human_action_std: 19.194628805996746
+
+==============================================================================
+FILE: game_behavior_guessing_20260719_182926.json
+run at: 2026-07-19T18:29:26.148634
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: game_behavior_guessing
+Metrics:
+  Wasserstein_with_ks_distance: 35.0280
+  Wasserstein_with_ks_distance_raw: 35.0280
+  Wasserstein_with_ks_ks_statistic: 0.8810
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_prompts: 1
+  num_total_attempts: 1000
+  num_model_samples: 1000
+  num_human_samples: 200
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+  model_action_mean: 0.437
+  model_action_std: 1.4635679007138682
+  human_action_mean: 35.465
+  human_action_std: 21.512526002308515
+
+==============================================================================
+FILE: game_behavior_public_goods_20260719_183854.json
+run at: 2026-07-19T18:38:54.542272
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: game_behavior_public_goods
+Metrics:
+  Wasserstein_with_ks_distance: 24.0650
+  Wasserstein_with_ks_distance_raw: 4.8130
+  Wasserstein_with_ks_ks_statistic: 0.5060
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_prompts: 1
+  num_total_attempts: 1000
+  num_model_samples: 1000
+  num_human_samples: 200
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+  model_action_mean: 9.943
+  model_action_std: 0.8554244560450676
+  human_action_mean: 8.91
+  human_action_std: 6.068929065329401
+
+==============================================================================
+FILE: game_behavior_push_pull_20260719_185152.json
+run at: 2026-07-19T18:51:52.653744
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: game_behavior_push_pull
+Metrics:
+  Wasserstein_with_ks_distance: 50.3000
+  Wasserstein_with_ks_distance_raw: 0.5030
+  Wasserstein_with_ks_ks_statistic: 0.0000
+  Wasserstein_with_ks_ks_pvalue: 1.0000
+  Wasserstein_with_ks_ks_pass_test: 1
+Metadata:
+  num_prompts: 1
+  num_total_attempts: 1000
+  num_model_samples: 1000
+  num_human_samples: 200
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+  model_action_mean: 0.067
+  model_action_std: 0.25002199903208516
+  human_action_mean: 0.57
+  human_action_std: 0.4950757517794625
+
+==============================================================================
+FILE: game_behavior_trust_banker_20260719_185324.json
+run at: 2026-07-19T18:53:24.520711
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: game_behavior_trust_banker
+Metrics:
+  Wasserstein_with_ks_distance: 22.4420
+  Wasserstein_with_ks_distance_raw: 33.6630
+  Wasserstein_with_ks_ks_statistic: 0.5950
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_prompts: 1
+  num_total_attempts: 1000
+  num_model_samples: 1000
+  num_human_samples: 200
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+  model_action_mean: 75.163
+  model_action_std: 6.271557302616313
+  human_action_mean: 55.9
+  human_action_std: 37.39933154482844
+
+==============================================================================
+FILE: game_behavior_trust_investor_20260719_185542.json
+run at: 2026-07-19T18:55:42.979968
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: game_behavior_trust_investor
+Metrics:
+  Wasserstein_with_ks_distance: 52.3801
+  Wasserstein_with_ks_distance_raw: 52.3801
+  Wasserstein_with_ks_ks_statistic: 0.6348
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_prompts: 1
+  num_total_attempts: 1000
+  num_model_samples: 998
+  num_human_samples: 200
+  num_failed_parses: 2
+  failed_parse_rate: 0.002
+  model_action_mean: 94.56513026052104
+  model_action_std: 16.229789853551615
+  human_action_mean: 42.185
+  human_action_std: 39.88985804687703
+
+==============================================================================
+FILE: game_behavior_ultimatum_proposer_20260719_185746.json
+run at: 2026-07-19T18:57:46.787683
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: game_behavior_ultimatum_proposer
+Metrics:
+  Wasserstein_with_ks_distance: 13.5600
+  Wasserstein_with_ks_distance_raw: 13.5600
+  Wasserstein_with_ks_ks_statistic: 0.4990
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_prompts: 1
+  num_total_attempts: 1000
+  num_model_samples: 1000
+  num_human_samples: 200
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+  model_action_mean: 39.99
+  model_action_std: 2.213571774305049
+  human_action_mean: 44.92
+  human_action_std: 18.328764279132404
+
+==============================================================================
+FILE: game_behavior_ultimatum_responder_20260719_190111.json
+run at: 2026-07-19T19:01:11.587850
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: game_behavior_ultimatum_responder
+Metrics:
+  Wasserstein_with_ks_distance: 27.8090
+  Wasserstein_with_ks_distance_raw: 27.8090
+  Wasserstein_with_ks_ks_statistic: 0.6800
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_prompts: 1
+  num_total_attempts: 1000
+  num_model_samples: 1000
+  num_human_samples: 200
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+  model_action_mean: 5.571
+  model_action_std: 7.129863883693714
+  human_action_mean: 33.29
+  human_action_std: 17.80297447057654
+
+==============================================================================
+FILE: ieo_economics_20260719_213750.json
+run at: 2026-07-19T21:37:50.458259
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: ieo_economics
+Metrics:
+  accuracy_multi_choice: 0.8306
+  f1_macro: 0.8244
+Metadata:
+  num_samples: 124
+  num_valid_predictions: 124
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+
+==============================================================================
+FILE: missing_surv_resp_20260719_205232.json
+run at: 2026-07-19T20:52:32.302686
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: missing_surv_resp
+Metrics:
+  Accuracy_averaged: 0.4597
+  f1_macro_averaged: 0.3561
+  MAE_averaged: 0.7893
+  Spearman_with_pvalue_correlation_averaged: 0.5086
+  Spearman_with_pvalue_pvalue_averaged: 0.0996
+  Spearman_with_pvalue_all_significant: 0
+  Wasserstein_with_ks_distance_averaged: 0.4407
+  Wasserstein_with_ks_distance_raw_averaged: 0.4407
+  Wasserstein_with_ks_all_ks_pass_test: 1
+  Wasserstein_with_ks_ks_pvalue_averaged: 1.0000
+  Wasserstein_with_ks_ks_statistic_averaged: 0.0000
+Metadata:
+  num_samples: 1000
+  num_valid_predictions: 1000
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+  group_by: target_item
+  num_groups: 50
+
+==============================================================================
+FILE: multiround_behavior_bomb_20260719_201120.json
+run at: 2026-07-19T20:11:20.193808
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: multiround_behavior_bomb
+Metrics:
+  MAE_with_normalization_mae: 17.7980
+  MAE_with_normalization_mae_raw: 17.7980
+  Spearman_with_pvalue_correlation: 0.3134
+  Spearman_with_pvalue_pvalue: 0.0000
+  Spearman_with_pvalue_significant: 1
+  Wasserstein_with_ks_distance: 6.3860
+  Wasserstein_with_ks_distance_raw: 6.3860
+  Wasserstein_with_ks_ks_statistic: 0.1920
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_samples: 500
+  num_valid_predictions: 500
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+
+==============================================================================
+FILE: multiround_behavior_dictator_20260719_195352.json
+run at: 2026-07-19T19:53:52.292966
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: multiround_behavior_dictator
+Metrics:
+  MAE_with_normalization_mae: 12.1220
+  MAE_with_normalization_mae_raw: 12.1220
+  Spearman_with_pvalue_correlation: 0.5349
+  Spearman_with_pvalue_pvalue: 0.0000
+  Spearman_with_pvalue_significant: 1
+  Wasserstein_with_ks_distance: 6.3300
+  Wasserstein_with_ks_distance_raw: 6.3300
+  Wasserstein_with_ks_ks_statistic: 0.1380
+  Wasserstein_with_ks_ks_pvalue: 0.0001
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_samples: 500
+  num_valid_predictions: 500
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+
+==============================================================================
+FILE: multiround_behavior_guessing_20260719_201933.json
+run at: 2026-07-19T20:19:33.169909
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: multiround_behavior_guessing
+Metrics:
+  MAE_with_normalization_mae: 10.3760
+  MAE_with_normalization_mae_raw: 10.3760
+  Spearman_with_pvalue_correlation: 0.6495
+  Spearman_with_pvalue_pvalue: 0.0000
+  Spearman_with_pvalue_significant: 1
+  Wasserstein_with_ks_distance: 7.5320
+  Wasserstein_with_ks_distance_raw: 7.5320
+  Wasserstein_with_ks_ks_statistic: 0.1980
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_samples: 500
+  num_valid_predictions: 500
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+
+==============================================================================
+FILE: multiround_behavior_public_goods_20260719_200719.json
+run at: 2026-07-19T20:07:19.081613
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: multiround_behavior_public_goods
+Metrics:
+  MAE_with_normalization_mae: 18.2200
+  MAE_with_normalization_mae_raw: 3.6440
+  Spearman_with_pvalue_correlation: 0.5700
+  Spearman_with_pvalue_pvalue: 0.0000
+  Spearman_with_pvalue_significant: 1
+  Wasserstein_with_ks_distance: 4.2000
+  Wasserstein_with_ks_distance_raw: 0.8400
+  Wasserstein_with_ks_ks_statistic: 0.0600
+  Wasserstein_with_ks_ks_pvalue: 0.3294
+  Wasserstein_with_ks_ks_pass_test: 1
+Metadata:
+  num_samples: 500
+  num_valid_predictions: 500
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+
+==============================================================================
+FILE: multiround_behavior_push_pull_20260719_202737.json
+run at: 2026-07-19T20:27:37.568544
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: multiround_behavior_push_pull
+Metrics:
+  Accuracy: 0.7020
+  f1_macro: 0.6730
+  MAE_with_normalization_mae: 29.8000
+  MAE_with_normalization_mae_raw: 0.2980
+  Wasserstein_with_ks_distance: 2.6000
+  Wasserstein_with_ks_distance_raw: 0.0260
+  Wasserstein_with_ks_ks_statistic: 0.0000
+  Wasserstein_with_ks_ks_pvalue: 1.0000
+  Wasserstein_with_ks_ks_pass_test: 1
+Metadata:
+  num_samples: 500
+  num_valid_predictions: 500
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+
+==============================================================================
+FILE: multiround_behavior_trust_banker_inv100_20260719_200240.json
+run at: 2026-07-19T20:02:40.143742
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: multiround_behavior_trust_banker_inv100
+Metrics:
+  MAE_with_normalization_mae: 15.3795
+  MAE_with_normalization_mae_raw: 46.1386
+  Spearman_with_pvalue_correlation: 0.3565
+  Spearman_with_pvalue_pvalue: 0.0000
+  Spearman_with_pvalue_significant: 1
+  Wasserstein_with_ks_distance: 10.6272
+  Wasserstein_with_ks_distance_raw: 31.8815
+  Wasserstein_with_ks_ks_statistic: 0.2450
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_samples: 498
+  num_valid_predictions: 498
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+
+==============================================================================
+FILE: multiround_behavior_trust_banker_inv50_20260719_195821.json
+run at: 2026-07-19T19:58:21.625690
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: multiround_behavior_trust_banker_inv50
+Metrics:
+  MAE_with_normalization_mae: 20.0320
+  MAE_with_normalization_mae_raw: 30.0480
+  Spearman_with_pvalue_correlation: 0.3225
+  Spearman_with_pvalue_pvalue: 0.0002
+  Spearman_with_pvalue_significant: 1
+  Wasserstein_with_ks_distance: 18.3040
+  Wasserstein_with_ks_distance_raw: 27.4560
+  Wasserstein_with_ks_ks_statistic: 0.3760
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_samples: 125
+  num_valid_predictions: 125
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+
+==============================================================================
+FILE: multiround_behavior_trust_investor_20260719_195716.json
+run at: 2026-07-19T19:57:16.696048
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: multiround_behavior_trust_investor
+Metrics:
+  MAE_with_normalization_mae: 23.9720
+  MAE_with_normalization_mae_raw: 23.9720
+  Spearman_with_pvalue_correlation: 0.5133
+  Spearman_with_pvalue_pvalue: 0.0000
+  Spearman_with_pvalue_significant: 1
+  Wasserstein_with_ks_distance: 6.9200
+  Wasserstein_with_ks_distance_raw: 6.9200
+  Wasserstein_with_ks_ks_statistic: 0.1540
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+Metadata:
+  num_samples: 500
+  num_valid_predictions: 500
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+
+==============================================================================
+FILE: pers_score_pred_20260719_210031.json
+run at: 2026-07-19T21:00:31.202228
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: pers_score_pred
+Metrics:
+  MAE_averaged: 7.1904
+  Spearman_with_pvalue_correlation_averaged: 0.0736
+  Spearman_with_pvalue_pvalue_averaged: 0.2974
+  Spearman_with_pvalue_all_significant: 0
+  Wasserstein_with_ks_distance_averaged: 5.9465
+  Wasserstein_with_ks_distance_raw_averaged: 5.9465
+  Wasserstein_with_ks_all_ks_pass_test: 0
+  Wasserstein_with_ks_ks_pvalue_averaged: 0.0000
+  Wasserstein_with_ks_ks_statistic_averaged: 0.3625
+Metadata:
+  num_samples: 1000
+  num_valid_predictions: 1000
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+  group_by: bigfive_dimension
+  num_groups: 5
+
+==============================================================================
+FILE: seq_surv_resp_20260719_211019.json
+run at: 2026-07-19T21:10:19.123810
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: seq_surv_resp
+Metrics:
+  Accuracy_averaged: 0.4170
+  f1_macro_averaged: 0.3244
+  MAE_averaged: 0.8879
+  Spearman_with_pvalue_correlation_averaged: 0.3876
+  Spearman_with_pvalue_pvalue_averaged: 0.1872
+  Spearman_with_pvalue_all_significant: 0
+  Wasserstein_with_ks_distance_averaged: 0.4619
+  Wasserstein_with_ks_distance_raw_averaged: 0.4619
+  Wasserstein_with_ks_all_ks_pass_test: 1
+  Wasserstein_with_ks_ks_pvalue_averaged: 1.0000
+  Wasserstein_with_ks_ks_statistic_averaged: 0.0000
+Metadata:
+  num_samples: 1000
+  num_valid_predictions: 1000
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+  group_by: target_item
+  num_groups: 49
+
+==============================================================================
+FILE: strategic_gameplay_guessing_20260719_213516.json
+run at: 2026-07-19T21:35:16.517398
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: strategic_gameplay_guessing
+Metrics:
+  MAE_with_normalization_mae: 11.7450
+  MAE_with_normalization_mae_raw: 11.7450
+  Spearman_with_pvalue_correlation: -0.1602
+  Spearman_with_pvalue_pvalue: 0.0000
+  Spearman_with_pvalue_significant: 1
+  Wasserstein_with_ks_distance: 9.6250
+  Wasserstein_with_ks_distance_raw: 9.6250
+  Wasserstein_with_ks_ks_statistic: 0.4490
+  Wasserstein_with_ks_ks_pvalue: 0.0000
+  Wasserstein_with_ks_ks_pass_test: 0
+  win_rate: 0.0980
+Metadata:
+  num_samples: 1000
+  num_valid_predictions: 1000
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+
+==============================================================================
+FILE: surv_resp_pred_20260719_211902.json
+run at: 2026-07-19T21:19:02.521905
+inference settings: {"model_name": "tencent/hy3", "model_type": "openai", "temperature": null, "top_p": null, "top_k": null, "min_p": null, "max_tokens": 16384, "concurrency": 4, "reasoning_effort": null}
+==============================================================================
+Task: surv_resp_pred
+Metrics:
+  Accuracy_averaged: 0.2736
+  f1_macro_averaged: 0.1136
+  MAE_averaged: 1.0248
+  Spearman_with_pvalue_correlation_averaged: 0.0581
+  Spearman_with_pvalue_pvalue_averaged: 0.3952
+  Spearman_with_pvalue_all_significant: 0
+  Wasserstein_with_ks_distance_averaged: 0.8365
+  Wasserstein_with_ks_distance_raw_averaged: 0.8365
+  Wasserstein_with_ks_all_ks_pass_test: 1
+  Wasserstein_with_ks_ks_pvalue_averaged: 1.0000
+  Wasserstein_with_ks_ks_statistic_averaged: 0.0000
+Metadata:
+  num_samples: 1000
+  num_valid_predictions: 1000
+  num_failed_parses: 0
+  failed_parse_rate: 0.0
+  group_by: target_item
+  num_groups: 50
+
+==============================================================================
+35 result files, 39 tasks
