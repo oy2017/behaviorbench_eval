@@ -1,0 +1,411 @@
+{
+  "timestamp": "2026-07-19T12:54:39.365143",
+  "metrics": {
+    "acrossdim_pers_score": {
+      "MAE_averaged": 8.487619047619047,
+      "Spearman_with_pvalue_correlation_averaged": 0.01617509903123084,
+      "Spearman_with_pvalue_pvalue_averaged": 0.4546035398781643,
+      "Spearman_with_pvalue_all_significant": 0,
+      "Wasserstein_with_ks_distance_averaged": 5.139047619047619,
+      "Wasserstein_with_ks_distance_raw_averaged": 5.139047619047619,
+      "Wasserstein_with_ks_all_ks_pass_test": 1,
+      "Wasserstein_with_ks_ks_pvalue_averaged": 0.7610667110667111,
+      "Wasserstein_with_ks_ks_statistic_averaged": 0.32571428571428573,
+      "_per_group": {
+        "Agreeableness": {
+          "MAE": 12.6,
+          "Spearman_with_pvalue_correlation": -0.36842105263157904,
+          "Spearman_with_pvalue_pvalue": 0.5417509057946895,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 4.6,
+          "Wasserstein_with_ks_distance_raw": 4.6,
+          "Wasserstein_with_ks_ks_statistic": 0.6000000000000001,
+          "Wasserstein_with_ks_ks_pvalue": 0.35714285714285715,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "Conscientiousness": {
+          "MAE": 5.666666666666667,
+          "Spearman_with_pvalue_correlation": 0.8660254037844387,
+          "Spearman_with_pvalue_pvalue": 0.33333333333333326,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 5.666666666666667,
+          "Wasserstein_with_ks_distance_raw": 5.666666666666667,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "Extraversion": {
+          "MAE": 8.0,
+          "Spearman_with_pvalue_correlation": -0.8651809126974003,
+          "Spearman_with_pvalue_pvalue": 0.0582072907029989,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 4.4,
+          "Wasserstein_with_ks_distance_raw": 4.4,
+          "Wasserstein_with_ks_ks_statistic": 0.4,
+          "Wasserstein_with_ks_ks_pvalue": 0.873015873015873,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "Neuroticism": {
+          "MAE": 8.6,
+          "Spearman_with_pvalue_correlation": 0.20519567041703085,
+          "Spearman_with_pvalue_pvalue": 0.7405819415910722,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 6.6000000000000005,
+          "Wasserstein_with_ks_distance_raw": 6.6000000000000005,
+          "Wasserstein_with_ks_ks_statistic": 0.20000000000000007,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "Openness": {
+          "MAE": 7.571428571428571,
+          "Spearman_with_pvalue_correlation": 0.24325638628366394,
+          "Spearman_with_pvalue_pvalue": 0.5991442279687279,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 4.428571428571429,
+          "Wasserstein_with_ks_distance_raw": 4.428571428571429,
+          "Wasserstein_with_ks_ks_statistic": 0.42857142857142855,
+          "Wasserstein_with_ks_ks_pvalue": 0.5751748251748252,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        }
+      }
+    }
+  },
+  "num_tasks": 1,
+  "tasks": [
+    {
+      "task_name": "acrossdim_pers_score",
+      "metrics": {
+        "MAE_averaged": 8.487619047619047,
+        "Spearman_with_pvalue_correlation_averaged": 0.01617509903123084,
+        "Spearman_with_pvalue_pvalue_averaged": 0.4546035398781643,
+        "Spearman_with_pvalue_all_significant": 0,
+        "Wasserstein_with_ks_distance_averaged": 5.139047619047619,
+        "Wasserstein_with_ks_distance_raw_averaged": 5.139047619047619,
+        "Wasserstein_with_ks_all_ks_pass_test": 1,
+        "Wasserstein_with_ks_ks_pvalue_averaged": 0.7610667110667111,
+        "Wasserstein_with_ks_ks_statistic_averaged": 0.32571428571428573,
+        "_per_group": {
+          "Agreeableness": {
+            "MAE": 12.6,
+            "Spearman_with_pvalue_correlation": -0.36842105263157904,
+            "Spearman_with_pvalue_pvalue": 0.5417509057946895,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 4.6,
+            "Wasserstein_with_ks_distance_raw": 4.6,
+            "Wasserstein_with_ks_ks_statistic": 0.6000000000000001,
+            "Wasserstein_with_ks_ks_pvalue": 0.35714285714285715,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "Conscientiousness": {
+            "MAE": 5.666666666666667,
+            "Spearman_with_pvalue_correlation": 0.8660254037844387,
+            "Spearman_with_pvalue_pvalue": 0.33333333333333326,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 5.666666666666667,
+            "Wasserstein_with_ks_distance_raw": 5.666666666666667,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "Extraversion": {
+            "MAE": 8.0,
+            "Spearman_with_pvalue_correlation": -0.8651809126974003,
+            "Spearman_with_pvalue_pvalue": 0.0582072907029989,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 4.4,
+            "Wasserstein_with_ks_distance_raw": 4.4,
+            "Wasserstein_with_ks_ks_statistic": 0.4,
+            "Wasserstein_with_ks_ks_pvalue": 0.873015873015873,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "Neuroticism": {
+            "MAE": 8.6,
+            "Spearman_with_pvalue_correlation": 0.20519567041703085,
+            "Spearman_with_pvalue_pvalue": 0.7405819415910722,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 6.6000000000000005,
+            "Wasserstein_with_ks_distance_raw": 6.6000000000000005,
+            "Wasserstein_with_ks_ks_statistic": 0.20000000000000007,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "Openness": {
+            "MAE": 7.571428571428571,
+            "Spearman_with_pvalue_correlation": 0.24325638628366394,
+            "Spearman_with_pvalue_pvalue": 0.5991442279687279,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 4.428571428571429,
+            "Wasserstein_with_ks_distance_raw": 4.428571428571429,
+            "Wasserstein_with_ks_ks_statistic": 0.42857142857142855,
+            "Wasserstein_with_ks_ks_pvalue": 0.5751748251748252,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          }
+        }
+      },
+      "metadata": {
+        "num_samples": 25,
+        "num_valid_predictions": 25,
+        "num_failed_parses": 0,
+        "failed_parse_rate": 0.0,
+        "group_by": "bigfive_dimension",
+        "num_groups": 5
+      },
+      "predictions": [
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Extraversion: 24\n* Neuroticism: 33\n* Conscientiousness: 30\n* Openness: 44\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Agreeableness* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[35]",
+          "parsed_prediction": 35.0,
+          "expected": 39.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Extraversion: 19\n* Neuroticism: 42\n* Agreeableness: 38\n* Conscientiousness: 27\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Openness* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[31]",
+          "parsed_prediction": 31.0,
+          "expected": 39.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Extraversion: 35\n* Agreeableness: 30\n* Conscientiousness: 27\n* Openness: 42\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Neuroticism* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[25]",
+          "parsed_prediction": 25.0,
+          "expected": 28.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Extraversion: 43\n* Agreeableness: 43\n* Conscientiousness: 38\n* Openness: 50\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Neuroticism* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[15]",
+          "parsed_prediction": 15.0,
+          "expected": 37.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Neuroticism: 45\n* Agreeableness: 46\n* Conscientiousness: 23\n* Openness: 41\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Extraversion* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[29]",
+          "parsed_prediction": 29.0,
+          "expected": 29.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Neuroticism: 34\n* Agreeableness: 32\n* Conscientiousness: 42\n* Openness: 42\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Extraversion* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[38]",
+          "parsed_prediction": 38.0,
+          "expected": 20.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Extraversion: 32\n* Neuroticism: 23\n* Agreeableness: 43\n* Conscientiousness: 44\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Openness* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[39]",
+          "parsed_prediction": 39.0,
+          "expected": 34.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Neuroticism: 23\n* Agreeableness: 28\n* Conscientiousness: 30\n* Openness: 47\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Extraversion* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[29]",
+          "parsed_prediction": 29.0,
+          "expected": 41.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Extraversion: 17\n* Agreeableness: 37\n* Conscientiousness: 36\n* Openness: 23\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Neuroticism* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[29]",
+          "parsed_prediction": 29.0,
+          "expected": 39.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Extraversion: 46\n* Neuroticism: 41\n* Agreeableness: 47\n* Conscientiousness: 31\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Openness* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[38]",
+          "parsed_prediction": 38.0,
+          "expected": 48.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Extraversion: 33\n* Neuroticism: 42\n* Agreeableness: 37\n* Conscientiousness: 25\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Openness* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[31]",
+          "parsed_prediction": 31.0,
+          "expected": 31.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Extraversion: 50\n* Neuroticism: 31\n* Conscientiousness: 35\n* Openness: 44\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Agreeableness* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[38]",
+          "parsed_prediction": 38.0,
+          "expected": 50.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Neuroticism: 29\n* Agreeableness: 44\n* Conscientiousness: 34\n* Openness: 36\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Extraversion* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[33]",
+          "parsed_prediction": 33.0,
+          "expected": 29.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Extraversion: 16\n* Agreeableness: 30\n* Conscientiousness: 23\n* Openness: 40\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Neuroticism* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[35]",
+          "parsed_prediction": 35.0,
+          "expected": 38.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Extraversion: 45\n* Neuroticism: 50\n* Conscientiousness: 27\n* Openness: 44\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Agreeableness* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[22]",
+          "parsed_prediction": 22.0,
+          "expected": 42.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Extraversion: 39\n* Neuroticism: 31\n* Agreeableness: 46\n* Conscientiousness: 35\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Openness* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[37]",
+          "parsed_prediction": 37.0,
+          "expected": 29.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Extraversion: 38\n* Neuroticism: 36\n* Agreeableness: 33\n* Conscientiousness: 29\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Openness* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[31]",
+          "parsed_prediction": 31.0,
+          "expected": 45.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Extraversion: 39\n* Neuroticism: 12\n* Agreeableness: 43\n* Conscientiousness: 39\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Openness* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[38]",
+          "parsed_prediction": 38.0,
+          "expected": 46.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Extraversion: 19\n* Neuroticism: 22\n* Conscientiousness: 46\n* Openness: 49\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Agreeableness* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[42]",
+          "parsed_prediction": 42.0,
+          "expected": 19.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Extraversion: 31\n* Neuroticism: 31\n* Agreeableness: 41\n* Openness: 47\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Conscientiousness* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[38]",
+          "parsed_prediction": 38.0,
+          "expected": 46.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Extraversion: 25\n* Neuroticism: 34\n* Agreeableness: 35\n* Openness: 43\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Conscientiousness* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[33]",
+          "parsed_prediction": 33.0,
+          "expected": 36.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Neuroticism: 28\n* Agreeableness: 45\n* Conscientiousness: 40\n* Openness: 38\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Extraversion* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[33]",
+          "parsed_prediction": 33.0,
+          "expected": 27.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Extraversion: 15\n* Neuroticism: 30\n* Agreeableness: 38\n* Openness: 39\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Conscientiousness* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[33]",
+          "parsed_prediction": 33.0,
+          "expected": 27.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Extraversion: 31\n* Neuroticism: 30\n* Conscientiousness: 39\n* Openness: 33\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Agreeableness* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[35]",
+          "parsed_prediction": 35.0,
+          "expected": 39.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test scores in four dimensions, your task is to predict the score in the remaining dimension.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Extraversion: 37\n* Agreeableness: 37\n* Conscientiousness: 35\n* Openness: 36\n\n## Output Format\nBased on the four dimension scores above, please predict this person's score in the *Neuroticism* dimension. Please output a single number in the range from 10 to 50, highlighted in [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[35]",
+          "parsed_prediction": 35.0,
+          "expected": 30.0
+        }
+      ],
+      "references": null
+    }
+  ],
+  "inference_settings": {
+    "model_name": "tencent/hy3:free",
+    "model_type": "openai",
+    "temperature": null,
+    "top_p": null,
+    "top_k": null,
+    "min_p": null,
+    "max_tokens": 16384,
+    "concurrency": 1,
+    "reasoning_effort": null
+  },
+  "token_usage": {
+    "session_start": null,
+    "total_api_calls": 25,
+    "total_prompt_tokens": 4350,
+    "total_completion_tokens": 100,
+    "total_reasoning_tokens": 0,
+    "total_cost_usd": 0.0,
+    "by_model": {
+      "tencent/hy3:free": {
+        "prompt_tokens": 4350,
+        "completion_tokens": 100,
+        "reasoning_tokens": 0,
+        "cost": 0.0,
+        "calls": 25
+      }
+    }
+  }
+}

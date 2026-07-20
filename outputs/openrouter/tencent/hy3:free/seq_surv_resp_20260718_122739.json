@@ -1,0 +1,191 @@
+{
+  "timestamp": "2026-07-18T12:27:39.472182",
+  "metrics": {
+    "seq_surv_resp": {
+      "Accuracy_averaged": 1.0,
+      "f1_macro_averaged": 0.5,
+      "_per_group": {
+        "C4": {
+          "MAE": 0.0,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 0.0,
+          "Wasserstein_with_ks_distance_raw": 0.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "O10": {
+          "MAE": 0.0,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 0.0,
+          "Wasserstein_with_ks_distance_raw": 0.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "O7": {
+          "MAE": 0.0,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 0.0,
+          "Wasserstein_with_ks_distance_raw": 0.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        }
+      },
+      "MAE_averaged": 0.0,
+      "Spearman_with_pvalue_correlation_averaged": 0.0,
+      "Spearman_with_pvalue_pvalue_averaged": 0.0,
+      "Spearman_with_pvalue_all_significant": 0,
+      "Wasserstein_with_ks_distance_averaged": 0.0,
+      "Wasserstein_with_ks_distance_raw_averaged": 0.0,
+      "Wasserstein_with_ks_all_ks_pass_test": 1,
+      "Wasserstein_with_ks_ks_pvalue_averaged": 1.0,
+      "Wasserstein_with_ks_ks_statistic_averaged": 0.0
+    }
+  },
+  "num_tasks": 1,
+  "tasks": [
+    {
+      "task_name": "seq_surv_resp",
+      "metrics": {
+        "Accuracy_averaged": 1.0,
+        "f1_macro_averaged": 0.5,
+        "_per_group": {
+          "C4": {
+            "MAE": 0.0,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 0.0,
+            "Wasserstein_with_ks_distance_raw": 0.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "O10": {
+            "MAE": 0.0,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 0.0,
+            "Wasserstein_with_ks_distance_raw": 0.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "O7": {
+            "MAE": 0.0,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 0.0,
+            "Wasserstein_with_ks_distance_raw": 0.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          }
+        },
+        "MAE_averaged": 0.0,
+        "Spearman_with_pvalue_correlation_averaged": 0.0,
+        "Spearman_with_pvalue_pvalue_averaged": 0.0,
+        "Spearman_with_pvalue_all_significant": 0,
+        "Wasserstein_with_ks_distance_averaged": 0.0,
+        "Wasserstein_with_ks_distance_raw_averaged": 0.0,
+        "Wasserstein_with_ks_all_ks_pass_test": 1,
+        "Wasserstein_with_ks_ks_pvalue_averaged": 1.0,
+        "Wasserstein_with_ks_ks_statistic_averaged": 0.0
+      },
+      "metadata": {
+        "num_samples": 3,
+        "num_valid_predictions": 3,
+        "num_failed_parses": 0,
+        "failed_parse_rate": 0.0,
+        "group_by": "target_item",
+        "num_groups": 3
+      },
+      "predictions": [
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's previous answers in a Big Five personality test (in the order they answered them), your task is to predict this subject's answer to the next question.",
+            "user": "## Subject's Previous Answers\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n1. I am the life of the party.\nAnswer: [4]\n\n2. I feel little concern for others.\nAnswer: [2]\n\n3. I am always prepared.\nAnswer: [2]\n\n4. I get stressed out easily.\nAnswer: [4]\n\n5. I have a rich vocabulary.\nAnswer: [4]\n\n6. I don't talk a lot.\nAnswer: [2]\n\n7. I am interested in people.\nAnswer: [3]\n\n8. I leave my belongings around.\nAnswer: [4]\n\n9. I am relaxed most of the time.\nAnswer: [2]\n\n10. I have difficulty understanding abstract ideas.\nAnswer: [1]\n\n11. I feel comfortable around people.\nAnswer: [4]\n\n12. I insult people.\nAnswer: [3]\n\n13. I pay attention to details.\nAnswer: [3]\n\n14. I worry about things.\nAnswer: [4]\n\n15. I have a vivid imagination.\nAnswer: [5]\n\n16. I keep in the background.\nAnswer: [2]\n\n17. I sympathize with others' feelings.\nAnswer: [5]\n\n18. I make a mess of things.\nAnswer: [2]\n\n19. I seldom feel blue.\nAnswer: [2]\n\n20. I am not interested in abstract ideas.\nAnswer: [2]\n\n21. I start conversations.\nAnswer: [4]\n\n22. I am not interested in other people's problems.\nAnswer: [2]\n\n23. I get chores done right away.\nAnswer: [2]\n\n24. I am easily disturbed.\nAnswer: [4]\n\n25. I have excellent ideas.\nAnswer: [5]\n\n26. I have little to say.\nAnswer: [1]\n\n27. I have a soft heart.\nAnswer: [5]\n\n28. I often forget to put things back in their proper place.\nAnswer: [4]\n\n29. I get upset easily.\nAnswer: [5]\n\n30. I do not have a good imagination.\nAnswer: [1]\n\n31. I talk to a lot of different people at parties.\nAnswer: [4]\n\n32. I am not really interested in others.\nAnswer: [1]\n\n33. I like order.\nAnswer: [4]\n\n34. I change my mood a lot.\nAnswer: [4]\n\n35. I am quick to understand things.\nAnswer: [5]\n\n36. I don't like to draw attention to myself.\nAnswer: [4]\n\n37. I take time out for others.\nAnswer: [4]\n\n38. I shirk my duties.\nAnswer: [2]\n\n39. I have frequent mood swings.\nAnswer: [2]\n\n40. I use difficult words.\nAnswer: [4]\n\n41. I don't mind being the center of attention.\nAnswer: [4]\n\n42. I feel others' emotions.\nAnswer: [4]\n\n43. I follow a schedule.\nAnswer: [4]\n\n44. I get irritated easily.\nAnswer: [4]\n\n45. I spend time reflecting on things.\nAnswer: [5]\n\n46. I am quiet around strangers.\nAnswer: [2]\n\n47. I make people feel at ease.\nAnswer: [3]\n\n48. I am exacting in my work.\nAnswer: [4]\n\n49. I often feel blue.\nAnswer: [3]\n\n## The Next Question\n50. I am full of ideas.\n\n## Output Format\nPlease predict the subject's answer to the next question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 14382,
+              "history_length": 49,
+              "target_item": "O10",
+              "target_position": 50
+            }
+          },
+          "raw_output": "[5]",
+          "parsed_prediction": 5,
+          "expected": 5
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's previous answers in a Big Five personality test (in the order they answered them), your task is to predict this subject's answer to the next question.",
+            "user": "## Subject's Previous Answers\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n1. I am the life of the party.\nAnswer: [1]\n\n2. I feel little concern for others.\nAnswer: [1]\n\n3. I am always prepared.\nAnswer: [2]\n\n4. I get stressed out easily.\nAnswer: [5]\n\n5. I have a rich vocabulary.\nAnswer: [3]\n\n6. I don't talk a lot.\nAnswer: [3]\n\n7. I am interested in people.\nAnswer: [3]\n\n8. I leave my belongings around.\nAnswer: [5]\n\n9. I am relaxed most of the time.\nAnswer: [1]\n\n10. I have difficulty understanding abstract ideas.\nAnswer: [3]\n\n11. I feel comfortable around people.\nAnswer: [3]\n\n12. I insult people.\nAnswer: [1]\n\n13. I pay attention to details.\nAnswer: [3]\n\n14. I worry about things.\nAnswer: [5]\n\n15. I have a vivid imagination.\nAnswer: [3]\n\n16. I keep in the background.\nAnswer: [3]\n\n17. I sympathize with others' feelings.\nAnswer: [4]\n\n## The Next Question\n18. I make a mess of things.\n\n## Output Format\nPlease predict the subject's answer to the next question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 19034,
+              "history_length": 17,
+              "target_item": "C4",
+              "target_position": 18
+            }
+          },
+          "raw_output": "[4]",
+          "parsed_prediction": 4,
+          "expected": 4
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's previous answers in a Big Five personality test (in the order they answered them), your task is to predict this subject's answer to the next question.",
+            "user": "## Subject's Previous Answers\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n1. I am the life of the party.\nAnswer: [4]\n\n2. I feel little concern for others.\nAnswer: [1]\n\n3. I am always prepared.\nAnswer: [3]\n\n4. I get stressed out easily.\nAnswer: [4]\n\n5. I have a rich vocabulary.\nAnswer: [4]\n\n6. I don't talk a lot.\nAnswer: [1]\n\n7. I am interested in people.\nAnswer: [4]\n\n8. I leave my belongings around.\nAnswer: [4]\n\n9. I am relaxed most of the time.\nAnswer: [2]\n\n10. I have difficulty understanding abstract ideas.\nAnswer: [1]\n\n11. I feel comfortable around people.\nAnswer: [2]\n\n12. I insult people.\nAnswer: [4]\n\n13. I pay attention to details.\nAnswer: [5]\n\n14. I worry about things.\nAnswer: [3]\n\n15. I have a vivid imagination.\nAnswer: [5]\n\n16. I keep in the background.\nAnswer: [2]\n\n17. I sympathize with others' feelings.\nAnswer: [4]\n\n18. I make a mess of things.\nAnswer: [3]\n\n19. I seldom feel blue.\nAnswer: [3]\n\n20. I am not interested in abstract ideas.\nAnswer: [1]\n\n21. I start conversations.\nAnswer: [3]\n\n22. I am not interested in other people's problems.\nAnswer: [1]\n\n23. I get chores done right away.\nAnswer: [1]\n\n24. I am easily disturbed.\nAnswer: [4]\n\n25. I have excellent ideas.\nAnswer: [4]\n\n26. I have little to say.\nAnswer: [2]\n\n27. I have a soft heart.\nAnswer: [5]\n\n28. I often forget to put things back in their proper place.\nAnswer: [4]\n\n29. I get upset easily.\nAnswer: [2]\n\n30. I do not have a good imagination.\nAnswer: [5]\n\n31. I talk to a lot of different people at parties.\nAnswer: [1]\n\n32. I am not really interested in others.\nAnswer: [3]\n\n33. I like order.\nAnswer: [5]\n\n34. I change my mood a lot.\nAnswer: [2]\n\n## The Next Question\n35. I am quick to understand things.\n\n## Output Format\nPlease predict the subject's answer to the next question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 19556,
+              "history_length": 34,
+              "target_item": "O7",
+              "target_position": 35
+            }
+          },
+          "raw_output": "[5]",
+          "parsed_prediction": 5,
+          "expected": 5
+        }
+      ],
+      "references": null
+    }
+  ],
+  "inference_settings": {
+    "model_name": "tencent/hy3:free",
+    "model_type": "openai",
+    "temperature": null,
+    "top_p": null,
+    "top_k": null,
+    "min_p": null,
+    "max_tokens": 16384,
+    "concurrency": 1,
+    "reasoning_effort": null
+  },
+  "token_usage": {
+    "session_start": null,
+    "total_api_calls": 3,
+    "total_prompt_tokens": 1848,
+    "total_completion_tokens": 12,
+    "total_reasoning_tokens": 0,
+    "total_cost_usd": 0.0,
+    "by_model": {
+      "tencent/hy3:free": {
+        "prompt_tokens": 1848,
+        "completion_tokens": 12,
+        "reasoning_tokens": 0,
+        "cost": 0.0,
+        "calls": 3
+      }
+    }
+  }
+}

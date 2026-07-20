@@ -1,0 +1,83 @@
+{
+  "timestamp": "2026-07-18T12:30:57.797526",
+  "metrics": {
+    "ieo_economics": {
+      "accuracy_multi_choice": 1.0,
+      "f1_macro": 1.0
+    }
+  },
+  "num_tasks": 1,
+  "tasks": [
+    {
+      "task_name": "ieo_economics",
+      "metrics": {
+        "accuracy_multi_choice": 1.0,
+        "f1_macro": 1.0
+      },
+      "metadata": {
+        "num_samples": 3,
+        "num_valid_predictions": 3,
+        "num_failed_parses": 0,
+        "failed_parse_rate": 0.0
+      },
+      "predictions": [
+        {
+          "prompt": {
+            "system": "You are an expert in economics. Answer the following multiple-choice question by selecting the correct option(s). There may be one or more correct answers. Output the letter(s) of the correct answer(s) (e.g., A or BC). Provide only the letter(s) of your answer.",
+            "user": "Which of the following effects would be the result of introducing a quota on an imported good below the market-clearing quantity? Consider all markets to be perfectly competitive.\n\nA. The domestic supply curve shifts downwards\nB. The domestic demand curve shifts upwards\nC. Some of the domestic consumers\u2019 surplus transfers to the domestic producers\nD. Importers\u2019 profit decreases"
+          },
+          "raw_output": "C",
+          "parsed_prediction": "C",
+          "expected": "C"
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in economics. Answer the following multiple-choice question by selecting the correct option(s). There may be one or more correct answers. Output the letter(s) of the correct answer(s) (e.g., A or BC). Provide only the letter(s) of your answer.",
+            "user": "Which of the following statements is correct, ceteris paribus?\n\nA. An increase in the trade surplus would lead to a decrease in a country\u2019s current account.\nB. A country with zero trade balance but historically high foreign direct investment would always have a current account deficit.\nC. An increase in remittances by a country\u2019s nationals abroad would lead to a lower current account.\nD. An increase in the official aid payment sent to other countries means a lower current account."
+          },
+          "raw_output": "D",
+          "parsed_prediction": "D",
+          "expected": "D"
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in economics. Answer the following multiple-choice question by selecting the correct option(s). There may be one or more correct answers. Output the letter(s) of the correct answer(s) (e.g., A or BC). Provide only the letter(s) of your answer.",
+            "user": "Which of the following statements about the outcome of an economic interaction is cor- rect?\n\nA. If the allocation is Pareto efficient, then you cannot make anyone better off without making someone else worse off. 1 International Economics Olympiad 2018 Economics\nB. All participants are happy with what they get if the allocation is Pareto efficient.\nC. There cannot be more than one Pareto-efficient outcome.\nD. Pareto-efficient outcome is always fair."
+          },
+          "raw_output": "A",
+          "parsed_prediction": "A",
+          "expected": "A"
+        }
+      ],
+      "references": null
+    }
+  ],
+  "inference_settings": {
+    "model_name": "tencent/hy3:free",
+    "model_type": "openai",
+    "temperature": null,
+    "top_p": null,
+    "top_k": null,
+    "min_p": null,
+    "max_tokens": 16384,
+    "concurrency": 1,
+    "reasoning_effort": null
+  },
+  "token_usage": {
+    "session_start": null,
+    "total_api_calls": 3,
+    "total_prompt_tokens": 480,
+    "total_completion_tokens": 6,
+    "total_reasoning_tokens": 0,
+    "total_cost_usd": 0.0,
+    "by_model": {
+      "tencent/hy3:free": {
+        "prompt_tokens": 480,
+        "completion_tokens": 6,
+        "reasoning_tokens": 0,
+        "cost": 0.0,
+        "calls": 3
+      }
+    }
+  }
+}

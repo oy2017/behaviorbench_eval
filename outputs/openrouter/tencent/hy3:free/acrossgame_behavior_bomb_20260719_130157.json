@@ -1,0 +1,529 @@
+{
+  "timestamp": "2026-07-19T13:01:57.706975",
+  "metrics": {
+    "acrossgame_behavior_bomb": {
+      "MAE_with_normalization_mae": 25.12,
+      "MAE_with_normalization_mae_raw": 25.12,
+      "Spearman_with_pvalue_correlation": 0.057975090436420296,
+      "Spearman_with_pvalue_pvalue": 0.7831116574881246,
+      "Spearman_with_pvalue_significant": 0,
+      "Wasserstein_with_ks_distance": 15.119999999999997,
+      "Wasserstein_with_ks_distance_raw": 15.119999999999997,
+      "Wasserstein_with_ks_ks_statistic": 0.32,
+      "Wasserstein_with_ks_ks_pvalue": 0.15576025200619348,
+      "Wasserstein_with_ks_ks_pass_test": 1
+    }
+  },
+  "num_tasks": 1,
+  "tasks": [
+    {
+      "task_name": "acrossgame_behavior_bomb",
+      "metrics": {
+        "MAE_with_normalization_mae": 25.12,
+        "MAE_with_normalization_mae_raw": 25.12,
+        "Spearman_with_pvalue_correlation": 0.057975090436420296,
+        "Spearman_with_pvalue_pvalue": 0.7831116574881246,
+        "Spearman_with_pvalue_significant": 0,
+        "Wasserstein_with_ks_distance": 15.119999999999997,
+        "Wasserstein_with_ks_distance_raw": 15.119999999999997,
+        "Wasserstein_with_ks_ks_statistic": 0.32,
+        "Wasserstein_with_ks_ks_pvalue": 0.15576025200619348,
+        "Wasserstein_with_ks_ks_pass_test": 1
+      },
+      "metadata": {
+        "num_samples": 25,
+        "num_valid_predictions": 25,
+        "num_failed_parses": 0,
+        "failed_parse_rate": 0.0
+      },
+      "predictions": [
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Beauty Contest Game\n- Game instruction: This is a number-guessing game where you will play with 26 other players. Each player chooses an integer between 0 and 100 which is hidden from other players. The player who chooses a number that is closest to 2/3 of the average wins the game. For example, if the average of the guesses is 60 and if you guess 40, i.e. 2/3 of 60, you win the game. What number would you like to guess? Please give a concrete number and highlight it with [] (e.g., [x]).\n- Your choice: [20]\n\n2. The Ultimatum Game (as the Proposer)\n- Game instruction: This is a two-player game. You are the Proposer, and the other player is the Responder. As the proposer, you propose how to divide $100 and the Responder chooses either Accept or Reject. If accepted, the two of you will earn as described by the accepted proposal accordingly. If rejected, then both of you will earn $0. How much would you like to propose to give to the Responder? Please give only one concrete choice, and highlight the amount with [] (such as [$x]).\n- Your choice: [60]\n\n3. The Ultimatum Game (as the Responder)\n- Game instruction: This is a two-player game. You are the Responder, and the other player is the Proposer. The proposer proposes how to divide $100 and you, as the Responder, choose either Accept or Reject. If accepted, the two of you will earn as described by the accepted proposal accordingly. If rejected, then both of you will earn $0. As the Responder, what is the minimal amount in the proposal that you would accept? Please give only one concrete choice, and highlight the amount with [] (such as [$x]).\n- Your choice: [20]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "142969",
+              "target_game": "bomb",
+              "history_games": [
+                "guessing",
+                "ultimatum_proposer",
+                "ultimatum_responder"
+              ],
+              "history_count": 3
+            }
+          },
+          "raw_output": "[50]",
+          "parsed_prediction": 50.0,
+          "expected": 45.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Dictator Game\n- Game instruction: You are paired with another player. Your role is to decide how to divide $100 and the other player simply receives your choice. How would you like to divide the money? Please give only one concrete choice and highlight the amount you give to the other player in [] (such as [$x]).\n- Your choice: [50]\n\n2. The Trust Game (as the Banker)\n- Game instruction: This is a two-player game. You are a Banker and the other player is an Investor, and the goal for each player is to earn more. The Investor chooses how much of the money (up to $100) to invest with you. The amount the Investor invests will generate a 2x return with you (the current value of investment becomes 3x). To settle the investment, as the Banker, you get to decide how much of this total amount to return to the Investor and the rest will be kept as your profit. For example, you can choose to return $0 (therefore the investor will lose their investment), or you can return the entire 3x (initial investment + 2x profit) to the investor, or you can return any amount in between. Now, if the investor has invested $50 with you and the current value became $150, how much of the $150 would you like to return to the Investor? Please give only one concrete choice, and highlight the number with [] (such as [$x]).\n- Your choice: [75]\n\n3. The Trust Game (as the Investor)\n- Game instruction: This is a two-player game. You are an Investor and the other player is a Banker. You have $100 to invest and you choose how much of your money to invest with the Banker. The amount you choose to invest will grow by 3x with the Banker. For example, if you invest $10, it will grow to $30 with the Banker. The Banker then decides how much of the money ($0-$30) to return to you, the Investor. How much of the $100 would you like to invest with the Banker? Please give only one concrete choice, and highlight the number with [] (such as [$x]).\n- Your choice: [100]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "1006350",
+              "target_game": "bomb",
+              "history_games": [
+                "dictator",
+                "trust_banker",
+                "trust_investor"
+              ],
+              "history_count": 3
+            }
+          },
+          "raw_output": "[50]",
+          "parsed_prediction": 50.0,
+          "expected": 50.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Dictator Game\n- Game instruction: You are paired with another player. Your role is to decide how to divide $100 and the other player simply receives your choice. How would you like to divide the money? Please give only one concrete choice and highlight the amount you give to the other player in [] (such as [$x]).\n- Your choice: [40]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "251115",
+              "target_game": "bomb",
+              "history_games": [
+                "dictator"
+              ],
+              "history_count": 1
+            }
+          },
+          "raw_output": "[50]",
+          "parsed_prediction": 50.0,
+          "expected": 60.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Dictator Game\n- Game instruction: You are paired with another player. Your role is to decide how to divide $100 and the other player simply receives your choice. How would you like to divide the money? Please give only one concrete choice and highlight the amount you give to the other player in [] (such as [$x]).\n- Your choice: [0]\n\n2. The Trust Game (as the Investor)\n- Game instruction: This is a two-player game. You are an Investor and the other player is a Banker. You have $100 to invest and you choose how much of your money to invest with the Banker. The amount you choose to invest will grow by 3x with the Banker. For example, if you invest $10, it will grow to $30 with the Banker. The Banker then decides how much of the money ($0-$30) to return to you, the Investor. How much of the $100 would you like to invest with the Banker? Please give only one concrete choice, and highlight the number with [] (such as [$x]).\n- Your choice: [14]\n\n3. The Ultimatum Game (as the Proposer)\n- Game instruction: This is a two-player game. You are the Proposer, and the other player is the Responder. As the proposer, you propose how to divide $100 and the Responder chooses either Accept or Reject. If accepted, the two of you will earn as described by the accepted proposal accordingly. If rejected, then both of you will earn $0. How much would you like to propose to give to the Responder? Please give only one concrete choice, and highlight the amount with [] (such as [$x]).\n- Your choice: [30]\n\n4. The Ultimatum Game (as the Responder)\n- Game instruction: This is a two-player game. You are the Responder, and the other player is the Proposer. The proposer proposes how to divide $100 and you, as the Responder, choose either Accept or Reject. If accepted, the two of you will earn as described by the accepted proposal accordingly. If rejected, then both of you will earn $0. As the Responder, what is the minimal amount in the proposal that you would accept? Please give only one concrete choice, and highlight the amount with [] (such as [$x]).\n- Your choice: [40]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "518926",
+              "target_game": "bomb",
+              "history_games": [
+                "dictator",
+                "trust_investor",
+                "ultimatum_proposer",
+                "ultimatum_responder"
+              ],
+              "history_count": 4
+            }
+          },
+          "raw_output": "[0]",
+          "parsed_prediction": 0.0,
+          "expected": 60.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Dictator Game\n- Game instruction: You are paired with another player. Your role is to decide how to divide $100 and the other player simply receives your choice. How would you like to divide the money? Please give only one concrete choice and highlight the amount you give to the other player in [] (such as [$x]).\n- Your choice: [1]\n\n2. The Trust Game (as the Investor)\n- Game instruction: This is a two-player game. You are an Investor and the other player is a Banker. You have $100 to invest and you choose how much of your money to invest with the Banker. The amount you choose to invest will grow by 3x with the Banker. For example, if you invest $10, it will grow to $30 with the Banker. The Banker then decides how much of the money ($0-$30) to return to you, the Investor. How much of the $100 would you like to invest with the Banker? Please give only one concrete choice, and highlight the number with [] (such as [$x]).\n- Your choice: [100]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "1014310",
+              "target_game": "bomb",
+              "history_games": [
+                "dictator",
+                "trust_investor"
+              ],
+              "history_count": 2
+            }
+          },
+          "raw_output": "[99]",
+          "parsed_prediction": 99.0,
+          "expected": 84.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Dictator Game\n- Game instruction: You are paired with another player. Your role is to decide how to divide $100 and the other player simply receives your choice. How would you like to divide the money? Please give only one concrete choice and highlight the amount you give to the other player in [] (such as [$x]).\n- Your choice: [0]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "115475",
+              "target_game": "bomb",
+              "history_games": [
+                "dictator"
+              ],
+              "history_count": 1
+            }
+          },
+          "raw_output": "[99]",
+          "parsed_prediction": 99.0,
+          "expected": 50.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Dictator Game\n- Game instruction: You are paired with another player. Your role is to decide how to divide $100 and the other player simply receives your choice. How would you like to divide the money? Please give only one concrete choice and highlight the amount you give to the other player in [] (such as [$x]).\n- Your choice: [0]\n\n2. The Trust Game (as the Investor)\n- Game instruction: This is a two-player game. You are an Investor and the other player is a Banker. You have $100 to invest and you choose how much of your money to invest with the Banker. The amount you choose to invest will grow by 3x with the Banker. For example, if you invest $10, it will grow to $30 with the Banker. The Banker then decides how much of the money ($0-$30) to return to you, the Investor. How much of the $100 would you like to invest with the Banker? Please give only one concrete choice, and highlight the number with [] (such as [$x]).\n- Your choice: [67]\n\n3. The Ultimatum Game (as the Proposer)\n- Game instruction: This is a two-player game. You are the Proposer, and the other player is the Responder. As the proposer, you propose how to divide $100 and the Responder chooses either Accept or Reject. If accepted, the two of you will earn as described by the accepted proposal accordingly. If rejected, then both of you will earn $0. How much would you like to propose to give to the Responder? Please give only one concrete choice, and highlight the amount with [] (such as [$x]).\n- Your choice: [49]\n\n4. The Ultimatum Game (as the Responder)\n- Game instruction: This is a two-player game. You are the Responder, and the other player is the Proposer. The proposer proposes how to divide $100 and you, as the Responder, choose either Accept or Reject. If accepted, the two of you will earn as described by the accepted proposal accordingly. If rejected, then both of you will earn $0. As the Responder, what is the minimal amount in the proposal that you would accept? Please give only one concrete choice, and highlight the amount with [] (such as [$x]).\n- Your choice: [50]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "165683",
+              "target_game": "bomb",
+              "history_games": [
+                "dictator",
+                "trust_investor",
+                "ultimatum_proposer",
+                "ultimatum_responder"
+              ],
+              "history_count": 4
+            }
+          },
+          "raw_output": "[99]",
+          "parsed_prediction": 99.0,
+          "expected": 49.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Beauty Contest Game\n- Game instruction: This is a number-guessing game where you will play with 7 other players. Each player chooses an integer between 0 and 100 which is hidden from other players. The player who chooses a number that is closest to 2/3 of the average wins the game. For example, if the average of the guesses is 60 and if you guess 40, i.e. 2/3 of 60, you win the game. What number would you like to guess? Please give a concrete number and highlight it with [] (e.g., [x]).\n- Your choice: [26]\n\n2. The Dictator Game\n- Game instruction: You are paired with another player. Your role is to decide how to divide $100 and the other player simply receives your choice. How would you like to divide the money? Please give only one concrete choice and highlight the amount you give to the other player in [] (such as [$x]).\n- Your choice: [50]\n\n3. The Trust Game (as the Investor)\n- Game instruction: This is a two-player game. You are an Investor and the other player is a Banker. You have $100 to invest and you choose how much of your money to invest with the Banker. The amount you choose to invest will grow by 3x with the Banker. For example, if you invest $10, it will grow to $30 with the Banker. The Banker then decides how much of the money ($0-$30) to return to you, the Investor. How much of the $100 would you like to invest with the Banker? Please give only one concrete choice, and highlight the number with [] (such as [$x]).\n- Your choice: [17]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "409389",
+              "target_game": "bomb",
+              "history_games": [
+                "guessing",
+                "dictator",
+                "trust_investor"
+              ],
+              "history_count": 3
+            }
+          },
+          "raw_output": "[99]",
+          "parsed_prediction": 99.0,
+          "expected": 48.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Beauty Contest Game\n- Game instruction: This is a number-guessing game where you will play with 190 other players. Each player chooses an integer between 0 and 100 which is hidden from other players. The player who chooses a number that is closest to 2/3 of the average wins the game. For example, if the average of the guesses is 60 and if you guess 40, i.e. 2/3 of 60, you win the game. What number would you like to guess? Please give a concrete number and highlight it with [] (e.g., [x]).\n- Your choice: [6]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "159153",
+              "target_game": "bomb",
+              "history_games": [
+                "guessing"
+              ],
+              "history_count": 1
+            }
+          },
+          "raw_output": "[50]",
+          "parsed_prediction": 50.0,
+          "expected": 51.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Beauty Contest Game\n- Game instruction: This is a number-guessing game where you will play with 18 other players. Each player chooses an integer between 0 and 100 which is hidden from other players. The player who chooses a number that is closest to 2/3 of the average wins the game. For example, if the average of the guesses is 60 and if you guess 40, i.e. 2/3 of 60, you win the game. What number would you like to guess? Please give a concrete number and highlight it with [] (e.g., [x]).\n- Your choice: [100]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "446118",
+              "target_game": "bomb",
+              "history_games": [
+                "guessing"
+              ],
+              "history_count": 1
+            }
+          },
+          "raw_output": "[99]",
+          "parsed_prediction": 99.0,
+          "expected": 30.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Dictator Game\n- Game instruction: You are paired with another player. Your role is to decide how to divide $100 and the other player simply receives your choice. How would you like to divide the money? Please give only one concrete choice and highlight the amount you give to the other player in [] (such as [$x]).\n- Your choice: [8]\n\n2. The Trust Game (as the Investor)\n- Game instruction: This is a two-player game. You are an Investor and the other player is a Banker. You have $100 to invest and you choose how much of your money to invest with the Banker. The amount you choose to invest will grow by 3x with the Banker. For example, if you invest $10, it will grow to $30 with the Banker. The Banker then decides how much of the money ($0-$30) to return to you, the Investor. How much of the $100 would you like to invest with the Banker? Please give only one concrete choice, and highlight the number with [] (such as [$x]).\n- Your choice: [15]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "451179",
+              "target_game": "bomb",
+              "history_games": [
+                "dictator",
+                "trust_investor"
+              ],
+              "history_count": 2
+            }
+          },
+          "raw_output": "[50]",
+          "parsed_prediction": 50.0,
+          "expected": 60.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Beauty Contest Game\n- Game instruction: This is a number-guessing game where you will play with 47 other players. Each player chooses an integer between 0 and 100 which is hidden from other players. The player who chooses a number that is closest to 2/3 of the average wins the game. For example, if the average of the guesses is 60 and if you guess 40, i.e. 2/3 of 60, you win the game. What number would you like to guess? Please give a concrete number and highlight it with [] (e.g., [x]).\n- Your choice: [50]\n\n2. The Public Goods Game\n- Game instruction: In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n- Your choice: [15]\n\n3. The Trust Game (as the Investor)\n- Game instruction: This is a two-player game. You are an Investor and the other player is a Banker. You have $100 to invest and you choose how much of your money to invest with the Banker. The amount you choose to invest will grow by 3x with the Banker. For example, if you invest $10, it will grow to $30 with the Banker. The Banker then decides how much of the money ($0-$30) to return to you, the Investor. How much of the $100 would you like to invest with the Banker? Please give only one concrete choice, and highlight the number with [] (such as [$x]).\n- Your choice: [25]\n\n4. The Ultimatum Game (as the Proposer)\n- Game instruction: This is a two-player game. You are the Proposer, and the other player is the Responder. As the proposer, you propose how to divide $100 and the Responder chooses either Accept or Reject. If accepted, the two of you will earn as described by the accepted proposal accordingly. If rejected, then both of you will earn $0. How much would you like to propose to give to the Responder? Please give only one concrete choice, and highlight the amount with [] (such as [$x]).\n- Your choice: [50]\n\n5. The Ultimatum Game (as the Responder)\n- Game instruction: This is a two-player game. You are the Responder, and the other player is the Proposer. The proposer proposes how to divide $100 and you, as the Responder, choose either Accept or Reject. If accepted, the two of you will earn as described by the accepted proposal accordingly. If rejected, then both of you will earn $0. As the Responder, what is the minimal amount in the proposal that you would accept? Please give only one concrete choice, and highlight the amount with [] (such as [$x]).\n- Your choice: [1]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "329946",
+              "target_game": "bomb",
+              "history_games": [
+                "guessing",
+                "public_goods",
+                "trust_investor",
+                "ultimatum_proposer",
+                "ultimatum_responder"
+              ],
+              "history_count": 5
+            }
+          },
+          "raw_output": "[50]",
+          "parsed_prediction": 50.0,
+          "expected": 50.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Beauty Contest Game\n- Game instruction: This is a number-guessing game where you will play with 77 other players. Each player chooses an integer between 0 and 100 which is hidden from other players. The player who chooses a number that is closest to 2/3 of the average wins the game. For example, if the average of the guesses is 60 and if you guess 40, i.e. 2/3 of 60, you win the game. What number would you like to guess? Please give a concrete number and highlight it with [] (e.g., [x]).\n- Your choice: [73]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "130984",
+              "target_game": "bomb",
+              "history_games": [
+                "guessing"
+              ],
+              "history_count": 1
+            }
+          },
+          "raw_output": "[50]",
+          "parsed_prediction": 50.0,
+          "expected": 74.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Dictator Game\n- Game instruction: You are paired with another player. Your role is to decide how to divide $100 and the other player simply receives your choice. How would you like to divide the money? Please give only one concrete choice and highlight the amount you give to the other player in [] (such as [$x]).\n- Your choice: [20]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "299847",
+              "target_game": "bomb",
+              "history_games": [
+                "dictator"
+              ],
+              "history_count": 1
+            }
+          },
+          "raw_output": "[50]",
+          "parsed_prediction": 50.0,
+          "expected": 70.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Dictator Game\n- Game instruction: You are paired with another player. Your role is to decide how to divide $100 and the other player simply receives your choice. How would you like to divide the money? Please give only one concrete choice and highlight the amount you give to the other player in [] (such as [$x]).\n- Your choice: [50]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "297164",
+              "target_game": "bomb",
+              "history_games": [
+                "dictator"
+              ],
+              "history_count": 1
+            }
+          },
+          "raw_output": "[99]",
+          "parsed_prediction": 99.0,
+          "expected": 80.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Beauty Contest Game\n- Game instruction: This is a number-guessing game where you will play with 15 other players. Each player chooses an integer between 0 and 100 which is hidden from other players. The player who chooses a number that is closest to 2/3 of the average wins the game. For example, if the average of the guesses is 60 and if you guess 40, i.e. 2/3 of 60, you win the game. What number would you like to guess? Please give a concrete number and highlight it with [] (e.g., [x]).\n- Your choice: [20]\n\n2. The Dictator Game\n- Game instruction: You are paired with another player. Your role is to decide how to divide $100 and the other player simply receives your choice. How would you like to divide the money? Please give only one concrete choice and highlight the amount you give to the other player in [] (such as [$x]).\n- Your choice: [0]\n\n3. The Public Goods Game\n- Game instruction: In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n- Your choice: [10]\n\n4. The Trust Game (as the Investor)\n- Game instruction: This is a two-player game. You are an Investor and the other player is a Banker. You have $100 to invest and you choose how much of your money to invest with the Banker. The amount you choose to invest will grow by 3x with the Banker. For example, if you invest $10, it will grow to $30 with the Banker. The Banker then decides how much of the money ($0-$30) to return to you, the Investor. How much of the $100 would you like to invest with the Banker? Please give only one concrete choice, and highlight the number with [] (such as [$x]).\n- Your choice: [30]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "254803",
+              "target_game": "bomb",
+              "history_games": [
+                "guessing",
+                "dictator",
+                "public_goods",
+                "trust_investor"
+              ],
+              "history_count": 4
+            }
+          },
+          "raw_output": "[50]",
+          "parsed_prediction": 50.0,
+          "expected": 50.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Dictator Game\n- Game instruction: You are paired with another player. Your role is to decide how to divide $100 and the other player simply receives your choice. How would you like to divide the money? Please give only one concrete choice and highlight the amount you give to the other player in [] (such as [$x]).\n- Your choice: [50]\n\n2. The Trust Game (as the Investor)\n- Game instruction: This is a two-player game. You are an Investor and the other player is a Banker. You have $100 to invest and you choose how much of your money to invest with the Banker. The amount you choose to invest will grow by 3x with the Banker. For example, if you invest $10, it will grow to $30 with the Banker. The Banker then decides how much of the money ($0-$30) to return to you, the Investor. How much of the $100 would you like to invest with the Banker? Please give only one concrete choice, and highlight the number with [] (such as [$x]).\n- Your choice: [10]\n\n3. The Ultimatum Game (as the Proposer)\n- Game instruction: This is a two-player game. You are the Proposer, and the other player is the Responder. As the proposer, you propose how to divide $100 and the Responder chooses either Accept or Reject. If accepted, the two of you will earn as described by the accepted proposal accordingly. If rejected, then both of you will earn $0. How much would you like to propose to give to the Responder? Please give only one concrete choice, and highlight the amount with [] (such as [$x]).\n- Your choice: [51]\n\n4. The Ultimatum Game (as the Responder)\n- Game instruction: This is a two-player game. You are the Responder, and the other player is the Proposer. The proposer proposes how to divide $100 and you, as the Responder, choose either Accept or Reject. If accepted, the two of you will earn as described by the accepted proposal accordingly. If rejected, then both of you will earn $0. As the Responder, what is the minimal amount in the proposal that you would accept? Please give only one concrete choice, and highlight the amount with [] (such as [$x]).\n- Your choice: [40]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "267472",
+              "target_game": "bomb",
+              "history_games": [
+                "dictator",
+                "trust_investor",
+                "ultimatum_proposer",
+                "ultimatum_responder"
+              ],
+              "history_count": 4
+            }
+          },
+          "raw_output": "[10]",
+          "parsed_prediction": 10.0,
+          "expected": 17.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Dictator Game\n- Game instruction: You are paired with another player. Your role is to decide how to divide $100 and the other player simply receives your choice. How would you like to divide the money? Please give only one concrete choice and highlight the amount you give to the other player in [] (such as [$x]).\n- Your choice: [45]\n\n2. The Public Goods Game\n- Game instruction: In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n- Your choice: [10]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "224603",
+              "target_game": "bomb",
+              "history_games": [
+                "dictator",
+                "public_goods"
+              ],
+              "history_count": 2
+            }
+          },
+          "raw_output": "[50]",
+          "parsed_prediction": 50.0,
+          "expected": 21.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Beauty Contest Game\n- Game instruction: This is a number-guessing game where you will play with 53 other players. Each player chooses an integer between 0 and 100 which is hidden from other players. The player who chooses a number that is closest to 2/3 of the average wins the game. For example, if the average of the guesses is 60 and if you guess 40, i.e. 2/3 of 60, you win the game. What number would you like to guess? Please give a concrete number and highlight it with [] (e.g., [x]).\n- Your choice: [1]\n\n2. The Trust Game (as the Investor)\n- Game instruction: This is a two-player game. You are an Investor and the other player is a Banker. You have $100 to invest and you choose how much of your money to invest with the Banker. The amount you choose to invest will grow by 3x with the Banker. For example, if you invest $10, it will grow to $30 with the Banker. The Banker then decides how much of the money ($0-$30) to return to you, the Investor. How much of the $100 would you like to invest with the Banker? Please give only one concrete choice, and highlight the number with [] (such as [$x]).\n- Your choice: [100]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "313543",
+              "target_game": "bomb",
+              "history_games": [
+                "guessing",
+                "trust_investor"
+              ],
+              "history_count": 2
+            }
+          },
+          "raw_output": "[99]",
+          "parsed_prediction": 99.0,
+          "expected": 99.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Beauty Contest Game\n- Game instruction: This is a number-guessing game where you will play with 103 other players. Each player chooses an integer between 0 and 100 which is hidden from other players. The player who chooses a number that is closest to 2/3 of the average wins the game. For example, if the average of the guesses is 60 and if you guess 40, i.e. 2/3 of 60, you win the game. What number would you like to guess? Please give a concrete number and highlight it with [] (e.g., [x]).\n- Your choice: [13]\n\n2. The Public Goods Game\n- Game instruction: In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n- Your choice: [7]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "138685",
+              "target_game": "bomb",
+              "history_games": [
+                "guessing",
+                "public_goods"
+              ],
+              "history_count": 2
+            }
+          },
+          "raw_output": "[50]",
+          "parsed_prediction": 50.0,
+          "expected": 32.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Dictator Game\n- Game instruction: You are paired with another player. Your role is to decide how to divide $100 and the other player simply receives your choice. How would you like to divide the money? Please give only one concrete choice and highlight the amount you give to the other player in [] (such as [$x]).\n- Your choice: [31]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "251136",
+              "target_game": "bomb",
+              "history_games": [
+                "dictator"
+              ],
+              "history_count": 1
+            }
+          },
+          "raw_output": "[50]",
+          "parsed_prediction": 50.0,
+          "expected": 0.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Beauty Contest Game\n- Game instruction: This is a number-guessing game where you will play with 0 other players. Each player chooses an integer between 0 and 100 which is hidden from other players. The player who chooses a number that is closest to 2/3 of the average wins the game. For example, if the average of the guesses is 60 and if you guess 40, i.e. 2/3 of 60, you win the game. What number would you like to guess? Please give a concrete number and highlight it with [] (e.g., [x]).\n- Your choice: [73]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "335450",
+              "target_game": "bomb",
+              "history_games": [
+                "guessing"
+              ],
+              "history_count": 1
+            }
+          },
+          "raw_output": "[99]",
+          "parsed_prediction": 99.0,
+          "expected": 32.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Dictator Game\n- Game instruction: You are paired with another player. Your role is to decide how to divide $100 and the other player simply receives your choice. How would you like to divide the money? Please give only one concrete choice and highlight the amount you give to the other player in [] (such as [$x]).\n- Your choice: [1]\n\n2. The Public Goods Game\n- Game instruction: In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n- Your choice: [10]\n\n3. The Trust Game (as the Investor)\n- Game instruction: This is a two-player game. You are an Investor and the other player is a Banker. You have $100 to invest and you choose how much of your money to invest with the Banker. The amount you choose to invest will grow by 3x with the Banker. For example, if you invest $10, it will grow to $30 with the Banker. The Banker then decides how much of the money ($0-$30) to return to you, the Investor. How much of the $100 would you like to invest with the Banker? Please give only one concrete choice, and highlight the number with [] (such as [$x]).\n- Your choice: [30]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "337190",
+              "target_game": "bomb",
+              "history_games": [
+                "dictator",
+                "public_goods",
+                "trust_investor"
+              ],
+              "history_count": 3
+            }
+          },
+          "raw_output": "[50]",
+          "parsed_prediction": 50.0,
+          "expected": 50.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Trust Game (as the Investor)\n- Game instruction: This is a two-player game. You are an Investor and the other player is a Banker. You have $100 to invest and you choose how much of your money to invest with the Banker. The amount you choose to invest will grow by 3x with the Banker. For example, if you invest $10, it will grow to $30 with the Banker. The Banker then decides how much of the money ($0-$30) to return to you, the Investor. How much of the $100 would you like to invest with the Banker? Please give only one concrete choice, and highlight the number with [] (such as [$x]).\n- Your choice: [30]\n\n2. The Ultimatum Game (as the Proposer)\n- Game instruction: This is a two-player game. You are the Proposer, and the other player is the Responder. As the proposer, you propose how to divide $100 and the Responder chooses either Accept or Reject. If accepted, the two of you will earn as described by the accepted proposal accordingly. If rejected, then both of you will earn $0. How much would you like to propose to give to the Responder? Please give only one concrete choice, and highlight the amount with [] (such as [$x]).\n- Your choice: [50]\n\n3. The Ultimatum Game (as the Responder)\n- Game instruction: This is a two-player game. You are the Responder, and the other player is the Proposer. The proposer proposes how to divide $100 and you, as the Responder, choose either Accept or Reject. If accepted, the two of you will earn as described by the accepted proposal accordingly. If rejected, then both of you will earn $0. As the Responder, what is the minimal amount in the proposal that you would accept? Please give only one concrete choice, and highlight the amount with [] (such as [$x]).\n- Your choice: [50]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "403047",
+              "target_game": "bomb",
+              "history_games": [
+                "trust_investor",
+                "ultimatum_proposer",
+                "ultimatum_responder"
+              ],
+              "history_count": 3
+            }
+          },
+          "raw_output": "[50]",
+          "parsed_prediction": 50.0,
+          "expected": 50.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Play History\nYou have played the following economics games before.\n\n1. The Beauty Contest Game\n- Game instruction: This is a number-guessing game where you will play with 20 other players. Each player chooses an integer between 0 and 100 which is hidden from other players. The player who chooses a number that is closest to 2/3 of the average wins the game. For example, if the average of the guesses is 60 and if you guess 40, i.e. 2/3 of 60, you win the game. What number would you like to guess? Please give a concrete number and highlight it with [] (e.g., [x]).\n- Your choice: [99]\n\n2. The Trust Game (as the Investor)\n- Game instruction: This is a two-player game. You are an Investor and the other player is a Banker. You have $100 to invest and you choose how much of your money to invest with the Banker. The amount you choose to invest will grow by 3x with the Banker. For example, if you invest $10, it will grow to $30 with the Banker. The Banker then decides how much of the money ($0-$30) to return to you, the Investor. How much of the $100 would you like to invest with the Banker? Please give only one concrete choice, and highlight the number with [] (such as [$x]).\n- Your choice: [20]\n\n## Your Choice\nNow you are playing a new game with the game instruction below:\n\nThere are 100 boxes, and one bomb has been randomly placed in 1 of 100 boxes. You can choose to open 0-100 boxes at the same time. If none of the boxes you open has the bomb, you earn points that are equal to the number of boxes you open. If one of the boxes you open has the bomb, you earn zero points. How many boxes would you open? Please give one concrete number and highlight it with [] (such as [x]).",
+            "metadata": {
+              "user_id": "428833",
+              "target_game": "bomb",
+              "history_games": [
+                "guessing",
+                "trust_investor"
+              ],
+              "history_count": 2
+            }
+          },
+          "raw_output": "[99]",
+          "parsed_prediction": 99.0,
+          "expected": 25.0
+        }
+      ],
+      "references": null
+    }
+  ],
+  "inference_settings": {
+    "model_name": "tencent/hy3:free",
+    "model_type": "openai",
+    "temperature": null,
+    "top_p": null,
+    "top_k": null,
+    "min_p": null,
+    "max_tokens": 16384,
+    "concurrency": 1,
+    "reasoning_effort": null
+  },
+  "token_usage": {
+    "session_start": null,
+    "total_api_calls": 25,
+    "total_prompt_tokens": 11719,
+    "total_completion_tokens": 100,
+    "total_reasoning_tokens": 0,
+    "total_cost_usd": 0.0,
+    "by_model": {
+      "tencent/hy3:free": {
+        "prompt_tokens": 11719,
+        "completion_tokens": 100,
+        "reasoning_tokens": 0,
+        "cost": 0.0,
+        "calls": 25
+      }
+    }
+  }
+}

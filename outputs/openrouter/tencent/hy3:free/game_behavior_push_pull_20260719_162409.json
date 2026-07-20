@@ -1,0 +1,1169 @@
+{
+  "timestamp": "2026-07-19T16:24:09.901322",
+  "metrics": {
+    "game_behavior_push_pull": {
+      "Wasserstein_with_ks_distance": 51.0,
+      "Wasserstein_with_ks_distance_raw": 0.51,
+      "Wasserstein_with_ks_ks_statistic": 0.0,
+      "Wasserstein_with_ks_ks_pvalue": 1.0,
+      "Wasserstein_with_ks_ks_pass_test": 1
+    }
+  },
+  "num_tasks": 1,
+  "tasks": [
+    {
+      "task_name": "game_behavior_push_pull",
+      "metrics": {
+        "Wasserstein_with_ks_distance": 51.0,
+        "Wasserstein_with_ks_distance_raw": 0.51,
+        "Wasserstein_with_ks_ks_statistic": 0.0,
+        "Wasserstein_with_ks_ks_pvalue": 1.0,
+        "Wasserstein_with_ks_ks_pass_test": 1
+      },
+      "metadata": {
+        "num_prompts": 1,
+        "num_total_attempts": 100,
+        "num_model_samples": 100,
+        "num_human_samples": 200,
+        "num_failed_parses": 0,
+        "failed_parse_rate": 0.0,
+        "model_action_mean": 0.06,
+        "model_action_std": 0.23748684174075835,
+        "human_action_mean": 0.57,
+        "human_action_std": 0.4950757517794625
+      },
+      "predictions": [
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the cooperative choice that yields a fair $400 for both players if matched, and it signals a willingness to cooperate. Since the game is repeated for 5 rounds, starting with Push encourages the other player to also choose Push, maximizing joint payoffs over time and avoiding the risky $0 outcome that comes from Pull if the other player also chooses Push.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and it signals a willingness to coordinate for mutual benefit over the 5 rounds. While Pull could exploit a Push-playing opponent for $700, opening with Push encourages reciprocity and avoids immediately triggering a low-trust, low-payoff equilibrium where both end up playing Pull for only $300 each.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and it signals a willingness to coordinate for mutual benefit over the 5 rounds. While Push exposes me to a $0 payoff if the other player exploits me with Pull, starting cooperatively is a standard strategy in repeated games to build trust and encourage reciprocal cooperation, maximizing joint payoffs across rounds.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the cooperative choice that yields a safe $400 payoff for both players if matched, and it signals trust/cooperation to the other player for the remaining rounds. Since both players can earn more collectively by repeatedly choosing Push ($400 each per round = $800 total) than by Pulling ($300 each if both Pull, or $700/$0 if one exploits), starting with [Push] encourages a mutually beneficial pattern over the 5 rounds.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and it signals willingness to cooperate. Since the game is repeated for 5 rounds, starting with [Push] encourages mutual cooperation and avoids the risk of both playing [Pull] (only $300 each) or a mismatch where one gets $0. If the other player reciprocates with [Push], we can both secure $400 per round; if they exploit with [Pull] early, I can adjust strategy in later rounds.",
+          "parsed_prediction": 1,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and it signals a willingness to coordinate for mutual benefit across the repeated rounds. Since we play 5 rounds, starting with [Push] encourages the other player to also choose [Push], maximizing joint payoffs over time rather than risking the lower $300 each from mutual [Pull] or the zero payoff from being exploited by a [Pull].",
+          "parsed_prediction": 1,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReason: Playing Push is the cooperative choice that yields a safe $400 for both players if matched, and avoids the risk of earning $0 if I Pull while the other plays Push. In the first round, establishing a cooperative stance gives the best chance of mutual benefit across the 5 rounds.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "In the first round, considering that building cooperative behavior early can lead to mutual benefit over the 5 rounds (since repeated play makes the $400-$400 outcome sustainable if both trust each other), I would choose to signal cooperation.\n\n[Push]",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the cooperative choice that yields a fair $400 for both players if matched, and it avoids the risk of immediately triggering the worst outcome for myself ($0) that comes from playing Pull if the other player also plays Pull or retaliates later. It also signals a willingness to cooperate, which can help establish mutual Push play across the 5 rounds for stable, decent payoffs.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and it signals a willingness to cooperate. Since both players earn the highest symmetric payoff ($400 each) when both push, starting with [Push] encourages mutual cooperation and avoids the risk of immediately triggering a race to the lower $300 payoff from both playing Pull.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReason: Playing [Push] is the cooperative choice that yields a safe $400 for both players if matched, and avoids the risk of earning $0 if I were to [Pull] while the other plays [Push]. In the first round, establishing a cooperative stance gives the best chance of mutual [Push] play and repeated $400 payoffs across the 5 rounds.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and avoids the risk of unilaterally playing Pull and getting exploited for $0 while the other earns $700. Starting with Push signals a willingness to cooperate and builds a basis for mutual benefit across the 5 rounds.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReasoning: Playing [Push] is the cooperative choice that yields a solid $400 for both players if matched, and it signals trust/cooperation to the other player for the remaining rounds. Since we play 5 rounds, building a cooperative dynamic early can help both of us avoid the risky $0 outcome and beat the mutual [Pull] payoff of $300 each.",
+          "parsed_prediction": 1,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "In the first round, I would play [Push].\n\nReason: Playing Push is the cooperative choice that secures a fair $400 payoff for both if matched, and avoids the risk of earning only $300 (or $0 if I Pull and they Push). Since we have 5 rounds and building trust early can lead to repeated mutual Push outcomes, starting with [Push] is the safest and most mutually beneficial opening move.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the coordinated-efficient choice: if both of us play Push, we each earn $400, which is better than the $300 we'd both get from Pull, and it avoids the risk of unilaterally playing Pull and getting exploited for $0 if the other plays Push. Starting with [Push] signals a preference for mutual cooperation and gives the best symmetric outcome.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the cooperative choice that secures a fair $400 payoff for both players if matched, and it avoids the risk of earning $0 that comes with playing Pull if the other player also chooses Push. In a repeated 5-round setting, starting with Push signals a willingness to cooperate and encourages the other player to reciprocate, which can lead to higher joint payoffs over time compared to immediately playing the exploitative Pull.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReasoning: Playing [Push] is the cooperative choice that yields a safe, equal payoff of $400 for both players if matched, and avoids the risk of earning $0 if the other player exploits a Pull. Since this is the first of 5 rounds, establishing a cooperative posture with [Push] encourages mutual cooperation and stable $400 payoffs across rounds, which dominates the lower $300 mutual-Pull outcome and avoids the worst-case $0 loss.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that secures a fair $400 payoff for both players if matched, and it signals trust/cooperation to the other player for the remaining rounds. While Pull is a greedy dominant trap that risks mutual $300 outcomes, starting with Push encourages a mutually beneficial pattern over the 5 rounds.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the cooperative choice that yields $400 for both players if matched, and it avoids the risk of earning $0 if the other player happens to play Pull. Since we have 5 rounds, starting with a cooperative signal can encourage mutual cooperation and maximizejoint payoffs over time, rather than immediately risking conflict with Pull.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields $400 for both players if matched, and it signals a willingness to coordinate for mutual benefit rather than immediately pursuing the risky $700/$0 outcome that comes from playing Pull. Over 5 rounds, starting with Push encourages repeated cooperation, which on average maximizes joint and individual payoffs compared to a hostile Pull strategy that risks getting $0 if the other player also tries to exploit.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the cooperative choice that secures a fair $400 payoff for both players if matched, and it signals trust/cooperation to the other player for the remaining rounds. While Pull could exploit a trusting opponent for $700, it risks mutual defection ($300 each) if both pull, and starting with Push encourages a more mutually beneficial trajectory over the 5 rounds.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and it signals a willingness to cooperate rather than immediately exploiting the other player (which [Pull] would do, risking only $300 if both defect). Starting with [Push] encourages mutual cooperation across the 5 rounds, maximizing joint and likely personal payoff over repeated play.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and it signals a willingness to coordinate for mutual benefit over the 5 rounds. While Pull is the greedy short-term payoff-maximizing move against a Push, starting with Push encourages reciprocal cooperation, which leads to higher combined earnings ($400 each per round vs. $300 each if both defect with Pull).",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReasoning: Playing [Push] is the cooperative choice that secures a fair $400 payoff for both players if matched, and avoids the risk of earning $0 if I were to [Pull] while the other plays [Push]. Since this is the first of 5 rounds, starting with [Push] encourages mutual cooperation and builds trust for repeated play, which is generally the most stable path to high cumulative earnings.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and it signals willingness to cooperate. Since both players can guarantee a higher joint payoff ($800 total with both Push vs. $600 total with both Pull), starting with Push encourages the other player to also choose Push, maximizing mutual earnings over the 5 rounds. If the other player exploits with Pull, I can adapt in later rounds, but opening with Push is the best strategy for building trust and repeated cooperation.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the cooperative choice that yields $400 for both players if matched, and it avoids the risk of earning $0 if the other player happens to play Pull. Since we have 5 rounds to build repeated interaction, starting with Push encourages mutual cooperation and sets a positive precedent, while still leaving room to adapt if the other player repeatedly exploits by playing Pull.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the cooperative choice that yields a fair $400 for both players if matched, and it avoids the risk of immediately triggering a worst-case $0 payoff for myself that comes from playing Pull if the other player also chooses Push. Starting with Push signals a willingness to cooperate and leaves open the possibility of mutually beneficial outcomes across the repeated 5 rounds.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReasoning: Playing [Push] is the cooperative choice that yields $400 for both players if matched, and it avoids the risk of earning $0 that comes with playing Pull if the other player also chooses Push. Since we are starting a 5-round game, opening with Push signals a willingness to cooperate and can help establish mutual trust for future rounds, which is generally beneficial for maximizing joint and individual payoffs over time.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and it signals a willingness to coordinate for mutual benefit over the 5 rounds. While Push exposes me to a $0 payoff if the other player exploits with Pull, starting cooperatively encourages repeated mutual cooperation, which maximizes joint earnings ($400 each per round vs. $300 each if both defect with Pull, and avoids the risky $700/$0 split).",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if mirrored, and it signals trust/willingness to coordinate. Since the game repeats for 5 rounds, starting with [Push] encourages the other player to also choose [Push] in return, maximizing joint payoff ($400 each per round = $2000 total each over 5 rounds) rather than risking the mutually worse $300-[Pull] outcome or the exploitative $0/$700 splits.",
+          "parsed_prediction": 1,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a safe $400 for both players if matched, and avoids the risk of earning $0 if I were to [Pull] while the other player [Push]es. Starting with [Push] signals a preference for mutual cooperation, which can help establish trust across the 5 rounds and maximize joint payoffs over time.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the cooperative choice that yields $400 for both players if matched, and it avoids the risk of earning $0 that comes with playing Pull against a Push. It also signals a willingness to cooperate, which can help establish mutual trust across the repeated 5-round game and potentially lead to better combined outcomes than the lower $300 each from both pulling.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that gives both players $400 and avoids the risk of getting $0 if the other player also chooses to pull. It establishes trust and encourages mutual cooperation for the remaining rounds, which is the best way to maximize joint and likely individual payoffs over 5 rounds.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the cooperative choice that yields $400 for both players if matched, and it avoids the risk of earning $0 that comes with playing Pull if the other player also chooses Push. Starting with Push signals a willingness to cooperate and can help establish mutual trust across the repeated 5-round game, which tends to maximize joint and individual payoffs over time compared to immediately playing the aggressive Pull.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the cooperative choice that secures a fair $400 payoff for both players if matched, and it signals trust and a willingness to coordinate for mutual benefit over the 5 rounds. While Pull could exploit a trusting opponent for $700, it risks retaliation and lower total earnings if both end up pulling ($300 each) or alternating punishments. Starting with [Push] builds a foundation for repeated cooperation.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the cooperative choice that yields a solid $400 for both players if matched, and it signals a willingness to cooperate. While Push carries the risk of earning $0 if the other player exploits with Pull, starting with cooperation encourages mutual benefit across the repeated rounds, and if the other player reciprocates, both can secure $400 each round (totaling $2000 per player over 5 rounds). Pull is the selfish/tempting option ($700 if the other pushes, $300 if both pull), but using it first risks breaking trust and leading to lower payoffs if both turn to Pull.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the uniquely best response if I believe the other player might Push (since 400 > 300), and it avoids the worst outcome of earning $0 if they Push while I Pull. It also signals cooperation, which can help establish a mutually beneficial ($400, $400) outcome over the 5 rounds.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and it signals a willingness to coordinate for mutual benefit over the 5 rounds rather than immediately pursuing the risky $700 grab that could trigger retaliation and lower overall payoffs.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the cooperative choice that secures a fair $400 payoff for both players if matched, and it signals trust and willingness to cooperate to the other player. Since both players earn the highest symmetric (equal) outcome when both Push ($400 each vs. $300 each if both Pull), starting with Push encourages mutual cooperation across the 5 rounds and avoids the risk of immediately triggering a race to the lower $300 payoff or a punitive Pull response.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the cooperative choice that secures a fair $400 payoff for both players if matched, and it avoids the risk of unilaterally playing Pull and earning only $300 if the other player also plays Pull, or $0 if the other plays Push. Starting with Push signals a willingness to cooperate and encourages the other player to also choose Push, maximizing joint outcomes over the 5 rounds.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "In the first round, I would play [Push].\n\nReasoning: Playing Push is the secure, cooperative choice that guarantees a fair $400 payoff if the other player also plays Push, and avoids the risk of earning $0 if I were to Pull while they Push. Since this is the first of 5 rounds, establishing a cooperative stance with Push encourages mutual cooperation (repeated-game norms), which yields the highest combined and stable individual payoffs over time.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and it signals willingness to cooperate. Since the game repeats for 5 rounds, starting with [Push] encourages mutual cooperation, which gives both players the highest repeated payoff ($400 per round each) compared to the lower $300 equilibrium of both playing [Pull] or the risky $0/$700 outcomes from mismatch.",
+          "parsed_prediction": 1,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the cooperative choice that yields $400 for both players if matched, and it avoids the risk of earning $0 that comes with playing Pull if the other player also chooses Push. Starting with Push signals a willingness to cooperate and can help establish mutual trust for the repeated rounds, which is generally beneficial over a 5-round game where reciprocity can improve joint outcomes.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields $400 for both players if matched, and it signals a willingness to coordinate for mutual benefit rather than immediately pursuing the risky $700/$0 outcome of Pull. In a repeated 5-round game, starting with Push encourages the other player to also choose Push, supporting a stable cooperative equilibrium and avoiding the lower $300/$300 payoff that results if both defect with Pull.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the coordination-friendly choice: if both of us play Push, we each earn $400, which is better than the $300 we'd both get from Pull, and it avoids the risk of me playing Pull and getting exploited for $0 while the other gets $700. Starting with Push signals willingness to cooperate for mutual gain.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReasoning: Playing [Push] is the cooperative choice that guarantees me $400 if the other player also pushes, and avoids the risk of earning $0 if I pull while they push. Since we play 5 rounds and building trust early can lead to mutual cooperation (both earning $400 each round = $2000 total), starting with [Push] is the best strategy to encourage reciprocal cooperation.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReasoning: Playing [Push] is the cooperative choice that yields a safe, equal payoff of $400 for both players if matched, and avoids the risk of earning $0 if I were to [Pull] while the other player [Push]es. Since we have 5 rounds and building trust early can lead to repeated mutual cooperation (each getting $400 per round = $2000 total), starting with [Push] signals willingness to cooperate.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and it signals a willingness to coordinate for mutual benefit over the 5 rounds. While Push carries the risk of the other player exploiting me with Pull (earning them $700 and leaving me $0), starting with cooperation encourages reciprocal behavior and avoids the lower $300 payoff that both pulling would produce.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReasoning: Playing [Push] is the cooperative choice that secures a fair $400 payoff for both players if matched, and avoids the risk of earning $0 if I were to [Pull] while the other player [Push]es. Since we have 5 rounds and building trust early can lead to repeated mutual cooperation (each getting $400 per round, totaling $2000 each), starting with [Push] is the safest and most socially optimal first move.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields $400 for both players if the other also pushes, and it avoids the risk of earning $0 that comes with playing Pull if the other player chooses Push. Starting with Push signals a willingness to cooperate and can encourage mutual cooperation across the 5 rounds, maximizing joint and stable payoffs.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and avoids the risk of unilaterally playing Pull and potentially earning only $300 if the other also pulls. Starting with Push signals a willingness to cooperate and builds a foundation for mutual benefit over the 5 rounds.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and it signals willingness to cooperate. Since both players earn the highest symmetric payoff ($400 each) when both push, starting with [Push] encourages the other player to also choose [Push] in subsequent rounds, maximizing joint earnings over the 5 rounds. Choosing [Pull] risks triggering a race to the bottom (both earn only $300) or being exploited (I earn $0 if they push), so [Push] is the safer, socially optimal opening move.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReason: Playing [Push] is the cooperative choice that secures a fair $400 payoff for both players if matched, and avoids the risk of earning only $300 (or $0 if the other exploits a Pull). In the first round, without any history, starting with cooperation encourages mutual cooperation and maximizes expected joint and personal payoff under reciprocity.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the cooperative choice that yields $400 for both players if matched, and it avoids the risk of earning $0 if I were to Pull while the other player Pushes. Since we have 5 rounds and building trust early can lead to mutually beneficial outcomes, starting with Push signals a willingness to cooperate.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the cooperative choice that yields $400 for both players if matched, and it avoids the risk of earning $0 if the other player happens to play Pull against my Push. Since we have 5 rounds to build reciprocity, starting with Push signals a willingness to cooperate and encourages the other player to also choose Push in return, maximizing joint payoffs over time.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReason: Playing [Push] is the cooperative choice that yields a safe $400 for both players if matched, and avoids the risk of earning only $300 (or $0 if the other exploits a Pull). In the first round with no history, starting with [Push] signals willingness to cooperate and maximizes joint payoff, which is a standard opening in repeated games like this.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the safer, cooperative choice: if both of us play Push we each earn $400, which is better than the $300 we would both get if we both played Pull. It also avoids the risk of unilaterally playing Pull and getting $0 if the other player plays Push. Starting with Push signals a willingness to cooperate and may encourage the other player to also choose Push in subsequent rounds, maximizing joint payoffs over the 5 rounds.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReasoning: Playing [Push] is the cooperative choice that secures a fair $400 payoff for both players if matched, and avoids the risk of earning $0 if I were to [Pull] while the other player [Push]es. Since this is the first of 5 rounds, starting with cooperation can help build trust and encourage mutual [Push]ing in later rounds, maximizing joint and individual earnings over the game.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the cooperative choice that secures a fair $400 payoff for both players if matched, and it avoids the risk of earning $0 if I were to Pull while the other player Pushes. Starting with Push also signals a willingness to cooperate, which can encourage mutual cooperation over the remaining rounds and maximize joint earnings.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReason: Playing [Push] is the cooperative choice that yields a safe, equal payoff of $400 for both players if matched, and avoids the risk of earning $0 if I were to [Pull] while the other player [Push]es. In the first round of a repeated 5-round game, starting with cooperation encourages mutual trust and better collective outcomes across rounds.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and it signals a willingness to coordinate for mutual benefit across the repeated rounds. Since both players have a dominant incentive to deviate to Pull for a higher individual payoff ($700) if the other pushes, starting with Push tests whether the other player reciprocates cooperation; if they also push, we can both sustain $400 payoffs, which is better than the $300 each would get if both defect with Pull.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair and equal $400 payoff for both players if matched, and it signals a willingness to coordinate on the mutually beneficial outcome rather than risking the lower $300 each from both playing Pull or the worst-case $0 from being exploited by a Pull.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "In the first round, I would play [Push].\n\nReasoning: Playing Push is the cooperative choice that secures a fair $400 payoff for both players if matched, and it avoids the risk of earning $0 that comes with Pull if the other player also chooses Push. Since we have 5 rounds and building trust early can lead to mutual cooperation (repeated-game dynamics), starting with [Push] is a reasonable strategy.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and it signals a willingness to coordinate for mutual benefit over the 5 rounds. Although Push exposes me to a $0 payoff if the other player exploits me with Pull, starting cooperatively encourages repeated mutual cooperation, which maximizes combined earnings ($400 each per round vs. $300 each if both defect with Pull, and avoids the risky $700/$0 split from mismatches).",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and it signals a willingness to cooperate. Since both players doing Push is the second-best joint outcome after the asymmetric $700/$0 cases, starting with Push encourages mutual cooperation across the 5 rounds to avoid the lower $300/$300 outcome that results from both pulling.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReason: Playing [Push] is the cooperative choice that yields a safe $400 for both players if matched, and avoids the risk of earning $0 if the other player chooses Pull while I choose Pull-to-win aggressively. In the first round with no history, starting with [Push] encourages mutual cooperation and builds trust for the remaining rounds, maximizing expected joint and individual payoff over the 5 rounds.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReason: Playing Push is the cooperative choice that yields a safe $400 for both players if matched, and avoids the risk of earning $0 if the other player exploits a Pull. Since this is the first of 5 rounds, starting with [Push] signals a willingness to cooperate and encourages the other player to also choose Push, maximizing joint payoff over repeated play.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields $400 for both players if the other also pushes, and it avoids the risk of earning $0 that comes with playing Pull. Starting with Push encourages mutual cooperation and builds trust for the remaining rounds, maximizing joint and likely individual payoffs over the 5-round game.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReason: Playing Push is the cooperative choice that secures a fair $400 payoff for both if matched, and avoids the risk of earning only $300 (or $0 if mismatched after choosing Pull). Starting with [Push] signals willingness to cooperate and builds trust for repeated rounds.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and it signals a willingness to coordinate for mutual benefit over the 5 rounds. While Push exposes me to a $0 payoff if the other player exploits me with Pull, starting cooperatively encourages reciprocity and helps avoid the lower $300-$300 outcome that results from mutual Pull.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and it signals a willingness to coordinate for mutual benefit over the 5 rounds rather than immediately pursuing the risky $700 grab that could trigger retaliation and lower payoffs for everyone.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReason: Playing [Push] is the cooperative choice that secures a fair $400 payoff for both players if matched, and avoids the risk of earning $0 if I were to play Pull while the other plays Push. In the first round, with no prior history, starting with cooperation encourages mutual cooperation across the 5 rounds, which yields the highest joint and stable individual outcome ($400 each per round).",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReason: Playing [Push] is the cooperative choice that secures a fair $400 payoff for both players if matched, and avoids the risk of earning only $300 (or $0 if the other exploits a Pull). In the first round with no history, starting cooperative encourages mutual cooperation across the 5 rounds, maximizing joint and expected personal payoff under repeated-game norms.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReason: Playing Push is the cooperative choice that secures a safe $400 payoff for both players and avoids the risk of getting $0 if the other player plays Pull. Since this is the first of 5 rounds, starting with Push encourages mutual cooperation and builds trust for future rounds, which is likely to lead to better combined outcomes than immediately playing the aggressive Pull.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. Playing Push is the cooperative choice that yields $400 for both players if matched, and it avoids the risk of unilaterally playing Pull and potentially earning only $300 if the other also pulls, while still leaving open the possibility of a high $700 payoff if the other player blindly pulls. Starting with Push signals a willingness to cooperate and can encourage mutual cooperation across the 5 rounds for stable, decent payoffs.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReason: Playing Push is the cooperative choice that yields a safe $400 for both players if matched, and avoids the risk of earning $0 if the other player chooses Pull while I choose Pull-to-win aggressively. Since this is the first of 5 rounds and we may build trust over repeated interactions, starting with [Push] encourages mutual cooperation and a stable, positive payoff across rounds.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReason: Playing [Push] is the cooperative choice that guarantees me $400 if the other player also plays Push, and avoids the risk of getting $0 if I Pull while they Push. Since we play 5 rounds and building trust early can lead to mutual cooperation (both Push each round = $2000 total), starting with [Push] is the safest and most socially optimal opening move.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. \n\nReasoning: [Push] is the cooperative choice that guarantees you $400 if the other player also pushes, and limits your downside risk to $0 (rather than risking $300 if you pull and they push, which would leave you with $700 only if they cooperate, but $300 if both defect). Since both players start symmetric and unknown, opening with [Push] signals willingness to cooperate for the mutually better $400 outcome across rounds, while avoiding the lower $300 of mutual [Pull].",
+          "parsed_prediction": 1,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReason: Playing Push is the cooperative choice that secures a fair $400 payoff for both players if the other also plays Push, and it avoids the risk of immediately earning $0 if I were to play Pull and the other plays Push. Since we have 5 rounds, starting with [Push] builds trust and encourages mutual cooperation for higher combined earnings.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReasoning: Playing Push is the cooperative choice that yields a safe $400 for both players if matched, and avoids the risk of earning $0 if the other player chooses Pull. Since this is the first of 5 rounds, starting with a cooperative signal encourages mutual cooperation and stable payoffs across the game, rather than immediately triggering a competitive (and mutually worse) outcome.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReason: Playing Push is the cooperative choice that secures a fair $400 payoff for both players if matched, and avoids the risk of earning $0 if I were to Pull while the other plays Push. Since we play 5 rounds and building trust early can lead to repeated mutual cooperation (better long-term joint outcomes), I start with the safe, socially optimal move.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReasoning: Playing [Push] is the cooperative choice that secures a fair $400 payoff for both players if the other also pushes, and it avoids the risk of earning $0 if I pull while the other pushes. Since we have 5 rounds, starting with cooperative behavior encourages mutual cooperation and stable earnings across rounds.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReason: Playing Push is the cooperative choice that yields a stable $400 for both players if matched, and protects against the risk of the other player playing Pull (which would leave me with $0 if I also chose Pull? actually if I Pull and they Push I get $700, but if they Pull and I Pull I only get $300; if I Push and they Pull I get $0, which is worst-case symmetric). In a repeated 5-round game, starting with [Push] signals willingness to cooperate and aims to build trust for mutual $400 payoffs across rounds, which dominates the lower $300 both-Pull outcome and avoids the destructive $0/$700 split.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReasoning: Playing Push is the cooperative choice that secures a fair $400 payoff for both players if matched, and it avoids the risk of earning $0 if I were to Play Pull while the other plays Push. Since this is the first of 5 rounds, starting with cooperation encourages mutual trust and repeated cooperation, which maximizes joint and stable individual earnings over the game.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nI would play [Push] in the first round. This is the cooperative choice that yields a fair $400 for both players if matched, and it signals a willingness to coordinate on the mutually better outcome ($400 each) rather than risking the destructive both-Pull result ($300 each) or the exploitative Push/Pull split where one gets $0. Starting with [Push] encourages the other player to also choose Push, maximizing joint payoffs over the 5 rounds.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReason: Playing Push is the cooperative choice that secures a fair $400 payoff for both players if matched, and avoids the risk of earning $0 if I Pull while the other player Pushes. Since we play 5 rounds and building trust early can lead to mutual cooperation (both Push each round = $400 \u00d7 5 = $2000 each), starting with [Push] is the safest and most socially optimal first move.",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]\n\nReason: Playing Push is the cooperative choice that secures a fair $400 payoff for both players if the other also cooperates, and it avoids the risk of immediately getting $0 if I were to Pull while the other plays Push. Since we have 5 rounds and building trust early can lead to repeated mutual cooperation (better collective outcome), I start with [Push].",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]",
+          "parsed_prediction": 0,
+          "expected": null
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "You're paired with another player, each having a $400 'Push' card and a $300 'Pull' card. Your payoff depends on both players' card choices. Here are the scenarios:\n\n* Both play 'Push': Each earns $400\n* You play 'Push', the other player plays 'Pull': You earn $0, the other player earns $700\n* You play 'Pull', the other player plays 'Push': You earn $700, the other player earns $0\n* Both play 'Pull': Each earns $300\n\nIn 5 total rounds, which card would you play in the first round? Please give a concrete choice and highlight it with [] (i.e., [Push] or [Pull])."
+          },
+          "raw_output": "[Push]",
+          "parsed_prediction": 0,
+          "expected": null
+        }
+      ],
+      "references": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0
+      ]
+    }
+  ],
+  "inference_settings": {
+    "model_name": "tencent/hy3:free",
+    "model_type": "openai",
+    "temperature": null,
+    "top_p": null,
+    "top_k": null,
+    "min_p": null,
+    "max_tokens": 16384,
+    "concurrency": 1,
+    "reasoning_effort": null
+  },
+  "token_usage": {
+    "session_start": null,
+    "total_api_calls": 100,
+    "total_prompt_tokens": 17500,
+    "total_completion_tokens": 7771,
+    "total_reasoning_tokens": 0,
+    "total_cost_usd": 0.0,
+    "by_model": {
+      "tencent/hy3:free": {
+        "prompt_tokens": 17500,
+        "completion_tokens": 7771,
+        "reasoning_tokens": 0,
+        "cost": 0.0,
+        "calls": 100
+      }
+    }
+  }
+}

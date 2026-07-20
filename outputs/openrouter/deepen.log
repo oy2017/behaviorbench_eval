@@ -1,0 +1,52 @@
+===== game_behavior_dictator (n=100) =====
+  Wasserstein_with_ks_distance: 25.6150
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3:free/game_behavior_dictator_20260719_160954.json
+
+===== game_behavior_bomb (n=100) =====
+  Wasserstein_with_ks_distance: 14.9150
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3:free/game_behavior_bomb_20260719_161229.json
+
+===== game_behavior_guessing (n=100) =====
+  Wasserstein_with_ks_distance: 34.1750
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3:free/game_behavior_guessing_20260719_161458.json
+
+===== game_behavior_public_goods (n=100) =====
+  Wasserstein_with_ks_distance: 24.2500
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3:free/game_behavior_public_goods_20260719_161837.json
+
+===== game_behavior_push_pull (n=100) =====
+  Wasserstein_with_ks_distance: 51.0000
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3:free/game_behavior_push_pull_20260719_162409.json
+
+===== game_behavior_trust_banker (n=100) =====
+  Wasserstein_with_ks_distance: 22.9000
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3:free/game_behavior_trust_banker_20260719_162635.json
+
+===== game_behavior_trust_investor (n=100) =====
+  Wasserstein_with_ks_distance: 57.8150
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3:free/game_behavior_trust_investor_20260719_162915.json
+
+===== game_behavior_ultimatum_proposer (n=100) =====
+  Wasserstein_with_ks_distance: 13.3900
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3:free/game_behavior_ultimatum_proposer_20260719_163215.json
+
+===== game_behavior_ultimatum_responder (n=100) =====
+  Wasserstein_with_ks_distance: 18.7600
+  num_failed_parses: 0
+Saved results to outputs/openrouter/tencent/hy3:free/game_behavior_ultimatum_responder_20260719_163443.json
+
+===== acrossgame_behavior_dictator (n=100) =====
+  first attempt failed; retrying once...
+  SECOND failure — assuming free quota EXHAUSTED. Stopping.
+WARNING:behaviorbench.models.api_model:[Retry] API call failed (attempt 2), retrying in 3.7s: Error code: 429 - {'error': {'message': "Rate limit exceeded: limit_rpd/tencent/hy3-20260706/0122db1
+    raise RuntimeError(
+RuntimeError: 7/100 API calls failed. Results would contain empty predictions. Reduce concurrency or check rate limits.
+STOPPED

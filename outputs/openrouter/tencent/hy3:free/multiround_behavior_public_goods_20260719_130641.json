@@ -1,0 +1,497 @@
+{
+  "timestamp": "2026-07-19T13:06:41.368013",
+  "metrics": {
+    "multiround_behavior_public_goods": {
+      "MAE_with_normalization_mae": 17.6,
+      "MAE_with_normalization_mae_raw": 3.52,
+      "Spearman_with_pvalue_correlation": 0.6206316936159648,
+      "Spearman_with_pvalue_pvalue": 0.0009323895279941641,
+      "Spearman_with_pvalue_significant": 1,
+      "Wasserstein_with_ks_distance": 5.6000000000000005,
+      "Wasserstein_with_ks_distance_raw": 1.12,
+      "Wasserstein_with_ks_ks_statistic": 0.2,
+      "Wasserstein_with_ks_ks_pvalue": 0.7102038997076623,
+      "Wasserstein_with_ks_ks_pass_test": 1
+    }
+  },
+  "num_tasks": 1,
+  "tasks": [
+    {
+      "task_name": "multiround_behavior_public_goods",
+      "metrics": {
+        "MAE_with_normalization_mae": 17.6,
+        "MAE_with_normalization_mae_raw": 3.52,
+        "Spearman_with_pvalue_correlation": 0.6206316936159648,
+        "Spearman_with_pvalue_pvalue": 0.0009323895279941641,
+        "Spearman_with_pvalue_significant": 1,
+        "Wasserstein_with_ks_distance": 5.6000000000000005,
+        "Wasserstein_with_ks_distance_raw": 1.12,
+        "Wasserstein_with_ks_ks_statistic": 0.2,
+        "Wasserstein_with_ks_ks_pvalue": 0.7102038997076623,
+        "Wasserstein_with_ks_ks_pass_test": 1
+      },
+      "metadata": {
+        "num_samples": 25,
+        "num_valid_predictions": 25,
+        "num_failed_parses": 0,
+        "failed_parse_rate": 0.0
+      },
+      "predictions": [
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 1 round(s). Here is the play history:\n- Round 1: Your choice: [6], the other players' choices: [13, 10, 3].\n\n## Your Choice\nNow in Round 2, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "296948",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 1,
+              "target_round": 2,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[8]",
+          "parsed_prediction": 8.0,
+          "expected": 7.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 3 round(s). Here is the play history:\n- Round 1: Your choice: [8], the other players' choices: [3, 9, 7].\n- Round 2: Your choice: [10], the other players' choices: [3, 7, 7].\n- Round 3: Your choice: [12], the other players' choices: [6, 10, 7].\n\n## Your Choice\nNow in Round 4, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "168162",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 3,
+              "target_round": 4,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[12]",
+          "parsed_prediction": 12.0,
+          "expected": 0.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 1 round(s). Here is the play history:\n- Round 1: Your choice: [8], the other players' choices: [5, 7, 3].\n\n## Your Choice\nNow in Round 2, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "499420",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 1,
+              "target_round": 2,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[8]",
+          "parsed_prediction": 8.0,
+          "expected": 11.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 1 round(s). Here is the play history:\n- Round 1: Your choice: [3], the other players' choices: [9, 9, 9].\n\n## Your Choice\nNow in Round 2, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "489252",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 1,
+              "target_round": 2,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[$3]",
+          "parsed_prediction": 3.0,
+          "expected": 3.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 1 round(s). Here is the play history:\n- Round 1: Your choice: [0], the other players' choices: [1, 0, 12].\n\n## Your Choice\nNow in Round 2, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "300517",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 1,
+              "target_round": 2,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[$0]",
+          "parsed_prediction": 0.0,
+          "expected": 0.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 1 round(s). Here is the play history:\n- Round 1: Your choice: [15], the other players' choices: [5, 5, 10].\n\n## Your Choice\nNow in Round 2, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "219978",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 1,
+              "target_round": 2,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[15]",
+          "parsed_prediction": 15.0,
+          "expected": 20.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 3 round(s). Here is the play history:\n- Round 1: Your choice: [10], the other players' choices: [20, 10, 18].\n- Round 2: Your choice: [20], the other players' choices: [20, 10, 20].\n- Round 3: Your choice: [20], the other players' choices: [20, 20, 20].\n\n## Your Choice\nNow in Round 4, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "232591",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 3,
+              "target_round": 4,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[20]",
+          "parsed_prediction": 20.0,
+          "expected": 20.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 3 round(s). Here is the play history:\n- Round 1: Your choice: [1], the other players' choices: [6, 5, 7].\n- Round 2: Your choice: [2], the other players' choices: [8, 7, 6].\n- Round 3: Your choice: [2], the other players' choices: [7, 1, 7].\n\n## Your Choice\nNow in Round 4, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "140441",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 3,
+              "target_round": 4,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[$2]",
+          "parsed_prediction": 2.0,
+          "expected": 2.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 2 round(s). Here is the play history:\n- Round 1: Your choice: [8], the other players' choices: [5, 13, 12].\n- Round 2: Your choice: [6], the other players' choices: [11, 8, 6].\n\n## Your Choice\nNow in Round 3, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "284318",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 2,
+              "target_round": 3,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[4]",
+          "parsed_prediction": 4.0,
+          "expected": 9.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 4 round(s). Here is the play history:\n- Round 1: Your choice: [20], the other players' choices: [5, 8, 4].\n- Round 2: Your choice: [20], the other players' choices: [10, 10, 5].\n- Round 3: Your choice: [10], the other players' choices: [7, 5, 8].\n- Round 4: Your choice: [15], the other players' choices: [5, 7, 4].\n\n## Your Choice\nNow in Round 5, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "436543",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 4,
+              "target_round": 5,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[12]",
+          "parsed_prediction": 12.0,
+          "expected": 0.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 4 round(s). Here is the play history:\n- Round 1: Your choice: [4], the other players' choices: [7, 3, 0].\n- Round 2: Your choice: [2], the other players' choices: [10, 2, 0].\n- Round 3: Your choice: [1], the other players' choices: [5, 7, 0].\n- Round 4: Your choice: [0], the other players' choices: [20, 11, 0].\n\n## Your Choice\nNow in Round 5, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "389243",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 4,
+              "target_round": 5,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[0]",
+          "parsed_prediction": 0.0,
+          "expected": 0.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 3 round(s). Here is the play history:\n- Round 1: Your choice: [5], the other players' choices: [20, 9, 8].\n- Round 2: Your choice: [10], the other players' choices: [10, 8, 12].\n- Round 3: Your choice: [3], the other players' choices: [20, 7, 5].\n\n## Your Choice\nNow in Round 4, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "109733",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 3,
+              "target_round": 4,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[$4]",
+          "parsed_prediction": 4.0,
+          "expected": 8.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 2 round(s). Here is the play history:\n- Round 1: Your choice: [8], the other players' choices: [1, 18, 5].\n- Round 2: Your choice: [9], the other players' choices: [2, 14, 5].\n\n## Your Choice\nNow in Round 3, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "345915",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 2,
+              "target_round": 3,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[10]",
+          "parsed_prediction": 10.0,
+          "expected": 8.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 1 round(s). Here is the play history:\n- Round 1: Your choice: [10], the other players' choices: [4, 20, 10].\n\n## Your Choice\nNow in Round 2, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "235273",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 1,
+              "target_round": 2,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[10]",
+          "parsed_prediction": 10.0,
+          "expected": 17.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 2 round(s). Here is the play history:\n- Round 1: Your choice: [15], the other players' choices: [7, 11, 13].\n- Round 2: Your choice: [20], the other players' choices: [13, 11, 11].\n\n## Your Choice\nNow in Round 3, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "450820",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 2,
+              "target_round": 3,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[$20]",
+          "parsed_prediction": 20.0,
+          "expected": 10.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 1 round(s). Here is the play history:\n- Round 1: Your choice: [19], the other players' choices: [20, 19, 20].\n\n## Your Choice\nNow in Round 2, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "471546",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 1,
+              "target_round": 2,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[$20]",
+          "parsed_prediction": 20.0,
+          "expected": 20.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 2 round(s). Here is the play history:\n- Round 1: Your choice: [10], the other players' choices: [3, 0, 10].\n- Round 2: Your choice: [12], the other players' choices: [3, 8, 2].\n\n## Your Choice\nNow in Round 3, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "299976",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 2,
+              "target_round": 3,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[$15]",
+          "parsed_prediction": 15.0,
+          "expected": 8.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 4 round(s). Here is the play history:\n- Round 1: Your choice: [4], the other players' choices: [19, 10, 5].\n- Round 2: Your choice: [8], the other players' choices: [20, 10, 8].\n- Round 3: Your choice: [9], the other players' choices: [20, 10, 10].\n- Round 4: Your choice: [10], the other players' choices: [20, 6, 12].\n\n## Your Choice\nNow in Round 5, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "261516",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 4,
+              "target_round": 5,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[10]",
+          "parsed_prediction": 10.0,
+          "expected": 12.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 2 round(s). Here is the play history:\n- Round 1: Your choice: [11], the other players' choices: [18, 18, 9].\n- Round 2: Your choice: [12], the other players' choices: [20, 20, 10].\n\n## Your Choice\nNow in Round 3, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "184662",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 2,
+              "target_round": 3,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[$13]",
+          "parsed_prediction": 13.0,
+          "expected": 12.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 2 round(s). Here is the play history:\n- Round 1: Your choice: [0], the other players' choices: [1, 20, 5].\n- Round 2: Your choice: [0], the other players' choices: [2, 20, 3].\n\n## Your Choice\nNow in Round 3, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "483556",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 2,
+              "target_round": 3,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[0]",
+          "parsed_prediction": 0.0,
+          "expected": 0.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 3 round(s). Here is the play history:\n- Round 1: Your choice: [6], the other players' choices: [5, 20, 10].\n- Round 2: Your choice: [12], the other players' choices: [10, 20, 8].\n- Round 3: Your choice: [10], the other players' choices: [12, 20, 8].\n\n## Your Choice\nNow in Round 4, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "1009178",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 3,
+              "target_round": 4,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[10]",
+          "parsed_prediction": 10.0,
+          "expected": 15.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 3 round(s). Here is the play history:\n- Round 1: Your choice: [5], the other players' choices: [20, 7, 10].\n- Round 2: Your choice: [6], the other players' choices: [15, 3, 12].\n- Round 3: Your choice: [1], the other players' choices: [20, 5, 10].\n\n## Your Choice\nNow in Round 4, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "229201",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 3,
+              "target_round": 4,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[2]",
+          "parsed_prediction": 2.0,
+          "expected": 0.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 3 round(s). Here is the play history:\n- Round 1: Your choice: [5], the other players' choices: [19, 10, 7].\n- Round 2: Your choice: [5], the other players' choices: [5, 10, 10].\n- Round 3: Your choice: [10], the other players' choices: [10, 11, 5].\n\n## Your Choice\nNow in Round 4, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "221732",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 3,
+              "target_round": 4,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[$10]",
+          "parsed_prediction": 10.0,
+          "expected": 7.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 4 round(s). Here is the play history:\n- Round 1: Your choice: [8], the other players' choices: [5, 13, 12].\n- Round 2: Your choice: [6], the other players' choices: [11, 8, 6].\n- Round 3: Your choice: [9], the other players' choices: [5, 13, 10].\n- Round 4: Your choice: [5], the other players' choices: [17, 12, 5].\n\n## Your Choice\nNow in Round 5, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "284318",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 4,
+              "target_round": 5,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[5]",
+          "parsed_prediction": 5.0,
+          "expected": 7.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "In this public good game, you and 3 others will choose how much to contribute towards a water cleaning project. Each of you gets $20 per round to contribute between $0 and $20. The project has a 50% return rate. Your payoff relies on both your and others' contributions. Everyone benefits from the group's total contribution. Your payoff in each round equals the amount you didn't contribute (endowment - contribution) plus everyone's benefit (total contributions * 50% return rate). Here are two examples to calculate your payoff.\nExample one: You contributed $12; total group contributions were $20\nYour Payoff = ($20-$12) + $20*50% = $18\nExample two: You contributed $12; total group contributions were $30\nYour Payoff = ($20-$12) + $30*50% = $23\nWe will play a total of 3 rounds, in the first round, how much of the $20 would you like to contribute? Please give a concrete number and highlight it with [] (e.g., [x]).\n\n## Play History\nIn this session, you have already played 1 round(s). Here is the play history:\n- Round 1: Your choice: [11], the other players' choices: [14, 10, 12].\n\n## Your Choice\nNow in Round 2, what would you choose? Please give only one concrete choice and\nhighlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "506126",
+              "game": "PG",
+              "role": "contributor",
+              "history_rounds": 1,
+              "target_round": 2,
+              "has_others_info": true
+            }
+          },
+          "raw_output": "[$11]",
+          "parsed_prediction": 11.0,
+          "expected": 6.0
+        }
+      ],
+      "references": null
+    }
+  ],
+  "inference_settings": {
+    "model_name": "tencent/hy3:free",
+    "model_type": "openai",
+    "temperature": null,
+    "top_p": null,
+    "top_k": null,
+    "min_p": null,
+    "max_tokens": 16384,
+    "concurrency": 1,
+    "reasoning_effort": null
+  },
+  "token_usage": {
+    "session_start": null,
+    "total_api_calls": 25,
+    "total_prompt_tokens": 9157,
+    "total_completion_tokens": 100,
+    "total_reasoning_tokens": 0,
+    "total_cost_usd": 0.0,
+    "by_model": {
+      "tencent/hy3:free": {
+        "prompt_tokens": 9157,
+        "completion_tokens": 100,
+        "reasoning_tokens": 0,
+        "cost": 0.0,
+        "calls": 25
+      }
+    }
+  }
+}

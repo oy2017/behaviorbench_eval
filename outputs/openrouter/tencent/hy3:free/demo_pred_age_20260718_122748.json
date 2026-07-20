@@ -1,0 +1,97 @@
+{
+  "timestamp": "2026-07-18T12:27:48.238159",
+  "metrics": {
+    "demo_pred_age": {
+      "MAE": 14.333333333333334,
+      "Spearman_with_pvalue_correlation": 0.0,
+      "Spearman_with_pvalue_pvalue": 1.0,
+      "Spearman_with_pvalue_significant": 0,
+      "Wasserstein_with_ks_distance": 14.333333333333334,
+      "Wasserstein_with_ks_distance_raw": 14.333333333333334,
+      "Wasserstein_with_ks_ks_statistic": 1.0,
+      "Wasserstein_with_ks_ks_pvalue": 0.09999999999999999,
+      "Wasserstein_with_ks_ks_pass_test": 1
+    }
+  },
+  "num_tasks": 1,
+  "tasks": [
+    {
+      "task_name": "demo_pred_age",
+      "metrics": {
+        "MAE": 14.333333333333334,
+        "Spearman_with_pvalue_correlation": 0.0,
+        "Spearman_with_pvalue_pvalue": 1.0,
+        "Spearman_with_pvalue_significant": 0,
+        "Wasserstein_with_ks_distance": 14.333333333333334,
+        "Wasserstein_with_ks_distance_raw": 14.333333333333334,
+        "Wasserstein_with_ks_ks_statistic": 1.0,
+        "Wasserstein_with_ks_ks_pvalue": 0.09999999999999999,
+        "Wasserstein_with_ks_ks_pass_test": 1
+      },
+      "metadata": {
+        "num_samples": 3,
+        "num_valid_predictions": 3,
+        "num_failed_parses": 0,
+        "failed_parse_rate": 0.0
+      },
+      "predictions": [
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test dimensionality scores, your task is to predict this person's age.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Openness: 44\n* Conscientiousness: 49\n* Extraversion: 28\n* Agreeableness: 45\n* Neuroticism: 36\n\n## Output Format\nPlease predict this person's age. Please output a single number indicating the age highlighted with [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[35]",
+          "parsed_prediction": 35.0,
+          "expected": 15.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test dimensionality scores, your task is to predict this person's age.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Openness: 41\n* Conscientiousness: 46\n* Extraversion: 44\n* Agreeableness: 48\n* Neuroticism: 17\n\n## Output Format\nPlease predict this person's age. Please output a single number indicating the age highlighted with [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[28]",
+          "parsed_prediction": 28.0,
+          "expected": 19.0
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a person's BigFive personality test dimensionality scores, your task is to predict this person's age.",
+            "user": "## BigFive Dimensionality Scores\nEach dimensionality score ranges from 10 to 50, with 10 indicating the lowest score in that dimension and 50 indicating the highest score.\n\n* Openness: 47\n* Conscientiousness: 38\n* Extraversion: 29\n* Agreeableness: 50\n* Neuroticism: 37\n\n## Output Format\nPlease predict this person's age. Please output a single number indicating the age highlighted with [] (e.g., [x]). Only output your answer in brackets."
+          },
+          "raw_output": "[28]",
+          "parsed_prediction": 28.0,
+          "expected": 14.0
+        }
+      ],
+      "references": null
+    }
+  ],
+  "inference_settings": {
+    "model_name": "tencent/hy3:free",
+    "model_type": "openai",
+    "temperature": null,
+    "top_p": null,
+    "top_k": null,
+    "min_p": null,
+    "max_tokens": 16384,
+    "concurrency": 1,
+    "reasoning_effort": null
+  },
+  "token_usage": {
+    "session_start": null,
+    "total_api_calls": 3,
+    "total_prompt_tokens": 465,
+    "total_completion_tokens": 12,
+    "total_reasoning_tokens": 0,
+    "total_cost_usd": 0.0,
+    "by_model": {
+      "tencent/hy3:free": {
+        "prompt_tokens": 465,
+        "completion_tokens": 12,
+        "reasoning_tokens": 0,
+        "cost": 0.0,
+        "calls": 3
+      }
+    }
+  }
+}

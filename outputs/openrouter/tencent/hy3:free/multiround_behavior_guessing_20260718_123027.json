@@ -1,0 +1,126 @@
+{
+  "timestamp": "2026-07-18T12:30:27.401682",
+  "metrics": {
+    "multiround_behavior_guessing": {
+      "MAE_with_normalization_mae": 3.333333333333334,
+      "MAE_with_normalization_mae_raw": 3.3333333333333335,
+      "Spearman_with_pvalue_correlation": 0.0,
+      "Spearman_with_pvalue_pvalue": 1.0,
+      "Spearman_with_pvalue_significant": 0,
+      "Wasserstein_with_ks_distance": 2.666666666666667,
+      "Wasserstein_with_ks_distance_raw": 2.666666666666667,
+      "Wasserstein_with_ks_ks_statistic": 0.0,
+      "Wasserstein_with_ks_ks_pvalue": 1.0,
+      "Wasserstein_with_ks_ks_pass_test": 1
+    }
+  },
+  "num_tasks": 1,
+  "tasks": [
+    {
+      "task_name": "multiround_behavior_guessing",
+      "metrics": {
+        "MAE_with_normalization_mae": 3.333333333333334,
+        "MAE_with_normalization_mae_raw": 3.3333333333333335,
+        "Spearman_with_pvalue_correlation": 0.0,
+        "Spearman_with_pvalue_pvalue": 1.0,
+        "Spearman_with_pvalue_significant": 0,
+        "Wasserstein_with_ks_distance": 2.666666666666667,
+        "Wasserstein_with_ks_distance_raw": 2.666666666666667,
+        "Wasserstein_with_ks_ks_statistic": 0.0,
+        "Wasserstein_with_ks_ks_pvalue": 1.0,
+        "Wasserstein_with_ks_ks_pass_test": 1
+      },
+      "metadata": {
+        "num_samples": 3,
+        "num_valid_predictions": 3,
+        "num_failed_parses": 0,
+        "failed_parse_rate": 0.0
+      },
+      "predictions": [
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Game Instruction\nThis is a number-guessing game where you will play with 51 other players. Each player chooses an integer between 0 and 100 which is hidden from other players. The player who chooses a number that is closest to 2/3 of the average wins the game. For example, if the average of the guesses is 60 and if you guess 40, i.e. 2/3 of 60, you win the game.\n\n## Play History\nIn this session, you have already played 2 round(s). Here is the play history:\n- Round 1. Your choice: [17], the group average is [27.4], and 2/3 of that is [18.2]. Sorry! You didn't win the game by guessing 17. Your guess is NOT the closest to 18.2.\n- Round 2. Your choice: [7], the group average is [14.6], and 2/3 of that is [9.7]. Sorry! You didn't win the game by guessing 7. Your guess is NOT the closest to 9.7.\n\n## Your Choice\nNow you will play the game again (Round 3). What number would you like to guess? Please give a concrete number and highlight it with [] (e.g., [x]).",
+            "metadata": {
+              "user_id": "280241",
+              "game": "guessing",
+              "role": "player",
+              "history_rounds": 2,
+              "target_round": 3,
+              "has_others_info": true,
+              "num_players": 51
+            }
+          },
+          "raw_output": "Based on the play history, the group average has been decreasing each round (27.4 \u2192 14.6), and 2/3 of the average has also decreased (18.2 \u2192 9.7). My previous guesses were slightly below the target (17 vs 18.2, 7 vs 9.7). The average is converging downward, likely toward the Nash equilibrium of 0, but not there yet.\n\nIn Round 2, the average was 14.6 and the target was 9.7; I guessed 7, which was too low. If the average continues to drop at a similar rate, a reasonable estimate for Round 3 average is around 10\u201311, making 2/3 of that about 6.7\u20137.3. To be closer to the target than last round, I should guess slightly above my previous guess of 7 but still below the Round 2 average.\n\nI will guess [8].\n\n[8]",
+          "parsed_prediction": 8.0,
+          "expected": 10.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Game Instruction\nThis is a number-guessing game where you will play with 49 other players. Each player chooses an integer between 0 and 100 which is hidden from other players. The player who chooses a number that is closest to 2/3 of the average wins the game. For example, if the average of the guesses is 60 and if you guess 40, i.e. 2/3 of 60, you win the game.\n\n## Play History\nIn this session, you have already played 1 round(s). Here is the play history:\n- Round 1. Your choice: [3], the group average is [30.0], and 2/3 of that is [20.0]. Sorry! You didn't win the game by guessing 3. Your guess is NOT the closest to 20.0.\n\n## Your Choice\nNow you will play the game again (Round 2). What number would you like to guess? Please give a concrete number and highlight it with [] (e.g., [x]).",
+            "metadata": {
+              "user_id": "319137",
+              "game": "guessing",
+              "role": "player",
+              "history_rounds": 1,
+              "target_round": 2,
+              "has_others_info": true,
+              "num_players": 49
+            }
+          },
+          "raw_output": "Based on the previous round, the group average was 30.0, which is quite high and suggests many players are not fully iterating the logic of the game. Since the winning target is 2/3 of the average, and players tend to gradually lower their guesses over rounds as they learn, I will choose a number slightly below the previous 2/3 target of 20.0 to account for some downward shift but not over-correct.\n\nMy guess for Round 2 is: [15]",
+          "parsed_prediction": 15.0,
+          "expected": 10.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "## Game Instruction\nThis is a number-guessing game where you will play with 39 other players. Each player chooses an integer between 0 and 100 which is hidden from other players. The player who chooses a number that is closest to 2/3 of the average wins the game. For example, if the average of the guesses is 60 and if you guess 40, i.e. 2/3 of 60, you win the game.\n\n## Play History\nIn this session, you have already played 4 round(s). Here is the play history:\n- Round 1. Your choice: [100], the group average is [52.0], and 2/3 of that is [34.7]. Sorry! You didn't win the game by guessing 100. Your guess is NOT the closest to 34.7.\n- Round 2. Your choice: [68], the group average is [39.0], and 2/3 of that is [26.0]. Sorry! You didn't win the game by guessing 68. Your guess is NOT the closest to 26.0.\n- Round 3. Your choice: [46], the group average is [27.5], and 2/3 of that is [18.3]. Sorry! You didn't win the game by guessing 46. Your guess is NOT the closest to 18.3.\n- Round 4. Your choice: [28], the group average is [19.1], and 2/3 of that is [12.7]. Sorry! You didn't win the game by guessing 28. Your guess is NOT the closest to 12.7.\n\n## Your Choice\nNow you will play the game again (Round 5). What number would you like to guess? Please give a concrete number and highlight it with [] (e.g., [x]).",
+            "metadata": {
+              "user_id": "314023",
+              "game": "guessing",
+              "role": "player",
+              "history_rounds": 4,
+              "target_round": 5,
+              "has_others_info": true,
+              "num_players": 39
+            }
+          },
+          "raw_output": "Based on the play history, the group average has been decreasing each round: 52.0 \u2192 39.0 \u2192 27.5 \u2192 19.1. The 2/3 targets were 34.7, 26.0, 18.3, and 12.7. My previous guesses were always above the target because I was not iterating enough times.\n\nIf the average continues to drop similarly, a reasonable estimate for Round 5's average is around 13\u201314, making 2/3 of that about 8.7\u20139.3. To be closest to the target, I should guess a low integer near that value.\n\nMy guess for Round 5 is: [9]",
+          "parsed_prediction": 9.0,
+          "expected": 6.0
+        }
+      ],
+      "references": null
+    }
+  ],
+  "inference_settings": {
+    "model_name": "tencent/hy3:free",
+    "model_type": "openai",
+    "temperature": null,
+    "top_p": null,
+    "top_k": null,
+    "min_p": null,
+    "max_tokens": 16384,
+    "concurrency": 1,
+    "reasoning_effort": null
+  },
+  "token_usage": {
+    "session_start": null,
+    "total_api_calls": 3,
+    "total_prompt_tokens": 961,
+    "total_completion_tokens": 457,
+    "total_reasoning_tokens": 0,
+    "total_cost_usd": 0.0,
+    "by_model": {
+      "tencent/hy3:free": {
+        "prompt_tokens": 961,
+        "completion_tokens": 457,
+        "reasoning_tokens": 0,
+        "cost": 0.0,
+        "calls": 3
+      }
+    }
+  }
+}

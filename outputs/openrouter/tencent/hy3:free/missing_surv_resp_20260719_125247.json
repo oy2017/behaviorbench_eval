@@ -1,0 +1,917 @@
+{
+  "timestamp": "2026-07-19T12:52:47.216590",
+  "metrics": {
+    "missing_surv_resp": {
+      "Accuracy_averaged": 0.4523809523809524,
+      "f1_macro_averaged": 0.13095238095238096,
+      "_per_group": {
+        "A2": {
+          "MAE": 0.0,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 0.0,
+          "Wasserstein_with_ks_distance_raw": 0.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "A4": {
+          "MAE": 0.0,
+          "Spearman_with_pvalue_correlation": 0.9999999999999999,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 0.0,
+          "Wasserstein_with_ks_distance_raw": 0.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "A7": {
+          "MAE": 1.0,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 1.0,
+          "Wasserstein_with_ks_distance_raw": 1.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "C10": {
+          "MAE": 0.5,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 0.5,
+          "Wasserstein_with_ks_distance_raw": 0.5,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "C2": {
+          "MAE": 0.0,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 0.0,
+          "Wasserstein_with_ks_distance_raw": 0.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "C3": {
+          "MAE": 1.0,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 1.0,
+          "Wasserstein_with_ks_distance_raw": 1.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "C4": {
+          "MAE": 0.0,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 0.0,
+          "Wasserstein_with_ks_distance_raw": 0.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "C8": {
+          "MAE": 3.0,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 3.0,
+          "Wasserstein_with_ks_distance_raw": 3.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "C9": {
+          "MAE": 1.0,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 1.0,
+          "Wasserstein_with_ks_distance_raw": 1.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "E3": {
+          "MAE": 0.0,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 0.0,
+          "Wasserstein_with_ks_distance_raw": 0.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "E6": {
+          "MAE": 1.0,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 1.0,
+          "Wasserstein_with_ks_distance_raw": 1.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "E7": {
+          "MAE": 1.0,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 1.0,
+          "Wasserstein_with_ks_distance_raw": 1.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "E8": {
+          "MAE": 1.0,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 1.0,
+          "Wasserstein_with_ks_distance_raw": 1.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "N10": {
+          "MAE": 1.5,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 1.5,
+          "Wasserstein_with_ks_distance_raw": 1.5,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "N3": {
+          "MAE": 1.0,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 1.0,
+          "Wasserstein_with_ks_distance_raw": 1.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "N6": {
+          "MAE": 0.0,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 0.0,
+          "Wasserstein_with_ks_distance_raw": 0.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "N7": {
+          "MAE": 4.0,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 4.0,
+          "Wasserstein_with_ks_distance_raw": 4.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "N9": {
+          "MAE": 1.0,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 1.0,
+          "Wasserstein_with_ks_distance_raw": 1.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "O2": {
+          "MAE": 0.0,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 0.0,
+          "Wasserstein_with_ks_distance_raw": 0.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "O4": {
+          "MAE": 0.0,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 0.0,
+          "Wasserstein_with_ks_distance_raw": 0.0,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        },
+        "O5": {
+          "MAE": 0.5,
+          "Spearman_with_pvalue_correlation": NaN,
+          "Spearman_with_pvalue_pvalue": NaN,
+          "Spearman_with_pvalue_significant": 0,
+          "Wasserstein_with_ks_distance": 0.5,
+          "Wasserstein_with_ks_distance_raw": 0.5,
+          "Wasserstein_with_ks_ks_statistic": 0.0,
+          "Wasserstein_with_ks_ks_pvalue": 1.0,
+          "Wasserstein_with_ks_ks_pass_test": 1
+        }
+      },
+      "MAE_averaged": 0.8333333333333334,
+      "Spearman_with_pvalue_correlation_averaged": 0.047619047619047616,
+      "Spearman_with_pvalue_pvalue_averaged": 0.0,
+      "Spearman_with_pvalue_all_significant": 0,
+      "Wasserstein_with_ks_distance_averaged": 0.8333333333333334,
+      "Wasserstein_with_ks_distance_raw_averaged": 0.8333333333333334,
+      "Wasserstein_with_ks_all_ks_pass_test": 1,
+      "Wasserstein_with_ks_ks_pvalue_averaged": 1.0,
+      "Wasserstein_with_ks_ks_statistic_averaged": 0.0
+    }
+  },
+  "num_tasks": 1,
+  "tasks": [
+    {
+      "task_name": "missing_surv_resp",
+      "metrics": {
+        "Accuracy_averaged": 0.4523809523809524,
+        "f1_macro_averaged": 0.13095238095238096,
+        "_per_group": {
+          "A2": {
+            "MAE": 0.0,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 0.0,
+            "Wasserstein_with_ks_distance_raw": 0.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "A4": {
+            "MAE": 0.0,
+            "Spearman_with_pvalue_correlation": 0.9999999999999999,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 0.0,
+            "Wasserstein_with_ks_distance_raw": 0.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "A7": {
+            "MAE": 1.0,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 1.0,
+            "Wasserstein_with_ks_distance_raw": 1.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "C10": {
+            "MAE": 0.5,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 0.5,
+            "Wasserstein_with_ks_distance_raw": 0.5,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "C2": {
+            "MAE": 0.0,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 0.0,
+            "Wasserstein_with_ks_distance_raw": 0.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "C3": {
+            "MAE": 1.0,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 1.0,
+            "Wasserstein_with_ks_distance_raw": 1.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "C4": {
+            "MAE": 0.0,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 0.0,
+            "Wasserstein_with_ks_distance_raw": 0.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "C8": {
+            "MAE": 3.0,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 3.0,
+            "Wasserstein_with_ks_distance_raw": 3.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "C9": {
+            "MAE": 1.0,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 1.0,
+            "Wasserstein_with_ks_distance_raw": 1.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "E3": {
+            "MAE": 0.0,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 0.0,
+            "Wasserstein_with_ks_distance_raw": 0.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "E6": {
+            "MAE": 1.0,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 1.0,
+            "Wasserstein_with_ks_distance_raw": 1.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "E7": {
+            "MAE": 1.0,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 1.0,
+            "Wasserstein_with_ks_distance_raw": 1.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "E8": {
+            "MAE": 1.0,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 1.0,
+            "Wasserstein_with_ks_distance_raw": 1.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "N10": {
+            "MAE": 1.5,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 1.5,
+            "Wasserstein_with_ks_distance_raw": 1.5,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "N3": {
+            "MAE": 1.0,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 1.0,
+            "Wasserstein_with_ks_distance_raw": 1.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "N6": {
+            "MAE": 0.0,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 0.0,
+            "Wasserstein_with_ks_distance_raw": 0.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "N7": {
+            "MAE": 4.0,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 4.0,
+            "Wasserstein_with_ks_distance_raw": 4.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "N9": {
+            "MAE": 1.0,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 1.0,
+            "Wasserstein_with_ks_distance_raw": 1.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "O2": {
+            "MAE": 0.0,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 0.0,
+            "Wasserstein_with_ks_distance_raw": 0.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "O4": {
+            "MAE": 0.0,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 0.0,
+            "Wasserstein_with_ks_distance_raw": 0.0,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          },
+          "O5": {
+            "MAE": 0.5,
+            "Spearman_with_pvalue_correlation": NaN,
+            "Spearman_with_pvalue_pvalue": NaN,
+            "Spearman_with_pvalue_significant": 0,
+            "Wasserstein_with_ks_distance": 0.5,
+            "Wasserstein_with_ks_distance_raw": 0.5,
+            "Wasserstein_with_ks_ks_statistic": 0.0,
+            "Wasserstein_with_ks_ks_pvalue": 1.0,
+            "Wasserstein_with_ks_ks_pass_test": 1
+          }
+        },
+        "MAE_averaged": 0.8333333333333334,
+        "Spearman_with_pvalue_correlation_averaged": 0.047619047619047616,
+        "Spearman_with_pvalue_pvalue_averaged": 0.0,
+        "Spearman_with_pvalue_all_significant": 0,
+        "Wasserstein_with_ks_distance_averaged": 0.8333333333333334,
+        "Wasserstein_with_ks_distance_raw_averaged": 0.8333333333333334,
+        "Wasserstein_with_ks_all_ks_pass_test": 1,
+        "Wasserstein_with_ks_ks_pvalue_averaged": 1.0,
+        "Wasserstein_with_ks_ks_statistic_averaged": 0.0
+      },
+      "metadata": {
+        "num_samples": 25,
+        "num_valid_predictions": 25,
+        "num_failed_parses": 0,
+        "failed_parse_rate": 0.0,
+        "group_by": "target_item",
+        "num_groups": 21
+      },
+      "predictions": [
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [1]\n2. I don't talk a lot.\nAnswer: [2]\n3. I feel comfortable around people.\nAnswer: [4]\n4. I keep in the background.\nAnswer: [4]\n5. I start conversations.\nAnswer: [4]\n6. I have little to say.\nAnswer: [4]\n7. I talk to a lot of different people at parties.\nAnswer: [3]\n8. I don't like to draw attention to myself.\nAnswer: [2]\n9. I don't mind being the center of attention.\nAnswer: [2]\n10. I am quiet around strangers.\nAnswer: [2]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [3]\n12. I am relaxed most of the time.\nAnswer: [5]\n13. I worry about things.\nAnswer: [4]\n14. I seldom feel blue.\nAnswer: [2]\n15. I am easily disturbed.\nAnswer: [1]\n16. I get upset easily.\nAnswer: [4]\n17. I change my mood a lot.\nAnswer: [1]\n18. I have frequent mood swings.\nAnswer: [1]\n19. I get irritated easily.\nAnswer: [1]\n20. I often feel blue.\nAnswer: [1]\n\n### Agreeableness\n21. I feel little concern for others.\nAnswer: [5]\n22. I am interested in people.\nAnswer: [3]\n23. I insult people.\nAnswer: [1]\n24. I sympathize with others' feelings.\nAnswer: [5]\n25. I am not interested in other people's problems.\nAnswer: [1]\n26. I have a soft heart.\nAnswer: [5]\n27. I am not really interested in others.\nAnswer: [1]\n28. I take time out for others.\nAnswer: [5]\n29. I feel others' emotions.\nAnswer: [5]\n30. I make people feel at ease.\nAnswer: [5]\n\n### Conscientiousness\n31. I am always prepared.\nAnswer: [3]\n32. I leave my belongings around.\nAnswer: [2]\n33. I pay attention to details.\nAnswer: [5]\n34. I make a mess of things.\nAnswer: [2]\n35. I get chores done right away.\nAnswer: [4]\n36. I often forget to put things back in their proper place.\nAnswer: [5]\n37. I like order.\nAnswer: [1]\n38. I shirk my duties.\nAnswer: [3]\n39. I am exacting in my work.\nAnswer: [2]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [4]\n41. I have difficulty understanding abstract ideas.\nAnswer: [3]\n42. I have a vivid imagination.\nAnswer: [1]\n43. I am not interested in abstract ideas.\nAnswer: [2]\n44. I have excellent ideas.\nAnswer: [5]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [4]\n47. I use difficult words.\nAnswer: [3]\n48. I spend time reflecting on things.\nAnswer: [4]\n49. I am full of ideas.\nAnswer: [5]\n\n## The Target Question (*Conscientiousness* Dimension)\nI follow a schedule.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 12065,
+              "dimension": "C",
+              "target_item": "C9",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[3]",
+          "parsed_prediction": 3,
+          "expected": 4
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [1]\n2. I don't talk a lot.\nAnswer: [3]\n3. I feel comfortable around people.\nAnswer: [2]\n4. I keep in the background.\nAnswer: [5]\n5. I start conversations.\nAnswer: [2]\n6. I have little to say.\nAnswer: [1]\n7. I talk to a lot of different people at parties.\nAnswer: [2]\n8. I don't like to draw attention to myself.\nAnswer: [5]\n9. I don't mind being the center of attention.\nAnswer: [1]\n10. I am quiet around strangers.\nAnswer: [5]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [5]\n12. I am relaxed most of the time.\nAnswer: [2]\n13. I worry about things.\nAnswer: [5]\n14. I seldom feel blue.\nAnswer: [2]\n15. I am easily disturbed.\nAnswer: [1]\n16. I get upset easily.\nAnswer: [5]\n17. I change my mood a lot.\nAnswer: [4]\n18. I have frequent mood swings.\nAnswer: [2]\n19. I get irritated easily.\nAnswer: [5]\n20. I often feel blue.\nAnswer: [5]\n\n### Agreeableness\n21. I feel little concern for others.\nAnswer: [1]\n22. I am interested in people.\nAnswer: [5]\n23. I insult people.\nAnswer: [1]\n24. I sympathize with others' feelings.\nAnswer: [5]\n25. I am not interested in other people's problems.\nAnswer: [1]\n26. I have a soft heart.\nAnswer: [5]\n27. I am not really interested in others.\nAnswer: [1]\n28. I take time out for others.\nAnswer: [5]\n29. I feel others' emotions.\nAnswer: [5]\n30. I make people feel at ease.\nAnswer: [3]\n\n### Conscientiousness\n31. I am always prepared.\nAnswer: [4]\n32. I leave my belongings around.\nAnswer: [3]\n33. I pay attention to details.\nAnswer: [4]\n34. I make a mess of things.\nAnswer: [5]\n35. I get chores done right away.\nAnswer: [2]\n36. I often forget to put things back in their proper place.\nAnswer: [4]\n37. I like order.\nAnswer: [5]\n38. I shirk my duties.\nAnswer: [3]\n39. I follow a schedule.\nAnswer: [5]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [4]\n41. I have difficulty understanding abstract ideas.\nAnswer: [1]\n42. I have a vivid imagination.\nAnswer: [4]\n43. I am not interested in abstract ideas.\nAnswer: [1]\n44. I have excellent ideas.\nAnswer: [5]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [5]\n47. I use difficult words.\nAnswer: [3]\n48. I spend time reflecting on things.\nAnswer: [5]\n49. I am full of ideas.\nAnswer: [5]\n\n## The Target Question (*Conscientiousness* Dimension)\nI am exacting in my work.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 16186,
+              "dimension": "C",
+              "target_item": "C10",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[4]",
+          "parsed_prediction": 4,
+          "expected": 5
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [2]\n2. I don't talk a lot.\nAnswer: [3]\n3. I feel comfortable around people.\nAnswer: [2]\n4. I keep in the background.\nAnswer: [5]\n5. I start conversations.\nAnswer: [1]\n6. I have little to say.\nAnswer: [4]\n7. I talk to a lot of different people at parties.\nAnswer: [1]\n8. I don't like to draw attention to myself.\nAnswer: [3]\n9. I don't mind being the center of attention.\nAnswer: [1]\n10. I am quiet around strangers.\nAnswer: [5]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [4]\n12. I am relaxed most of the time.\nAnswer: [2]\n13. I worry about things.\nAnswer: [5]\n14. I seldom feel blue.\nAnswer: [2]\n15. I am easily disturbed.\nAnswer: [5]\n16. I change my mood a lot.\nAnswer: [5]\n17. I have frequent mood swings.\nAnswer: [5]\n18. I get irritated easily.\nAnswer: [4]\n19. I often feel blue.\nAnswer: [4]\n\n### Agreeableness\n20. I feel little concern for others.\nAnswer: [2]\n21. I am interested in people.\nAnswer: [3]\n22. I insult people.\nAnswer: [4]\n23. I sympathize with others' feelings.\nAnswer: [4]\n24. I am not interested in other people's problems.\nAnswer: [3]\n25. I have a soft heart.\nAnswer: [4]\n26. I am not really interested in others.\nAnswer: [2]\n27. I take time out for others.\nAnswer: [4]\n28. I feel others' emotions.\nAnswer: [4]\n29. I make people feel at ease.\nAnswer: [3]\n\n### Conscientiousness\n30. I am always prepared.\nAnswer: [4]\n31. I leave my belongings around.\nAnswer: [3]\n32. I pay attention to details.\nAnswer: [5]\n33. I make a mess of things.\nAnswer: [2]\n34. I get chores done right away.\nAnswer: [4]\n35. I often forget to put things back in their proper place.\nAnswer: [2]\n36. I like order.\nAnswer: [5]\n37. I shirk my duties.\nAnswer: [2]\n38. I follow a schedule.\nAnswer: [4]\n39. I am exacting in my work.\nAnswer: [5]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [4]\n41. I have difficulty understanding abstract ideas.\nAnswer: [1]\n42. I have a vivid imagination.\nAnswer: [5]\n43. I am not interested in abstract ideas.\nAnswer: [1]\n44. I have excellent ideas.\nAnswer: [3]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [4]\n47. I use difficult words.\nAnswer: [4]\n48. I spend time reflecting on things.\nAnswer: [2]\n49. I am full of ideas.\nAnswer: [4]\n\n## The Target Question (*Neuroticism* Dimension)\nI get upset easily.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 9960,
+              "dimension": "N",
+              "target_item": "N6",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[5]",
+          "parsed_prediction": 5,
+          "expected": 5
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [3]\n2. I don't talk a lot.\nAnswer: [1]\n3. I feel comfortable around people.\nAnswer: [3]\n4. I keep in the background.\nAnswer: [2]\n5. I start conversations.\nAnswer: [4]\n6. I talk to a lot of different people at parties.\nAnswer: [4]\n7. I don't like to draw attention to myself.\nAnswer: [2]\n8. I don't mind being the center of attention.\nAnswer: [4]\n9. I am quiet around strangers.\nAnswer: [2]\n\n### Neuroticism\n10. I get stressed out easily.\nAnswer: [4]\n11. I am relaxed most of the time.\nAnswer: [4]\n12. I worry about things.\nAnswer: [2]\n13. I seldom feel blue.\nAnswer: [3]\n14. I am easily disturbed.\nAnswer: [3]\n15. I get upset easily.\nAnswer: [2]\n16. I change my mood a lot.\nAnswer: [3]\n17. I have frequent mood swings.\nAnswer: [1]\n18. I get irritated easily.\nAnswer: [3]\n19. I often feel blue.\nAnswer: [2]\n\n### Agreeableness\n20. I feel little concern for others.\nAnswer: [2]\n21. I am interested in people.\nAnswer: [2]\n22. I insult people.\nAnswer: [4]\n23. I sympathize with others' feelings.\nAnswer: [2]\n24. I am not interested in other people's problems.\nAnswer: [3]\n25. I have a soft heart.\nAnswer: [3]\n26. I am not really interested in others.\nAnswer: [4]\n27. I take time out for others.\nAnswer: [2]\n28. I feel others' emotions.\nAnswer: [2]\n29. I make people feel at ease.\nAnswer: [2]\n\n### Conscientiousness\n30. I am always prepared.\nAnswer: [1]\n31. I leave my belongings around.\nAnswer: [4]\n32. I pay attention to details.\nAnswer: [3]\n33. I make a mess of things.\nAnswer: [4]\n34. I get chores done right away.\nAnswer: [2]\n35. I often forget to put things back in their proper place.\nAnswer: [2]\n36. I like order.\nAnswer: [1]\n37. I shirk my duties.\nAnswer: [3]\n38. I follow a schedule.\nAnswer: [1]\n39. I am exacting in my work.\nAnswer: [3]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [2]\n41. I have difficulty understanding abstract ideas.\nAnswer: [1]\n42. I have a vivid imagination.\nAnswer: [5]\n43. I am not interested in abstract ideas.\nAnswer: [1]\n44. I have excellent ideas.\nAnswer: [4]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [4]\n47. I use difficult words.\nAnswer: [2]\n48. I spend time reflecting on things.\nAnswer: [4]\n49. I am full of ideas.\nAnswer: [5]\n\n## The Target Question (*Extraversion* Dimension)\nI have little to say.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 6448,
+              "dimension": "E",
+              "target_item": "E6",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[2]",
+          "parsed_prediction": 2,
+          "expected": 1
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [3]\n2. I don't talk a lot.\nAnswer: [3]\n3. I feel comfortable around people.\nAnswer: [1]\n4. I keep in the background.\nAnswer: [5]\n5. I start conversations.\nAnswer: [1]\n6. I have little to say.\nAnswer: [3]\n7. I don't like to draw attention to myself.\nAnswer: [4]\n8. I don't mind being the center of attention.\nAnswer: [3]\n9. I am quiet around strangers.\nAnswer: [5]\n\n### Neuroticism\n10. I get stressed out easily.\nAnswer: [5]\n11. I am relaxed most of the time.\nAnswer: [2]\n12. I worry about things.\nAnswer: [5]\n13. I seldom feel blue.\nAnswer: [1]\n14. I am easily disturbed.\nAnswer: [5]\n15. I get upset easily.\nAnswer: [5]\n16. I change my mood a lot.\nAnswer: [5]\n17. I have frequent mood swings.\nAnswer: [5]\n18. I get irritated easily.\nAnswer: [5]\n19. I often feel blue.\nAnswer: [5]\n\n### Agreeableness\n20. I feel little concern for others.\nAnswer: [1]\n21. I am interested in people.\nAnswer: [3]\n22. I insult people.\nAnswer: [3]\n23. I sympathize with others' feelings.\nAnswer: [5]\n24. I am not interested in other people's problems.\nAnswer: [1]\n25. I have a soft heart.\nAnswer: [5]\n26. I am not really interested in others.\nAnswer: [1]\n27. I take time out for others.\nAnswer: [5]\n28. I feel others' emotions.\nAnswer: [5]\n29. I make people feel at ease.\nAnswer: [3]\n\n### Conscientiousness\n30. I am always prepared.\nAnswer: [2]\n31. I leave my belongings around.\nAnswer: [2]\n32. I pay attention to details.\nAnswer: [5]\n33. I make a mess of things.\nAnswer: [5]\n34. I get chores done right away.\nAnswer: [1]\n35. I often forget to put things back in their proper place.\nAnswer: [5]\n36. I like order.\nAnswer: [5]\n37. I shirk my duties.\nAnswer: [5]\n38. I follow a schedule.\nAnswer: [3]\n39. I am exacting in my work.\nAnswer: [3]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [5]\n41. I have difficulty understanding abstract ideas.\nAnswer: [1]\n42. I have a vivid imagination.\nAnswer: [5]\n43. I am not interested in abstract ideas.\nAnswer: [2]\n44. I have excellent ideas.\nAnswer: [5]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [4]\n47. I use difficult words.\nAnswer: [5]\n48. I spend time reflecting on things.\nAnswer: [5]\n49. I am full of ideas.\nAnswer: [5]\n\n## The Target Question (*Extraversion* Dimension)\nI talk to a lot of different people at parties.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 8848,
+              "dimension": "E",
+              "target_item": "E7",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[1]",
+          "parsed_prediction": 1,
+          "expected": 2
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [3]\n2. I don't talk a lot.\nAnswer: [2]\n3. I feel comfortable around people.\nAnswer: [3]\n4. I keep in the background.\nAnswer: [3]\n5. I start conversations.\nAnswer: [3]\n6. I have little to say.\nAnswer: [3]\n7. I talk to a lot of different people at parties.\nAnswer: [1]\n8. I don't like to draw attention to myself.\nAnswer: [5]\n9. I don't mind being the center of attention.\nAnswer: [2]\n10. I am quiet around strangers.\nAnswer: [3]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [3]\n12. I am relaxed most of the time.\nAnswer: [2]\n13. I worry about things.\nAnswer: [4]\n14. I seldom feel blue.\nAnswer: [2]\n15. I am easily disturbed.\nAnswer: [3]\n16. I get upset easily.\nAnswer: [2]\n17. I change my mood a lot.\nAnswer: [3]\n18. I have frequent mood swings.\nAnswer: [3]\n19. I get irritated easily.\nAnswer: [4]\n20. I often feel blue.\nAnswer: [4]\n\n### Agreeableness\n21. I feel little concern for others.\nAnswer: [5]\n22. I am interested in people.\nAnswer: [1]\n23. I insult people.\nAnswer: [4]\n24. I am not interested in other people's problems.\nAnswer: [5]\n25. I have a soft heart.\nAnswer: [2]\n26. I am not really interested in others.\nAnswer: [5]\n27. I take time out for others.\nAnswer: [2]\n28. I feel others' emotions.\nAnswer: [1]\n29. I make people feel at ease.\nAnswer: [2]\n\n### Conscientiousness\n30. I am always prepared.\nAnswer: [5]\n31. I leave my belongings around.\nAnswer: [1]\n32. I pay attention to details.\nAnswer: [5]\n33. I make a mess of things.\nAnswer: [1]\n34. I get chores done right away.\nAnswer: [3]\n35. I often forget to put things back in their proper place.\nAnswer: [1]\n36. I like order.\nAnswer: [5]\n37. I shirk my duties.\nAnswer: [5]\n38. I follow a schedule.\nAnswer: [5]\n39. I am exacting in my work.\nAnswer: [5]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [5]\n41. I have difficulty understanding abstract ideas.\nAnswer: [1]\n42. I have a vivid imagination.\nAnswer: [5]\n43. I am not interested in abstract ideas.\nAnswer: [3]\n44. I have excellent ideas.\nAnswer: [5]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [5]\n47. I use difficult words.\nAnswer: [3]\n48. I spend time reflecting on things.\nAnswer: [4]\n49. I am full of ideas.\nAnswer: [5]\n\n## The Target Question (*Agreeableness* Dimension)\nI sympathize with others' feelings.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 3120,
+              "dimension": "A",
+              "target_item": "A4",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[1]",
+          "parsed_prediction": 1,
+          "expected": 1
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [4]\n2. I don't talk a lot.\nAnswer: [1]\n3. I feel comfortable around people.\nAnswer: [5]\n4. I keep in the background.\nAnswer: [4]\n5. I start conversations.\nAnswer: [5]\n6. I have little to say.\nAnswer: [1]\n7. I talk to a lot of different people at parties.\nAnswer: [5]\n8. I don't like to draw attention to myself.\nAnswer: [5]\n9. I don't mind being the center of attention.\nAnswer: [3]\n10. I am quiet around strangers.\nAnswer: [1]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [3]\n12. I am relaxed most of the time.\nAnswer: [5]\n13. I worry about things.\nAnswer: [5]\n14. I seldom feel blue.\nAnswer: [2]\n15. I am easily disturbed.\nAnswer: [1]\n16. I get upset easily.\nAnswer: [3]\n17. I have frequent mood swings.\nAnswer: [1]\n18. I get irritated easily.\nAnswer: [3]\n19. I often feel blue.\nAnswer: [1]\n\n### Agreeableness\n20. I feel little concern for others.\nAnswer: [1]\n21. I am interested in people.\nAnswer: [5]\n22. I insult people.\nAnswer: [1]\n23. I sympathize with others' feelings.\nAnswer: [5]\n24. I am not interested in other people's problems.\nAnswer: [1]\n25. I have a soft heart.\nAnswer: [5]\n26. I am not really interested in others.\nAnswer: [1]\n27. I take time out for others.\nAnswer: [5]\n28. I feel others' emotions.\nAnswer: [5]\n29. I make people feel at ease.\nAnswer: [5]\n\n### Conscientiousness\n30. I am always prepared.\nAnswer: [5]\n31. I leave my belongings around.\nAnswer: [1]\n32. I pay attention to details.\nAnswer: [5]\n33. I make a mess of things.\nAnswer: [1]\n34. I get chores done right away.\nAnswer: [5]\n35. I often forget to put things back in their proper place.\nAnswer: [1]\n36. I like order.\nAnswer: [5]\n37. I shirk my duties.\nAnswer: [1]\n38. I follow a schedule.\nAnswer: [5]\n39. I am exacting in my work.\nAnswer: [5]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [3]\n41. I have difficulty understanding abstract ideas.\nAnswer: [1]\n42. I have a vivid imagination.\nAnswer: [5]\n43. I am not interested in abstract ideas.\nAnswer: [1]\n44. I have excellent ideas.\nAnswer: [5]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [5]\n47. I use difficult words.\nAnswer: [2]\n48. I spend time reflecting on things.\nAnswer: [5]\n49. I am full of ideas.\nAnswer: [5]\n\n## The Target Question (*Neuroticism* Dimension)\nI change my mood a lot.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 18996,
+              "dimension": "N",
+              "target_item": "N7",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[1]",
+          "parsed_prediction": 1,
+          "expected": 5
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [3]\n2. I don't talk a lot.\nAnswer: [1]\n3. I feel comfortable around people.\nAnswer: [2]\n4. I keep in the background.\nAnswer: [2]\n5. I start conversations.\nAnswer: [5]\n6. I have little to say.\nAnswer: [1]\n7. I talk to a lot of different people at parties.\nAnswer: [2]\n8. I don't like to draw attention to myself.\nAnswer: [4]\n9. I don't mind being the center of attention.\nAnswer: [3]\n10. I am quiet around strangers.\nAnswer: [3]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [1]\n12. I am relaxed most of the time.\nAnswer: [4]\n13. I worry about things.\nAnswer: [2]\n14. I seldom feel blue.\nAnswer: [1]\n15. I am easily disturbed.\nAnswer: [3]\n16. I get upset easily.\nAnswer: [2]\n17. I change my mood a lot.\nAnswer: [4]\n18. I have frequent mood swings.\nAnswer: [3]\n19. I get irritated easily.\nAnswer: [2]\n\n### Agreeableness\n20. I feel little concern for others.\nAnswer: [1]\n21. I am interested in people.\nAnswer: [5]\n22. I insult people.\nAnswer: [4]\n23. I sympathize with others' feelings.\nAnswer: [5]\n24. I am not interested in other people's problems.\nAnswer: [1]\n25. I have a soft heart.\nAnswer: [3]\n26. I am not really interested in others.\nAnswer: [5]\n27. I take time out for others.\nAnswer: [5]\n28. I feel others' emotions.\nAnswer: [4]\n29. I make people feel at ease.\nAnswer: [3]\n\n### Conscientiousness\n30. I am always prepared.\nAnswer: [3]\n31. I leave my belongings around.\nAnswer: [5]\n32. I pay attention to details.\nAnswer: [4]\n33. I make a mess of things.\nAnswer: [3]\n34. I get chores done right away.\nAnswer: [1]\n35. I often forget to put things back in their proper place.\nAnswer: [4]\n36. I like order.\nAnswer: [3]\n37. I shirk my duties.\nAnswer: [4]\n38. I follow a schedule.\nAnswer: [4]\n39. I am exacting in my work.\nAnswer: [2]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [1]\n41. I have difficulty understanding abstract ideas.\nAnswer: [1]\n42. I have a vivid imagination.\nAnswer: [5]\n43. I am not interested in abstract ideas.\nAnswer: [1]\n44. I have excellent ideas.\nAnswer: [5]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [5]\n47. I use difficult words.\nAnswer: [1]\n48. I spend time reflecting on things.\nAnswer: [4]\n49. I am full of ideas.\nAnswer: [5]\n\n## The Target Question (*Neuroticism* Dimension)\nI often feel blue.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 14041,
+              "dimension": "N",
+              "target_item": "N10",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[1]",
+          "parsed_prediction": 1,
+          "expected": 4
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [1]\n2. I don't talk a lot.\nAnswer: [4]\n3. I feel comfortable around people.\nAnswer: [5]\n4. I keep in the background.\nAnswer: [1]\n5. I start conversations.\nAnswer: [5]\n6. I have little to say.\nAnswer: [1]\n7. I talk to a lot of different people at parties.\nAnswer: [5]\n8. I don't like to draw attention to myself.\nAnswer: [1]\n9. I don't mind being the center of attention.\nAnswer: [5]\n10. I am quiet around strangers.\nAnswer: [1]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [2]\n12. I am relaxed most of the time.\nAnswer: [5]\n13. I worry about things.\nAnswer: [2]\n14. I seldom feel blue.\nAnswer: [5]\n15. I am easily disturbed.\nAnswer: [1]\n16. I get upset easily.\nAnswer: [2]\n17. I change my mood a lot.\nAnswer: [1]\n18. I have frequent mood swings.\nAnswer: [1]\n19. I get irritated easily.\nAnswer: [3]\n20. I often feel blue.\nAnswer: [1]\n\n### Agreeableness\n21. I feel little concern for others.\nAnswer: [1]\n22. I am interested in people.\nAnswer: [5]\n23. I insult people.\nAnswer: [1]\n24. I am not interested in other people's problems.\nAnswer: [1]\n25. I have a soft heart.\nAnswer: [4]\n26. I am not really interested in others.\nAnswer: [1]\n27. I take time out for others.\nAnswer: [5]\n28. I feel others' emotions.\nAnswer: [5]\n29. I make people feel at ease.\nAnswer: [5]\n\n### Conscientiousness\n30. I am always prepared.\nAnswer: [2]\n31. I leave my belongings around.\nAnswer: [5]\n32. I pay attention to details.\nAnswer: [5]\n33. I make a mess of things.\nAnswer: [1]\n34. I get chores done right away.\nAnswer: [2]\n35. I often forget to put things back in their proper place.\nAnswer: [5]\n36. I like order.\nAnswer: [2]\n37. I shirk my duties.\nAnswer: [1]\n38. I follow a schedule.\nAnswer: [4]\n39. I am exacting in my work.\nAnswer: [5]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [5]\n41. I have difficulty understanding abstract ideas.\nAnswer: [1]\n42. I have a vivid imagination.\nAnswer: [5]\n43. I am not interested in abstract ideas.\nAnswer: [1]\n44. I have excellent ideas.\nAnswer: [5]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [5]\n47. I use difficult words.\nAnswer: [5]\n48. I spend time reflecting on things.\nAnswer: [5]\n49. I am full of ideas.\nAnswer: [5]\n\n## The Target Question (*Agreeableness* Dimension)\nI sympathize with others' feelings.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 9192,
+              "dimension": "A",
+              "target_item": "A4",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[5]",
+          "parsed_prediction": 5,
+          "expected": 5
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [3]\n2. I don't talk a lot.\nAnswer: [3]\n3. I feel comfortable around people.\nAnswer: [5]\n4. I keep in the background.\nAnswer: [3]\n5. I start conversations.\nAnswer: [3]\n6. I have little to say.\nAnswer: [4]\n7. I talk to a lot of different people at parties.\nAnswer: [1]\n8. I don't like to draw attention to myself.\nAnswer: [2]\n9. I don't mind being the center of attention.\nAnswer: [5]\n10. I am quiet around strangers.\nAnswer: [2]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [1]\n12. I am relaxed most of the time.\nAnswer: [1]\n13. I worry about things.\nAnswer: [4]\n14. I seldom feel blue.\nAnswer: [4]\n15. I am easily disturbed.\nAnswer: [2]\n16. I get upset easily.\nAnswer: [4]\n17. I change my mood a lot.\nAnswer: [3]\n18. I have frequent mood swings.\nAnswer: [1]\n19. I get irritated easily.\nAnswer: [2]\n20. I often feel blue.\nAnswer: [4]\n\n### Agreeableness\n21. I feel little concern for others.\nAnswer: [4]\n22. I am interested in people.\nAnswer: [5]\n23. I insult people.\nAnswer: [1]\n24. I sympathize with others' feelings.\nAnswer: [5]\n25. I am not interested in other people's problems.\nAnswer: [1]\n26. I have a soft heart.\nAnswer: [5]\n27. I am not really interested in others.\nAnswer: [4]\n28. I take time out for others.\nAnswer: [4]\n29. I feel others' emotions.\nAnswer: [5]\n30. I make people feel at ease.\nAnswer: [5]\n\n### Conscientiousness\n31. I am always prepared.\nAnswer: [3]\n32. I leave my belongings around.\nAnswer: [2]\n33. I pay attention to details.\nAnswer: [5]\n34. I make a mess of things.\nAnswer: [1]\n35. I get chores done right away.\nAnswer: [3]\n36. I often forget to put things back in their proper place.\nAnswer: [2]\n37. I like order.\nAnswer: [2]\n38. I shirk my duties.\nAnswer: [2]\n39. I follow a schedule.\nAnswer: [5]\n40. I am exacting in my work.\nAnswer: [5]\n\n### Openness\n41. I have a rich vocabulary.\nAnswer: [3]\n42. I have difficulty understanding abstract ideas.\nAnswer: [4]\n43. I have a vivid imagination.\nAnswer: [5]\n44. I have excellent ideas.\nAnswer: [5]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [4]\n47. I use difficult words.\nAnswer: [1]\n48. I spend time reflecting on things.\nAnswer: [4]\n49. I am full of ideas.\nAnswer: [4]\n\n## The Target Question (*Openness* Dimension)\nI am not interested in abstract ideas.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 14298,
+              "dimension": "O",
+              "target_item": "O4",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[2]",
+          "parsed_prediction": 2,
+          "expected": 2
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [5]\n2. I don't talk a lot.\nAnswer: [1]\n3. I feel comfortable around people.\nAnswer: [5]\n4. I keep in the background.\nAnswer: [1]\n5. I start conversations.\nAnswer: [5]\n6. I have little to say.\nAnswer: [1]\n7. I talk to a lot of different people at parties.\nAnswer: [5]\n8. I don't like to draw attention to myself.\nAnswer: [3]\n9. I don't mind being the center of attention.\nAnswer: [5]\n10. I am quiet around strangers.\nAnswer: [5]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [1]\n12. I am relaxed most of the time.\nAnswer: [5]\n13. I worry about things.\nAnswer: [2]\n14. I seldom feel blue.\nAnswer: [1]\n15. I am easily disturbed.\nAnswer: [5]\n16. I get upset easily.\nAnswer: [5]\n17. I change my mood a lot.\nAnswer: [5]\n18. I have frequent mood swings.\nAnswer: [5]\n19. I get irritated easily.\nAnswer: [5]\n\n### Agreeableness\n20. I feel little concern for others.\nAnswer: [4]\n21. I am interested in people.\nAnswer: [5]\n22. I insult people.\nAnswer: [5]\n23. I sympathize with others' feelings.\nAnswer: [5]\n24. I am not interested in other people's problems.\nAnswer: [1]\n25. I have a soft heart.\nAnswer: [1]\n26. I am not really interested in others.\nAnswer: [1]\n27. I take time out for others.\nAnswer: [5]\n28. I feel others' emotions.\nAnswer: [5]\n29. I make people feel at ease.\nAnswer: [5]\n\n### Conscientiousness\n30. I am always prepared.\nAnswer: [2]\n31. I leave my belongings around.\nAnswer: [3]\n32. I pay attention to details.\nAnswer: [3]\n33. I make a mess of things.\nAnswer: [3]\n34. I get chores done right away.\nAnswer: [1]\n35. I often forget to put things back in their proper place.\nAnswer: [5]\n36. I like order.\nAnswer: [3]\n37. I shirk my duties.\nAnswer: [3]\n38. I follow a schedule.\nAnswer: [5]\n39. I am exacting in my work.\nAnswer: [5]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [4]\n41. I have difficulty understanding abstract ideas.\nAnswer: [1]\n42. I have a vivid imagination.\nAnswer: [5]\n43. I am not interested in abstract ideas.\nAnswer: [3]\n44. I have excellent ideas.\nAnswer: [5]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [5]\n47. I use difficult words.\nAnswer: [4]\n48. I spend time reflecting on things.\nAnswer: [4]\n49. I am full of ideas.\nAnswer: [5]\n\n## The Target Question (*Neuroticism* Dimension)\nI often feel blue.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 2761,
+              "dimension": "N",
+              "target_item": "N10",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[1]",
+          "parsed_prediction": 1,
+          "expected": 1
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [4]\n2. I don't talk a lot.\nAnswer: [2]\n3. I feel comfortable around people.\nAnswer: [4]\n4. I keep in the background.\nAnswer: [2]\n5. I start conversations.\nAnswer: [5]\n6. I have little to say.\nAnswer: [2]\n7. I talk to a lot of different people at parties.\nAnswer: [5]\n8. I don't like to draw attention to myself.\nAnswer: [3]\n9. I don't mind being the center of attention.\nAnswer: [5]\n10. I am quiet around strangers.\nAnswer: [3]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [3]\n12. I am relaxed most of the time.\nAnswer: [1]\n13. I worry about things.\nAnswer: [5]\n14. I seldom feel blue.\nAnswer: [1]\n15. I am easily disturbed.\nAnswer: [1]\n16. I get upset easily.\nAnswer: [3]\n17. I change my mood a lot.\nAnswer: [3]\n18. I have frequent mood swings.\nAnswer: [3]\n19. I get irritated easily.\nAnswer: [4]\n20. I often feel blue.\nAnswer: [5]\n\n### Agreeableness\n21. I feel little concern for others.\nAnswer: [1]\n22. I am interested in people.\nAnswer: [4]\n23. I insult people.\nAnswer: [2]\n24. I sympathize with others' feelings.\nAnswer: [5]\n25. I am not interested in other people's problems.\nAnswer: [1]\n26. I have a soft heart.\nAnswer: [4]\n27. I am not really interested in others.\nAnswer: [1]\n28. I take time out for others.\nAnswer: [4]\n29. I feel others' emotions.\nAnswer: [5]\n30. I make people feel at ease.\nAnswer: [4]\n\n### Conscientiousness\n31. I am always prepared.\nAnswer: [4]\n32. I leave my belongings around.\nAnswer: [4]\n33. I pay attention to details.\nAnswer: [3]\n34. I make a mess of things.\nAnswer: [3]\n35. I get chores done right away.\nAnswer: [3]\n36. I often forget to put things back in their proper place.\nAnswer: [3]\n37. I like order.\nAnswer: [3]\n38. I shirk my duties.\nAnswer: [3]\n39. I follow a schedule.\nAnswer: [3]\n40. I am exacting in my work.\nAnswer: [3]\n\n### Openness\n41. I have a rich vocabulary.\nAnswer: [3]\n42. I have difficulty understanding abstract ideas.\nAnswer: [1]\n43. I have a vivid imagination.\nAnswer: [5]\n44. I am not interested in abstract ideas.\nAnswer: [1]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [4]\n47. I use difficult words.\nAnswer: [4]\n48. I spend time reflecting on things.\nAnswer: [4]\n49. I am full of ideas.\nAnswer: [5]\n\n## The Target Question (*Openness* Dimension)\nI have excellent ideas.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 9148,
+              "dimension": "O",
+              "target_item": "O5",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[5]",
+          "parsed_prediction": 5,
+          "expected": 4
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [4]\n2. I don't talk a lot.\nAnswer: [1]\n3. I feel comfortable around people.\nAnswer: [5]\n4. I keep in the background.\nAnswer: [2]\n5. I start conversations.\nAnswer: [5]\n6. I have little to say.\nAnswer: [1]\n7. I talk to a lot of different people at parties.\nAnswer: [5]\n8. I don't like to draw attention to myself.\nAnswer: [3]\n9. I don't mind being the center of attention.\nAnswer: [5]\n10. I am quiet around strangers.\nAnswer: [2]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [1]\n12. I am relaxed most of the time.\nAnswer: [4]\n13. I worry about things.\nAnswer: [4]\n14. I seldom feel blue.\nAnswer: [1]\n15. I am easily disturbed.\nAnswer: [2]\n16. I get upset easily.\nAnswer: [2]\n17. I change my mood a lot.\nAnswer: [3]\n18. I have frequent mood swings.\nAnswer: [2]\n19. I get irritated easily.\nAnswer: [2]\n20. I often feel blue.\nAnswer: [4]\n\n### Agreeableness\n21. I feel little concern for others.\nAnswer: [2]\n22. I am interested in people.\nAnswer: [4]\n23. I insult people.\nAnswer: [3]\n24. I sympathize with others' feelings.\nAnswer: [4]\n25. I am not interested in other people's problems.\nAnswer: [4]\n26. I have a soft heart.\nAnswer: [4]\n27. I am not really interested in others.\nAnswer: [2]\n28. I take time out for others.\nAnswer: [4]\n29. I feel others' emotions.\nAnswer: [4]\n30. I make people feel at ease.\nAnswer: [5]\n\n### Conscientiousness\n31. I am always prepared.\nAnswer: [4]\n32. I leave my belongings around.\nAnswer: [2]\n33. I make a mess of things.\nAnswer: [2]\n34. I get chores done right away.\nAnswer: [5]\n35. I often forget to put things back in their proper place.\nAnswer: [1]\n36. I like order.\nAnswer: [5]\n37. I shirk my duties.\nAnswer: [1]\n38. I follow a schedule.\nAnswer: [4]\n39. I am exacting in my work.\nAnswer: [5]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [5]\n41. I have difficulty understanding abstract ideas.\nAnswer: [1]\n42. I have a vivid imagination.\nAnswer: [4]\n43. I am not interested in abstract ideas.\nAnswer: [2]\n44. I have excellent ideas.\nAnswer: [4]\n45. I do not have a good imagination.\nAnswer: [2]\n46. I am quick to understand things.\nAnswer: [5]\n47. I use difficult words.\nAnswer: [5]\n48. I spend time reflecting on things.\nAnswer: [4]\n49. I am full of ideas.\nAnswer: [4]\n\n## The Target Question (*Conscientiousness* Dimension)\nI pay attention to details.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 1563,
+              "dimension": "C",
+              "target_item": "C3",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[5]",
+          "parsed_prediction": 5,
+          "expected": 4
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [1]\n2. I don't talk a lot.\nAnswer: [5]\n3. I feel comfortable around people.\nAnswer: [2]\n4. I keep in the background.\nAnswer: [5]\n5. I start conversations.\nAnswer: [2]\n6. I have little to say.\nAnswer: [4]\n7. I talk to a lot of different people at parties.\nAnswer: [1]\n8. I don't like to draw attention to myself.\nAnswer: [1]\n9. I don't mind being the center of attention.\nAnswer: [2]\n10. I am quiet around strangers.\nAnswer: [5]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [4]\n12. I am relaxed most of the time.\nAnswer: [3]\n13. I worry about things.\nAnswer: [4]\n14. I seldom feel blue.\nAnswer: [3]\n15. I am easily disturbed.\nAnswer: [5]\n16. I get upset easily.\nAnswer: [5]\n17. I change my mood a lot.\nAnswer: [5]\n18. I have frequent mood swings.\nAnswer: [5]\n19. I get irritated easily.\nAnswer: [5]\n20. I often feel blue.\nAnswer: [3]\n\n### Agreeableness\n21. I feel little concern for others.\nAnswer: [5]\n22. I am interested in people.\nAnswer: [2]\n23. I insult people.\nAnswer: [1]\n24. I sympathize with others' feelings.\nAnswer: [4]\n25. I am not interested in other people's problems.\nAnswer: [4]\n26. I have a soft heart.\nAnswer: [5]\n27. I am not really interested in others.\nAnswer: [3]\n28. I take time out for others.\nAnswer: [3]\n29. I feel others' emotions.\nAnswer: [4]\n30. I make people feel at ease.\nAnswer: [2]\n\n### Conscientiousness\n31. I am always prepared.\nAnswer: [5]\n32. I pay attention to details.\nAnswer: [4]\n33. I make a mess of things.\nAnswer: [1]\n34. I get chores done right away.\nAnswer: [3]\n35. I often forget to put things back in their proper place.\nAnswer: [1]\n36. I like order.\nAnswer: [1]\n37. I shirk my duties.\nAnswer: [2]\n38. I follow a schedule.\nAnswer: [5]\n39. I am exacting in my work.\nAnswer: [4]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [2]\n41. I have difficulty understanding abstract ideas.\nAnswer: [2]\n42. I have a vivid imagination.\nAnswer: [4]\n43. I am not interested in abstract ideas.\nAnswer: [2]\n44. I have excellent ideas.\nAnswer: [4]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [3]\n47. I use difficult words.\nAnswer: [1]\n48. I spend time reflecting on things.\nAnswer: [5]\n49. I am full of ideas.\nAnswer: [4]\n\n## The Target Question (*Conscientiousness* Dimension)\nI leave my belongings around.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 14128,
+              "dimension": "C",
+              "target_item": "C2",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[1]",
+          "parsed_prediction": 1,
+          "expected": 1
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [3]\n2. I don't talk a lot.\nAnswer: [5]\n3. I feel comfortable around people.\nAnswer: [2]\n4. I keep in the background.\nAnswer: [3]\n5. I start conversations.\nAnswer: [5]\n6. I have little to say.\nAnswer: [1]\n7. I talk to a lot of different people at parties.\nAnswer: [3]\n8. I don't like to draw attention to myself.\nAnswer: [1]\n9. I don't mind being the center of attention.\nAnswer: [5]\n10. I am quiet around strangers.\nAnswer: [2]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [5]\n12. I am relaxed most of the time.\nAnswer: [2]\n13. I worry about things.\nAnswer: [5]\n14. I seldom feel blue.\nAnswer: [4]\n15. I am easily disturbed.\nAnswer: [4]\n16. I get upset easily.\nAnswer: [5]\n17. I change my mood a lot.\nAnswer: [4]\n18. I have frequent mood swings.\nAnswer: [3]\n19. I get irritated easily.\nAnswer: [3]\n20. I often feel blue.\nAnswer: [4]\n\n### Agreeableness\n21. I feel little concern for others.\nAnswer: [1]\n22. I am interested in people.\nAnswer: [5]\n23. I insult people.\nAnswer: [3]\n24. I sympathize with others' feelings.\nAnswer: [5]\n25. I am not interested in other people's problems.\nAnswer: [2]\n26. I have a soft heart.\nAnswer: [5]\n27. I am not really interested in others.\nAnswer: [1]\n28. I take time out for others.\nAnswer: [4]\n29. I feel others' emotions.\nAnswer: [5]\n30. I make people feel at ease.\nAnswer: [5]\n\n### Conscientiousness\n31. I am always prepared.\nAnswer: [1]\n32. I leave my belongings around.\nAnswer: [1]\n33. I pay attention to details.\nAnswer: [5]\n34. I make a mess of things.\nAnswer: [3]\n35. I get chores done right away.\nAnswer: [2]\n36. I often forget to put things back in their proper place.\nAnswer: [5]\n37. I like order.\nAnswer: [3]\n38. I shirk my duties.\nAnswer: [4]\n39. I follow a schedule.\nAnswer: [2]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [3]\n41. I have difficulty understanding abstract ideas.\nAnswer: [4]\n42. I have a vivid imagination.\nAnswer: [4]\n43. I am not interested in abstract ideas.\nAnswer: [3]\n44. I have excellent ideas.\nAnswer: [4]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [3]\n47. I use difficult words.\nAnswer: [1]\n48. I spend time reflecting on things.\nAnswer: [5]\n49. I am full of ideas.\nAnswer: [5]\n\n## The Target Question (*Conscientiousness* Dimension)\nI am exacting in my work.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 13137,
+              "dimension": "C",
+              "target_item": "C10",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[5]",
+          "parsed_prediction": 5,
+          "expected": 5
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [1]\n2. I don't talk a lot.\nAnswer: [4]\n3. I feel comfortable around people.\nAnswer: [2]\n4. I keep in the background.\nAnswer: [4]\n5. I start conversations.\nAnswer: [2]\n6. I have little to say.\nAnswer: [3]\n7. I talk to a lot of different people at parties.\nAnswer: [2]\n8. I don't like to draw attention to myself.\nAnswer: [4]\n9. I don't mind being the center of attention.\nAnswer: [2]\n10. I am quiet around strangers.\nAnswer: [5]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [3]\n12. I am relaxed most of the time.\nAnswer: [2]\n13. I worry about things.\nAnswer: [5]\n14. I seldom feel blue.\nAnswer: [2]\n15. I am easily disturbed.\nAnswer: [2]\n16. I get upset easily.\nAnswer: [3]\n17. I change my mood a lot.\nAnswer: [3]\n18. I have frequent mood swings.\nAnswer: [2]\n19. I get irritated easily.\nAnswer: [2]\n20. I often feel blue.\nAnswer: [3]\n\n### Agreeableness\n21. I feel little concern for others.\nAnswer: [2]\n22. I am interested in people.\nAnswer: [4]\n23. I insult people.\nAnswer: [1]\n24. I sympathize with others' feelings.\nAnswer: [5]\n25. I am not interested in other people's problems.\nAnswer: [1]\n26. I have a soft heart.\nAnswer: [3]\n27. I take time out for others.\nAnswer: [3]\n28. I feel others' emotions.\nAnswer: [4]\n29. I make people feel at ease.\nAnswer: [3]\n\n### Conscientiousness\n30. I am always prepared.\nAnswer: [4]\n31. I leave my belongings around.\nAnswer: [1]\n32. I pay attention to details.\nAnswer: [4]\n33. I make a mess of things.\nAnswer: [2]\n34. I get chores done right away.\nAnswer: [3]\n35. I often forget to put things back in their proper place.\nAnswer: [3]\n36. I like order.\nAnswer: [4]\n37. I shirk my duties.\nAnswer: [2]\n38. I follow a schedule.\nAnswer: [3]\n39. I am exacting in my work.\nAnswer: [4]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [4]\n41. I have difficulty understanding abstract ideas.\nAnswer: [2]\n42. I have a vivid imagination.\nAnswer: [5]\n43. I am not interested in abstract ideas.\nAnswer: [1]\n44. I have excellent ideas.\nAnswer: [4]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [5]\n47. I use difficult words.\nAnswer: [4]\n48. I spend time reflecting on things.\nAnswer: [4]\n49. I am full of ideas.\nAnswer: [4]\n\n## The Target Question (*Agreeableness* Dimension)\nI am not really interested in others.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 18631,
+              "dimension": "A",
+              "target_item": "A7",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[1]",
+          "parsed_prediction": 1,
+          "expected": 2
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [3]\n2. I don't talk a lot.\nAnswer: [3]\n3. I feel comfortable around people.\nAnswer: [3]\n4. I keep in the background.\nAnswer: [3]\n5. I start conversations.\nAnswer: [5]\n6. I have little to say.\nAnswer: [1]\n7. I talk to a lot of different people at parties.\nAnswer: [1]\n8. I don't like to draw attention to myself.\nAnswer: [5]\n9. I don't mind being the center of attention.\nAnswer: [5]\n10. I am quiet around strangers.\nAnswer: [5]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [5]\n12. I am relaxed most of the time.\nAnswer: [5]\n13. I worry about things.\nAnswer: [5]\n14. I seldom feel blue.\nAnswer: [4]\n15. I am easily disturbed.\nAnswer: [5]\n16. I get upset easily.\nAnswer: [3]\n17. I change my mood a lot.\nAnswer: [1]\n18. I have frequent mood swings.\nAnswer: [1]\n19. I get irritated easily.\nAnswer: [4]\n20. I often feel blue.\nAnswer: [5]\n\n### Agreeableness\n21. I feel little concern for others.\nAnswer: [5]\n22. I am interested in people.\nAnswer: [5]\n23. I insult people.\nAnswer: [1]\n24. I sympathize with others' feelings.\nAnswer: [5]\n25. I am not interested in other people's problems.\nAnswer: [1]\n26. I have a soft heart.\nAnswer: [5]\n27. I am not really interested in others.\nAnswer: [5]\n28. I take time out for others.\nAnswer: [1]\n29. I feel others' emotions.\nAnswer: [5]\n30. I make people feel at ease.\nAnswer: [5]\n\n### Conscientiousness\n31. I am always prepared.\nAnswer: [3]\n32. I leave my belongings around.\nAnswer: [1]\n33. I pay attention to details.\nAnswer: [4]\n34. I make a mess of things.\nAnswer: [1]\n35. I get chores done right away.\nAnswer: [1]\n36. I often forget to put things back in their proper place.\nAnswer: [3]\n37. I like order.\nAnswer: [5]\n38. I shirk my duties.\nAnswer: [1]\n39. I follow a schedule.\nAnswer: [3]\n40. I am exacting in my work.\nAnswer: [5]\n\n### Openness\n41. I have a rich vocabulary.\nAnswer: [3]\n42. I have a vivid imagination.\nAnswer: [5]\n43. I am not interested in abstract ideas.\nAnswer: [5]\n44. I have excellent ideas.\nAnswer: [5]\n45. I do not have a good imagination.\nAnswer: [2]\n46. I am quick to understand things.\nAnswer: [3]\n47. I use difficult words.\nAnswer: [5]\n48. I spend time reflecting on things.\nAnswer: [5]\n49. I am full of ideas.\nAnswer: [5]\n\n## The Target Question (*Openness* Dimension)\nI have difficulty understanding abstract ideas.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 15819,
+              "dimension": "O",
+              "target_item": "O2",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[1]",
+          "parsed_prediction": 1,
+          "expected": 1
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [3]\n2. I don't talk a lot.\nAnswer: [2]\n3. I feel comfortable around people.\nAnswer: [4]\n4. I keep in the background.\nAnswer: [2]\n5. I start conversations.\nAnswer: [5]\n6. I have little to say.\nAnswer: [1]\n7. I talk to a lot of different people at parties.\nAnswer: [4]\n8. I don't like to draw attention to myself.\nAnswer: [2]\n9. I don't mind being the center of attention.\nAnswer: [5]\n10. I am quiet around strangers.\nAnswer: [3]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [3]\n12. I am relaxed most of the time.\nAnswer: [3]\n13. I worry about things.\nAnswer: [3]\n14. I seldom feel blue.\nAnswer: [2]\n15. I am easily disturbed.\nAnswer: [4]\n16. I get upset easily.\nAnswer: [3]\n17. I change my mood a lot.\nAnswer: [3]\n18. I have frequent mood swings.\nAnswer: [3]\n19. I get irritated easily.\nAnswer: [3]\n20. I often feel blue.\nAnswer: [2]\n\n### Agreeableness\n21. I feel little concern for others.\nAnswer: [1]\n22. I am interested in people.\nAnswer: [4]\n23. I insult people.\nAnswer: [3]\n24. I sympathize with others' feelings.\nAnswer: [4]\n25. I am not interested in other people's problems.\nAnswer: [2]\n26. I have a soft heart.\nAnswer: [5]\n27. I am not really interested in others.\nAnswer: [3]\n28. I take time out for others.\nAnswer: [4]\n29. I feel others' emotions.\nAnswer: [4]\n30. I make people feel at ease.\nAnswer: [3]\n\n### Conscientiousness\n31. I am always prepared.\nAnswer: [4]\n32. I leave my belongings around.\nAnswer: [2]\n33. I pay attention to details.\nAnswer: [3]\n34. I make a mess of things.\nAnswer: [2]\n35. I get chores done right away.\nAnswer: [2]\n36. I often forget to put things back in their proper place.\nAnswer: [2]\n37. I like order.\nAnswer: [5]\n38. I shirk my duties.\nAnswer: [2]\n39. I follow a schedule.\nAnswer: [3]\n40. I am exacting in my work.\nAnswer: [3]\n\n### Openness\n41. I have a rich vocabulary.\nAnswer: [3]\n42. I have difficulty understanding abstract ideas.\nAnswer: [2]\n43. I have a vivid imagination.\nAnswer: [3]\n44. I am not interested in abstract ideas.\nAnswer: [2]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [4]\n47. I use difficult words.\nAnswer: [2]\n48. I spend time reflecting on things.\nAnswer: [5]\n49. I am full of ideas.\nAnswer: [5]\n\n## The Target Question (*Openness* Dimension)\nI have excellent ideas.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 13147,
+              "dimension": "O",
+              "target_item": "O5",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[5]",
+          "parsed_prediction": 5,
+          "expected": 5
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [2]\n2. I don't talk a lot.\nAnswer: [2]\n3. I feel comfortable around people.\nAnswer: [3]\n4. I keep in the background.\nAnswer: [4]\n5. I start conversations.\nAnswer: [2]\n6. I have little to say.\nAnswer: [4]\n7. I talk to a lot of different people at parties.\nAnswer: [1]\n8. I don't like to draw attention to myself.\nAnswer: [4]\n9. I don't mind being the center of attention.\nAnswer: [2]\n10. I am quiet around strangers.\nAnswer: [5]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [3]\n12. I am relaxed most of the time.\nAnswer: [4]\n13. I worry about things.\nAnswer: [2]\n14. I seldom feel blue.\nAnswer: [4]\n15. I am easily disturbed.\nAnswer: [4]\n16. I get upset easily.\nAnswer: [3]\n17. I change my mood a lot.\nAnswer: [4]\n18. I have frequent mood swings.\nAnswer: [4]\n19. I get irritated easily.\nAnswer: [1]\n20. I often feel blue.\nAnswer: [1]\n\n### Agreeableness\n21. I feel little concern for others.\nAnswer: [2]\n22. I am interested in people.\nAnswer: [5]\n23. I insult people.\nAnswer: [1]\n24. I sympathize with others' feelings.\nAnswer: [2]\n25. I am not interested in other people's problems.\nAnswer: [4]\n26. I have a soft heart.\nAnswer: [2]\n27. I am not really interested in others.\nAnswer: [4]\n28. I take time out for others.\nAnswer: [3]\n29. I feel others' emotions.\nAnswer: [5]\n30. I make people feel at ease.\nAnswer: [4]\n\n### Conscientiousness\n31. I am always prepared.\nAnswer: [4]\n32. I leave my belongings around.\nAnswer: [4]\n33. I pay attention to details.\nAnswer: [2]\n34. I get chores done right away.\nAnswer: [3]\n35. I often forget to put things back in their proper place.\nAnswer: [2]\n36. I like order.\nAnswer: [4]\n37. I shirk my duties.\nAnswer: [1]\n38. I follow a schedule.\nAnswer: [3]\n39. I am exacting in my work.\nAnswer: [4]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [2]\n41. I have difficulty understanding abstract ideas.\nAnswer: [2]\n42. I have a vivid imagination.\nAnswer: [4]\n43. I am not interested in abstract ideas.\nAnswer: [2]\n44. I have excellent ideas.\nAnswer: [4]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [2]\n47. I use difficult words.\nAnswer: [2]\n48. I spend time reflecting on things.\nAnswer: [5]\n49. I am full of ideas.\nAnswer: [5]\n\n## The Target Question (*Conscientiousness* Dimension)\nI make a mess of things.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 11358,
+              "dimension": "C",
+              "target_item": "C4",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[2]",
+          "parsed_prediction": 2,
+          "expected": 2
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [1]\n2. I don't talk a lot.\nAnswer: [3]\n3. I feel comfortable around people.\nAnswer: [4]\n4. I keep in the background.\nAnswer: [5]\n5. I start conversations.\nAnswer: [2]\n6. I have little to say.\nAnswer: [1]\n7. I talk to a lot of different people at parties.\nAnswer: [1]\n8. I don't mind being the center of attention.\nAnswer: [2]\n9. I am quiet around strangers.\nAnswer: [4]\n\n### Neuroticism\n10. I get stressed out easily.\nAnswer: [4]\n11. I am relaxed most of the time.\nAnswer: [4]\n12. I worry about things.\nAnswer: [4]\n13. I seldom feel blue.\nAnswer: [2]\n14. I am easily disturbed.\nAnswer: [1]\n15. I get upset easily.\nAnswer: [2]\n16. I change my mood a lot.\nAnswer: [2]\n17. I have frequent mood swings.\nAnswer: [2]\n18. I get irritated easily.\nAnswer: [2]\n19. I often feel blue.\nAnswer: [4]\n\n### Agreeableness\n20. I feel little concern for others.\nAnswer: [2]\n21. I am interested in people.\nAnswer: [5]\n22. I insult people.\nAnswer: [2]\n23. I sympathize with others' feelings.\nAnswer: [4]\n24. I am not interested in other people's problems.\nAnswer: [1]\n25. I have a soft heart.\nAnswer: [4]\n26. I am not really interested in others.\nAnswer: [1]\n27. I take time out for others.\nAnswer: [5]\n28. I feel others' emotions.\nAnswer: [3]\n29. I make people feel at ease.\nAnswer: [3]\n\n### Conscientiousness\n30. I am always prepared.\nAnswer: [2]\n31. I leave my belongings around.\nAnswer: [2]\n32. I pay attention to details.\nAnswer: [5]\n33. I make a mess of things.\nAnswer: [3]\n34. I get chores done right away.\nAnswer: [2]\n35. I often forget to put things back in their proper place.\nAnswer: [1]\n36. I like order.\nAnswer: [3]\n37. I shirk my duties.\nAnswer: [2]\n38. I follow a schedule.\nAnswer: [2]\n39. I am exacting in my work.\nAnswer: [5]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [4]\n41. I have difficulty understanding abstract ideas.\nAnswer: [2]\n42. I have a vivid imagination.\nAnswer: [3]\n43. I am not interested in abstract ideas.\nAnswer: [2]\n44. I have excellent ideas.\nAnswer: [3]\n45. I do not have a good imagination.\nAnswer: [2]\n46. I am quick to understand things.\nAnswer: [3]\n47. I use difficult words.\nAnswer: [4]\n48. I spend time reflecting on things.\nAnswer: [5]\n49. I am full of ideas.\nAnswer: [2]\n\n## The Target Question (*Extraversion* Dimension)\nI don't like to draw attention to myself.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 4700,
+              "dimension": "E",
+              "target_item": "E8",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[4]",
+          "parsed_prediction": 4,
+          "expected": 5
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [4]\n2. I don't talk a lot.\nAnswer: [2]\n3. I feel comfortable around people.\nAnswer: [4]\n4. I keep in the background.\nAnswer: [1]\n5. I start conversations.\nAnswer: [5]\n6. I have little to say.\nAnswer: [1]\n7. I talk to a lot of different people at parties.\nAnswer: [4]\n8. I don't like to draw attention to myself.\nAnswer: [1]\n9. I don't mind being the center of attention.\nAnswer: [5]\n10. I am quiet around strangers.\nAnswer: [1]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [2]\n12. I am relaxed most of the time.\nAnswer: [4]\n13. I worry about things.\nAnswer: [2]\n14. I seldom feel blue.\nAnswer: [3]\n15. I am easily disturbed.\nAnswer: [2]\n16. I get upset easily.\nAnswer: [2]\n17. I change my mood a lot.\nAnswer: [1]\n18. I have frequent mood swings.\nAnswer: [1]\n19. I get irritated easily.\nAnswer: [1]\n20. I often feel blue.\nAnswer: [2]\n\n### Agreeableness\n21. I feel little concern for others.\nAnswer: [2]\n22. I insult people.\nAnswer: [1]\n23. I sympathize with others' feelings.\nAnswer: [4]\n24. I am not interested in other people's problems.\nAnswer: [2]\n25. I have a soft heart.\nAnswer: [4]\n26. I am not really interested in others.\nAnswer: [1]\n27. I take time out for others.\nAnswer: [3]\n28. I feel others' emotions.\nAnswer: [2]\n29. I make people feel at ease.\nAnswer: [4]\n\n### Conscientiousness\n30. I am always prepared.\nAnswer: [4]\n31. I leave my belongings around.\nAnswer: [1]\n32. I pay attention to details.\nAnswer: [4]\n33. I make a mess of things.\nAnswer: [1]\n34. I get chores done right away.\nAnswer: [3]\n35. I often forget to put things back in their proper place.\nAnswer: [1]\n36. I like order.\nAnswer: [5]\n37. I shirk my duties.\nAnswer: [1]\n38. I follow a schedule.\nAnswer: [4]\n39. I am exacting in my work.\nAnswer: [4]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [4]\n41. I have difficulty understanding abstract ideas.\nAnswer: [1]\n42. I have a vivid imagination.\nAnswer: [4]\n43. I am not interested in abstract ideas.\nAnswer: [1]\n44. I have excellent ideas.\nAnswer: [5]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [4]\n47. I use difficult words.\nAnswer: [1]\n48. I spend time reflecting on things.\nAnswer: [5]\n49. I am full of ideas.\nAnswer: [5]\n\n## The Target Question (*Agreeableness* Dimension)\nI am interested in people.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 2495,
+              "dimension": "A",
+              "target_item": "A2",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[4]",
+          "parsed_prediction": 4,
+          "expected": 4
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [2]\n2. I don't talk a lot.\nAnswer: [3]\n3. I feel comfortable around people.\nAnswer: [3]\n4. I keep in the background.\nAnswer: [3]\n5. I start conversations.\nAnswer: [3]\n6. I have little to say.\nAnswer: [3]\n7. I talk to a lot of different people at parties.\nAnswer: [4]\n8. I don't like to draw attention to myself.\nAnswer: [5]\n9. I don't mind being the center of attention.\nAnswer: [2]\n10. I am quiet around strangers.\nAnswer: [5]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [3]\n12. I am relaxed most of the time.\nAnswer: [4]\n13. I seldom feel blue.\nAnswer: [3]\n14. I am easily disturbed.\nAnswer: [2]\n15. I get upset easily.\nAnswer: [3]\n16. I change my mood a lot.\nAnswer: [4]\n17. I have frequent mood swings.\nAnswer: [3]\n18. I get irritated easily.\nAnswer: [3]\n19. I often feel blue.\nAnswer: [3]\n\n### Agreeableness\n20. I feel little concern for others.\nAnswer: [1]\n21. I am interested in people.\nAnswer: [4]\n22. I insult people.\nAnswer: [1]\n23. I sympathize with others' feelings.\nAnswer: [5]\n24. I am not interested in other people's problems.\nAnswer: [1]\n25. I have a soft heart.\nAnswer: [5]\n26. I am not really interested in others.\nAnswer: [2]\n27. I take time out for others.\nAnswer: [5]\n28. I feel others' emotions.\nAnswer: [5]\n29. I make people feel at ease.\nAnswer: [3]\n\n### Conscientiousness\n30. I am always prepared.\nAnswer: [4]\n31. I leave my belongings around.\nAnswer: [4]\n32. I pay attention to details.\nAnswer: [5]\n33. I make a mess of things.\nAnswer: [3]\n34. I get chores done right away.\nAnswer: [4]\n35. I often forget to put things back in their proper place.\nAnswer: [3]\n36. I like order.\nAnswer: [5]\n37. I shirk my duties.\nAnswer: [2]\n38. I follow a schedule.\nAnswer: [4]\n39. I am exacting in my work.\nAnswer: [5]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [5]\n41. I have difficulty understanding abstract ideas.\nAnswer: [1]\n42. I have a vivid imagination.\nAnswer: [2]\n43. I am not interested in abstract ideas.\nAnswer: [1]\n44. I have excellent ideas.\nAnswer: [4]\n45. I do not have a good imagination.\nAnswer: [4]\n46. I am quick to understand things.\nAnswer: [5]\n47. I use difficult words.\nAnswer: [5]\n48. I spend time reflecting on things.\nAnswer: [4]\n49. I am full of ideas.\nAnswer: [5]\n\n## The Target Question (*Neuroticism* Dimension)\nI worry about things.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 15339,
+              "dimension": "N",
+              "target_item": "N3",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[3]",
+          "parsed_prediction": 3,
+          "expected": 4
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [4]\n2. I don't talk a lot.\nAnswer: [3]\n3. I feel comfortable around people.\nAnswer: [3]\n4. I keep in the background.\nAnswer: [3]\n5. I start conversations.\nAnswer: [5]\n6. I have little to say.\nAnswer: [3]\n7. I talk to a lot of different people at parties.\nAnswer: [4]\n8. I don't like to draw attention to myself.\nAnswer: [3]\n9. I don't mind being the center of attention.\nAnswer: [5]\n10. I am quiet around strangers.\nAnswer: [5]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [5]\n12. I am relaxed most of the time.\nAnswer: [2]\n13. I worry about things.\nAnswer: [5]\n14. I seldom feel blue.\nAnswer: [1]\n15. I am easily disturbed.\nAnswer: [3]\n16. I get upset easily.\nAnswer: [4]\n17. I change my mood a lot.\nAnswer: [5]\n18. I have frequent mood swings.\nAnswer: [5]\n19. I often feel blue.\nAnswer: [5]\n\n### Agreeableness\n20. I feel little concern for others.\nAnswer: [5]\n21. I am interested in people.\nAnswer: [4]\n22. I insult people.\nAnswer: [2]\n23. I sympathize with others' feelings.\nAnswer: [5]\n24. I am not interested in other people's problems.\nAnswer: [1]\n25. I have a soft heart.\nAnswer: [5]\n26. I am not really interested in others.\nAnswer: [1]\n27. I take time out for others.\nAnswer: [5]\n28. I feel others' emotions.\nAnswer: [5]\n29. I make people feel at ease.\nAnswer: [3]\n\n### Conscientiousness\n30. I am always prepared.\nAnswer: [3]\n31. I leave my belongings around.\nAnswer: [1]\n32. I pay attention to details.\nAnswer: [5]\n33. I make a mess of things.\nAnswer: [3]\n34. I get chores done right away.\nAnswer: [5]\n35. I often forget to put things back in their proper place.\nAnswer: [1]\n36. I like order.\nAnswer: [3]\n37. I shirk my duties.\nAnswer: [1]\n38. I follow a schedule.\nAnswer: [5]\n39. I am exacting in my work.\nAnswer: [5]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [4]\n41. I have difficulty understanding abstract ideas.\nAnswer: [4]\n42. I have a vivid imagination.\nAnswer: [4]\n43. I am not interested in abstract ideas.\nAnswer: [1]\n44. I have excellent ideas.\nAnswer: [4]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [5]\n47. I use difficult words.\nAnswer: [4]\n48. I spend time reflecting on things.\nAnswer: [5]\n49. I am full of ideas.\nAnswer: [5]\n\n## The Target Question (*Neuroticism* Dimension)\nI get irritated easily.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 16036,
+              "dimension": "N",
+              "target_item": "N9",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[4]",
+          "parsed_prediction": 4,
+          "expected": 5
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [3]\n2. I don't talk a lot.\nAnswer: [1]\n3. I feel comfortable around people.\nAnswer: [5]\n4. I keep in the background.\nAnswer: [2]\n5. I start conversations.\nAnswer: [5]\n6. I have little to say.\nAnswer: [1]\n7. I talk to a lot of different people at parties.\nAnswer: [4]\n8. I don't like to draw attention to myself.\nAnswer: [3]\n9. I don't mind being the center of attention.\nAnswer: [4]\n10. I am quiet around strangers.\nAnswer: [3]\n\n### Neuroticism\n11. I get stressed out easily.\nAnswer: [3]\n12. I am relaxed most of the time.\nAnswer: [4]\n13. I worry about things.\nAnswer: [4]\n14. I seldom feel blue.\nAnswer: [3]\n15. I am easily disturbed.\nAnswer: [3]\n16. I get upset easily.\nAnswer: [3]\n17. I change my mood a lot.\nAnswer: [3]\n18. I have frequent mood swings.\nAnswer: [3]\n19. I get irritated easily.\nAnswer: [3]\n20. I often feel blue.\nAnswer: [3]\n\n### Agreeableness\n21. I feel little concern for others.\nAnswer: [1]\n22. I am interested in people.\nAnswer: [5]\n23. I insult people.\nAnswer: [2]\n24. I sympathize with others' feelings.\nAnswer: [5]\n25. I am not interested in other people's problems.\nAnswer: [1]\n26. I have a soft heart.\nAnswer: [5]\n27. I am not really interested in others.\nAnswer: [1]\n28. I take time out for others.\nAnswer: [5]\n29. I feel others' emotions.\nAnswer: [5]\n30. I make people feel at ease.\nAnswer: [3]\n\n### Conscientiousness\n31. I am always prepared.\nAnswer: [3]\n32. I leave my belongings around.\nAnswer: [4]\n33. I pay attention to details.\nAnswer: [4]\n34. I make a mess of things.\nAnswer: [1]\n35. I get chores done right away.\nAnswer: [2]\n36. I often forget to put things back in their proper place.\nAnswer: [4]\n37. I like order.\nAnswer: [3]\n38. I follow a schedule.\nAnswer: [3]\n39. I am exacting in my work.\nAnswer: [3]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [4]\n41. I have difficulty understanding abstract ideas.\nAnswer: [2]\n42. I have a vivid imagination.\nAnswer: [5]\n43. I am not interested in abstract ideas.\nAnswer: [1]\n44. I have excellent ideas.\nAnswer: [3]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [3]\n47. I use difficult words.\nAnswer: [4]\n48. I spend time reflecting on things.\nAnswer: [4]\n49. I am full of ideas.\nAnswer: [4]\n\n## The Target Question (*Conscientiousness* Dimension)\nI shirk my duties.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 3092,
+              "dimension": "C",
+              "target_item": "C8",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[1]",
+          "parsed_prediction": 1,
+          "expected": 4
+        },
+        {
+          "prompt": {
+            "system": "You are an expert in psychology. Given a subject's answers to 49 questions from the Big Five personality test, your task is to predict this subject's answer to the remaining question.",
+            "user": "## Subject's Answers (Five Personality Dimensions)\nThe following items were rated on a five point scale where 1=Disagree,\n2=Slightly Disagree, 3=Neutral, 4=Slightly Agree, 5=Agree.\n\n### Extraversion\n1. I am the life of the party.\nAnswer: [2]\n2. I don't talk a lot.\nAnswer: [3]\n3. I keep in the background.\nAnswer: [5]\n4. I start conversations.\nAnswer: [1]\n5. I have little to say.\nAnswer: [4]\n6. I talk to a lot of different people at parties.\nAnswer: [1]\n7. I don't like to draw attention to myself.\nAnswer: [3]\n8. I don't mind being the center of attention.\nAnswer: [1]\n9. I am quiet around strangers.\nAnswer: [5]\n\n### Neuroticism\n10. I get stressed out easily.\nAnswer: [4]\n11. I am relaxed most of the time.\nAnswer: [2]\n12. I worry about things.\nAnswer: [5]\n13. I seldom feel blue.\nAnswer: [2]\n14. I am easily disturbed.\nAnswer: [5]\n15. I get upset easily.\nAnswer: [5]\n16. I change my mood a lot.\nAnswer: [5]\n17. I have frequent mood swings.\nAnswer: [5]\n18. I get irritated easily.\nAnswer: [4]\n19. I often feel blue.\nAnswer: [4]\n\n### Agreeableness\n20. I feel little concern for others.\nAnswer: [2]\n21. I am interested in people.\nAnswer: [3]\n22. I insult people.\nAnswer: [4]\n23. I sympathize with others' feelings.\nAnswer: [4]\n24. I am not interested in other people's problems.\nAnswer: [3]\n25. I have a soft heart.\nAnswer: [4]\n26. I am not really interested in others.\nAnswer: [2]\n27. I take time out for others.\nAnswer: [4]\n28. I feel others' emotions.\nAnswer: [4]\n29. I make people feel at ease.\nAnswer: [3]\n\n### Conscientiousness\n30. I am always prepared.\nAnswer: [4]\n31. I leave my belongings around.\nAnswer: [3]\n32. I pay attention to details.\nAnswer: [5]\n33. I make a mess of things.\nAnswer: [2]\n34. I get chores done right away.\nAnswer: [4]\n35. I often forget to put things back in their proper place.\nAnswer: [2]\n36. I like order.\nAnswer: [5]\n37. I shirk my duties.\nAnswer: [2]\n38. I follow a schedule.\nAnswer: [4]\n39. I am exacting in my work.\nAnswer: [5]\n\n### Openness\n40. I have a rich vocabulary.\nAnswer: [4]\n41. I have difficulty understanding abstract ideas.\nAnswer: [1]\n42. I have a vivid imagination.\nAnswer: [5]\n43. I am not interested in abstract ideas.\nAnswer: [1]\n44. I have excellent ideas.\nAnswer: [3]\n45. I do not have a good imagination.\nAnswer: [1]\n46. I am quick to understand things.\nAnswer: [4]\n47. I use difficult words.\nAnswer: [4]\n48. I spend time reflecting on things.\nAnswer: [2]\n49. I am full of ideas.\nAnswer: [4]\n\n## The Target Question (*Extraversion* Dimension)\nI feel comfortable around people.\n\n## Output Format\nPlease predict the subject's answer to the target question and highlight\nyour prediction in [](such as [1],[2],[3],[4],or [5]).\nOnly output your answer in brackets.",
+            "metadata": {
+              "subject_idx": 9960,
+              "dimension": "E",
+              "target_item": "E3",
+              "context_item_count": 49
+            }
+          },
+          "raw_output": "[2]",
+          "parsed_prediction": 2,
+          "expected": 2
+        }
+      ],
+      "references": null
+    }
+  ],
+  "inference_settings": {
+    "model_name": "tencent/hy3:free",
+    "model_type": "openai",
+    "temperature": null,
+    "top_p": null,
+    "top_k": null,
+    "min_p": null,
+    "max_tokens": 16384,
+    "concurrency": 1,
+    "reasoning_effort": null
+  },
+  "token_usage": {
+    "session_start": null,
+    "total_api_calls": 25,
+    "total_prompt_tokens": 21478,
+    "total_completion_tokens": 100,
+    "total_reasoning_tokens": 0,
+    "total_cost_usd": 0.0,
+    "by_model": {
+      "tencent/hy3:free": {
+        "prompt_tokens": 21478,
+        "completion_tokens": 100,
+        "reasoning_tokens": 0,
+        "cost": 0.0,
+        "calls": 25
+      }
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "timestamp": "2026-07-18T12:29:44.630921",
+  "metrics": {
+    "multiround_behavior_trust_banker_inv50": {
+      "MAE_with_normalization_mae": 5.555555555555556,
+      "MAE_with_normalization_mae_raw": 8.333333333333334,
+      "Spearman_with_pvalue_correlation": 0.8660254037844387,
+      "Spearman_with_pvalue_pvalue": 0.33333333333333326,
+      "Spearman_with_pvalue_significant": 0,
+      "Wasserstein_with_ks_distance": 5.555555555555555,
+      "Wasserstein_with_ks_distance_raw": 8.333333333333332,
+      "Wasserstein_with_ks_ks_statistic": 0.3333333333333333,
+      "Wasserstein_with_ks_ks_pvalue": 1.0,
+      "Wasserstein_with_ks_ks_pass_test": 1
+    }
+  },
+  "num_tasks": 1,
+  "tasks": [
+    {
+      "task_name": "multiround_behavior_trust_banker_inv50",
+      "metrics": {
+        "MAE_with_normalization_mae": 5.555555555555556,
+        "MAE_with_normalization_mae_raw": 8.333333333333334,
+        "Spearman_with_pvalue_correlation": 0.8660254037844387,
+        "Spearman_with_pvalue_pvalue": 0.33333333333333326,
+        "Spearman_with_pvalue_significant": 0,
+        "Wasserstein_with_ks_distance": 5.555555555555555,
+        "Wasserstein_with_ks_distance_raw": 8.333333333333332,
+        "Wasserstein_with_ks_ks_statistic": 0.3333333333333333,
+        "Wasserstein_with_ks_ks_pvalue": 1.0,
+        "Wasserstein_with_ks_ks_pass_test": 1
+      },
+      "metadata": {
+        "num_samples": 3,
+        "num_valid_predictions": 3,
+        "num_failed_parses": 0,
+        "failed_parse_rate": 0.0
+      },
+      "predictions": [
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "This is a two-player game. You are a Banker and the other player is an Investor, and the goal for each player is to earn more. The Investor chooses how much of the money (up to $100) to invest with you. The amount the Investor invests will generate a 2x return with you (the current value of investment becomes 3x). To settle the investment, as the Banker, you get to decide how much of this total amount to return to the Investor and the rest will be kept as your profit. For example, you can choose to return $0 (therefore the investor will lose their investment), or you can return the entire 3x (initial investment + 2x profit) to the investor, or you can return any amount in between.\n\n## Play History\nIn this session, you have already played 1 round(s). Here is the play history:\n- Round 1: Your choice: [75], the other player's choice: [50].\n\n## Your Choice\nNow in this round, the investor has invested $50 with you and the current value became $150. How much of the $150 would you like to return to the Investor? Please give only one concrete choice and highlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "1014400",
+              "game": "trust",
+              "role": "second",
+              "history_rounds": 1,
+              "target_round": 2,
+              "has_others_info": true,
+              "investment": 50
+            }
+          },
+          "raw_output": "[$75]",
+          "parsed_prediction": 75.0,
+          "expected": 80.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "This is a two-player game. You are a Banker and the other player is an Investor, and the goal for each player is to earn more. The Investor chooses how much of the money (up to $100) to invest with you. The amount the Investor invests will generate a 2x return with you (the current value of investment becomes 3x). To settle the investment, as the Banker, you get to decide how much of this total amount to return to the Investor and the rest will be kept as your profit. For example, you can choose to return $0 (therefore the investor will lose their investment), or you can return the entire 3x (initial investment + 2x profit) to the investor, or you can return any amount in between.\n\n## Play History\nIn this session, you have already played 1 round(s). Here is the play history:\n- Round 1: Your choice: [21], the other player's choice: [20].\n\n## Your Choice\nNow in this round, the investor has invested $50 with you and the current value became $150. How much of the $150 would you like to return to the Investor? Please give only one concrete choice and highlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "273647",
+              "game": "trust",
+              "role": "second",
+              "history_rounds": 1,
+              "target_round": 2,
+              "has_others_info": true,
+              "investment": 50
+            }
+          },
+          "raw_output": "[$75]",
+          "parsed_prediction": 75.0,
+          "expected": 55.0
+        },
+        {
+          "prompt": {
+            "system": "You are a player who is playing an economics game.",
+            "user": "This is a two-player game. You are a Banker and the other player is an Investor, and the goal for each player is to earn more. The Investor chooses how much of the money (up to $100) to invest with you. The amount the Investor invests will generate a 2x return with you (the current value of investment becomes 3x). To settle the investment, as the Banker, you get to decide how much of this total amount to return to the Investor and the rest will be kept as your profit. For example, you can choose to return $0 (therefore the investor will lose their investment), or you can return the entire 3x (initial investment + 2x profit) to the investor, or you can return any amount in between.\n\n## Play History\nIn this session, you have already played 2 round(s). Here is the play history:\n- Round 1: Your choice: [100], the other player's choice: [50].\n- Round 2: Your choice: [100], the other player's choice: [50].\n\n## Your Choice\nNow in this round, the investor has invested $50 with you and the current value became $150. How much of the $150 would you like to return to the Investor? Please give only one concrete choice and highlight the number with [] (such as [$x]).",
+            "metadata": {
+              "user_id": "319042",
+              "game": "trust",
+              "role": "second",
+              "history_rounds": 2,
+              "target_round": 3,
+              "has_others_info": true,
+              "investment": 50
+            }
+          },
+          "raw_output": "[100]",
+          "parsed_prediction": 100.0,
+          "expected": 100.0
+        }
+      ],
+      "references": null
+    }
+  ],
+  "inference_settings": {
+    "model_name": "tencent/hy3:free",
+    "model_type": "openai",
+    "temperature": null,
+    "top_p": null,
+    "top_k": null,
+    "min_p": null,
+    "max_tokens": 16384,
+    "concurrency": 1,
+    "reasoning_effort": null
+  },
+  "token_usage": {
+    "session_start": null,
+    "total_api_calls": 3,
+    "total_prompt_tokens": 899,
+    "total_completion_tokens": 12,
+    "total_reasoning_tokens": 0,
+    "total_cost_usd": 0.0,
+    "by_model": {
+      "tencent/hy3:free": {
+        "prompt_tokens": 899,
+        "completion_tokens": 12,
+        "reasoning_tokens": 0,
+        "cost": 0.0,
+        "calls": 3
+      }
+    }
+  }
+}
