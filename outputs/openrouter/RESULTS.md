@@ -2,6 +2,29 @@
 
 All 39 tasks per model, grouped by family. Values are copied from each result JSON's `metrics` and `metadata`; blank cells mean the metric does not apply to that task.
 
+## Summary — family means, side by side
+
+Raw per-family metric means computed from the section tables below (not the
+leaderboard's mean-win-rate aggregation; see note). Arrows give the better
+direction.
+
+| family (metric) | hy3 | glm-5.2 no-reasoning | glm-5.2 default |
+|---|---|---|---|
+| game Wasserstein ↓ | 29.49 | **19.92** | 20.42 |
+| acrossgame MAE ↓ | 30.28 | 27.78 | **25.74** |
+| multiround MAE ↓ | **18.46** | 20.00 | 18.85 |
+| big_five MAE ↓ | 4.79 | **4.45** | 4.59 |
+| strategic win rate ↑ | 0.098 | 0.143 | **0.156** |
+| economics accuracy ↑ | 0.831 | 0.774 | **0.911** |
+| workflow BLEURT ↑ | 0.443 | 0.458 | 0.458 |
+
+Note on leaderboard comparability: the public leaderboard summarizes with
+HELM-style mean win rate / ELO over per-scenario columns (Individual /
+Distributional), not family-mean raw metrics, and its MobLab and BigFive
+numbers are computed on its own `n_v1` subsample of the test data (IEO and
+workflow are full-set). The runs here use the full test files everywhere, so
+small differences against leaderboard entries should be read as ties.
+
 ## `tencent/hy3`
 
 Provider-default settings. Full detail, including every per-sample prompt and model response, is in [`tencent/hy3/`](tencent/hy3).
