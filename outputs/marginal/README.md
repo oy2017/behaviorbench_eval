@@ -8,8 +8,8 @@
 Models on BehaviorBench do two things at once: they match what people **in general** do (the
 distributional level, scored by Wasserstein distance), and they predict what **one specific
 person** will do (the individual level, scored by MAE and accuracy). Today the
-individual-level scores are only compared model against model. This note adds a fixed
-reference point:
+individual-level scores are only compared model against model. This note adds a null
+baseline — the score of knowing the population but not the person:
 
 - **Marginal sampler** — a pseudo-model that answers each question with a random draw from
   real people's answers to that task (per survey item, per Big Five dimension, per game — the
