@@ -28,15 +28,19 @@ Raw per-family metric means computed from the section tables below (not the
 leaderboard's mean-win-rate aggregation; see note). Arrows give the better
 direction.
 
-| family (metric) | hy3 | glm-5.2 no-reasoning | glm-5.2 default |
+| family (metric) | glm-5.2 (default) | hy3 | glm-5.2 no-reasoning |
 |---|---|---|---|
-| game Wasserstein ↓ | 29.49 | **19.92** | 20.42 |
-| acrossgame MAE ↓ | 30.28 | 27.78 | **25.74** |
-| multiround MAE ↓ | **18.46** | 20.00 | 18.85 |
-| big_five MAE ↓ | 4.79 | **4.45** | 4.59 |
-| strategic win rate ↑ | 0.098 | 0.143 | **0.156** |
-| economics accuracy ↑ | 0.831 | 0.774 | **0.911** |
-| workflow BLEURT ↑ | 0.443 | 0.458 | 0.458 |
+| game Wasserstein ↓ | 20.42 | 29.49 | **19.92** |
+| acrossgame MAE ↓ | **25.74** | 30.28 | 27.78 |
+| multiround MAE ↓ | 18.85 | **18.46** | 20.00 |
+| big_five MAE ↓ | 4.59 | 4.79 | **4.45** |
+| strategic win rate ↑ | **0.156** | 0.098 | 0.143 |
+| economics accuracy ↑ | **0.911** | 0.831 | 0.774 |
+| workflow BLEURT ↑ | 0.458 | 0.443 | 0.458 |
+
+A `moonshotai/kimi-k3` run is pending and will slot in between hy3 and the
+no-reasoning column. The no-reasoning variant is a non-default side run, kept
+for the reasoning-effect comparison.
 
 Note on leaderboard comparability: the public leaderboard summarizes with
 HELM-style mean win rate / ELO over per-scenario columns (Individual /
@@ -46,6 +50,97 @@ workflow are full-set). The runs here use the full test files everywhere, so
 the two sets of numbers are computed on slightly different data (see the
 open question above).
 
+## `z-ai/glm-5.2` — default settings (reasoning on)
+
+Provider-default inference settings, matching the paper convention; GLM-5.2 reasons by default. Full detail in [`z-ai/glm-5.2/`](z-ai/glm-5.2).
+
+### game_behavior
+
+*Model plays the game; scored against the human distribution.*
+
+| task | Wasserstein | KS stat | KS pass | n | parse fails | model mean | model SD | human mean | human SD |
+|---|---|---|---|---|---|---|---|---|---|
+| `bomb` | 17.72 | 0.525 | 0 | 1000 | 0 | 50 | 0 | 45.56 | 23.09 |
+| `dictator` | 18.97 | 0.592 | 0 | 1000 | 0 | 43.68 | 16.87 | 24.71 | 19.19 |
+| `guessing` | 17.03 | 0.605 | 0 | 1000 | 0 | 19.13 | 6.701 | 35.47 | 21.51 |
+| `public_goods` | 20.25 | 0.434 | 0 | 1000 | 0 | 9.564 | 2.615 | 8.91 | 6.069 |
+| `push_pull` | 47.7 | 0 | 1 | 1000 | 0 | 0.093 | 0.2904 | 0.57 | 0.4951 |
+| `trust_banker` | 19.35 | 0.52 | 0 | 1000 | 0 | 82.18 | 24.51 | 55.9 | 37.4 |
+| `trust_investor` | 20.26 | 0.292 | 0 | 1000 | 0 | 41.74 | 27.65 | 42.19 | 39.89 |
+| `ultimatum_proposer` | 7.633 | 0.182 | 0 | 1000 | 0 | 45.33 | 5.796 | 44.92 | 18.33 |
+| `ultimatum_responder` | 14.83 | 0.501 | 0 | 1000 | 0 | 18.55 | 10.48 | 33.29 | 17.8 |
+
+### acrossgame_behavior
+
+*Predict a player's action in one game from their behaviour in others.*
+
+| task | MAE | MAE (raw) | Wasserstein | KS stat | KS pass | Spearman | Accuracy | F1 macro | n | parse fails |
+|---|---|---|---|---|---|---|---|---|---|---|
+| `bomb` | 18.08 | 18.08 | 16.62 | 0.436 | 0 | 0.02153 |  |  | 750 | 0 |
+| `dictator` | 21.64 | 21.64 | 8.712 | 0.26 | 0 | -0.02062 |  |  | 750 | 0 |
+| `guessing` | 19.92 | 19.92 | 18.39 | 0.5093 | 0 | 0.02407 |  |  | 750 | 0 |
+| `public_goods` | 25.93 | 5.185 | 15.61 | 0.2187 | 0 | 0.08791 |  |  | 750 | 0 |
+| `push_pull` | 54.4 | 0.544 | 50.13 | 0 | 1 |  | 0.456 | 0.3649 | 750 | 0 |
+| `trust_banker` | 25.65 | 38.47 | 17 | 0.5267 | 0 | 0.01629 |  |  | 262 | 0 |
+| `trust_investor` | 35.96 | 35.96 | 21.98 | 0.3333 | 0 | 0.03708 |  |  | 750 | 0 |
+| `ultimatum_proposer` | 13.29 | 13.29 | 6.565 | 0.1295 | 0 | 0.234 |  |  | 750 | 1 |
+| `ultimatum_responder` | 16.79 | 16.79 | 13.23 | 0.4853 | 0 | 0.2947 |  |  | 750 | 0 |
+
+### multiround_behavior
+
+*Predict a specific player's next action across rounds.*
+
+| task | MAE | MAE (raw) | Wasserstein | KS stat | KS pass | Spearman | Accuracy | F1 macro | n | parse fails |
+|---|---|---|---|---|---|---|---|---|---|---|
+| `bomb` | 16.5 | 16.5 | 16.23 | 0.4449 | 0 | 0.2381 |  |  | 500 | 1 |
+| `dictator` | 10.27 | 10.27 | 3.592 | 0.086 | 0 | 0.6581 |  |  | 500 | 0 |
+| `guessing` | 11.12 | 11.12 | 8.866 | 0.238 | 0 | 0.623 |  |  | 500 | 0 |
+| `public_goods` | 24.31 | 4.862 | 16.77 | 0.228 | 0 | 0.4207 |  |  | 500 | 0 |
+| `push_pull` | 30.4 | 0.304 | 4.4 | 0 | 1 |  | 0.696 | 0.6793 | 500 | 0 |
+| `trust_banker_inv100` | 11.97 | 35.9 | 7.893 | 0.1847 | 0 | 0.5237 |  |  | 498 | 0 |
+| `trust_banker_inv50` | 22.37 | 33.55 | 19.95 | 0.472 | 0 | 0.277 |  |  | 125 | 0 |
+| `trust_investor` | 23.85 | 23.85 | 3.198 | 0.032 | 1 | 0.5402 |  |  | 500 | 0 |
+
+### big_five
+
+*Personality / survey-response prediction.*
+
+| task | MAE | Wasserstein | KS stat | KS pass | Spearman | Accuracy | F1 macro | n | parse fails |
+|---|---|---|---|---|---|---|---|---|---|
+| `acrossdim_pers_score` | 7.397 | 4.512 | 0.2873 | 0 | 0.2873 |  |  | 1000 | 31 |
+| `demo_pred_age` | 10.52 | 4.266 | 0.2402 | 0 | 0.1812 |  |  | 1000 | 1 |
+| `missing_surv_resp` | 0.7735 | 0.3841 | 0 | 1 | 0.502 | 0.4594 | 0.3667 | 1000 | 3 |
+| `pers_score_pred` | 6.957 | 5.472 | 0.3545 | 0 | 0.1216 |  |  | 1000 | 0 |
+| `seq_surv_resp` | 0.8475 | 0.4539 | 0 | 1 | 0.4088 | 0.4116 | 0.3344 | 1000 | 0 |
+| `surv_resp_pred` | 1.016 | 0.7652 | 0 | 1 | 0.02905 | 0.2703 | 0.1236 | 1000 | 2 |
+
+### strategic_gameplay
+
+*Head-to-head strategic play.*
+
+| task | MAE | MAE (raw) | Wasserstein | KS stat | KS pass | Spearman | Win rate | n | parse fails |
+|---|---|---|---|---|---|---|---|---|---|
+| `guessing` | 5.057 | 5.057 | 1.801 | 0.04614 | 1 | 0.5214 | 0.1565 | 1000 | 3 |
+
+### economics
+
+*Economics-olympiad multiple choice.*
+
+| task | Accuracy | F1 macro | n | parse fails |
+|---|---|---|---|---|
+| `economics` | 0.9113 | 0.7376 | 124 | 1 |
+
+### workflow
+
+*Free-text research-workflow generation (BLEURT / ROUGE).*
+
+| task | BLEURT | ROUGE-1 | n | parse fails |
+|---|---|---|---|---|
+| `idea_generation` | 0.4053 | 0.2813 | 244 | 0 |
+| `impact_prediction` | 0.4709 | 0.2469 | 116 | 0 |
+| `method_recommendation` | 0.3926 | 0.3079 | 240 | 0 |
+| `outcome_prediction` | 0.5271 | 0.396 | 240 | 0 |
+| `title_prediction` | 0.4948 | 0.5138 | 244 | 0 |
 ## `tencent/hy3`
 
 Provider-default settings. Full detail, including every per-sample prompt and model response, is in [`tencent/hy3/`](tencent/hy3).
@@ -230,94 +325,3 @@ Run with `--reasoning-effort none` (GLM-5.2 reasons by default; disabled here fo
 | `outcome_prediction` | 0.5178 | 0.3901 | 240 | 0 |
 | `title_prediction` | 0.479 | 0.5053 | 244 | 0 |
 
-## `z-ai/glm-5.2` — default settings (reasoning on)
-
-Provider-default inference settings, matching the paper convention; GLM-5.2 reasons by default. Full detail in [`z-ai/glm-5.2/`](z-ai/glm-5.2).
-
-### game_behavior
-
-*Model plays the game; scored against the human distribution.*
-
-| task | Wasserstein | KS stat | KS pass | n | parse fails | model mean | model SD | human mean | human SD |
-|---|---|---|---|---|---|---|---|---|---|
-| `bomb` | 17.72 | 0.525 | 0 | 1000 | 0 | 50 | 0 | 45.56 | 23.09 |
-| `dictator` | 18.97 | 0.592 | 0 | 1000 | 0 | 43.68 | 16.87 | 24.71 | 19.19 |
-| `guessing` | 17.03 | 0.605 | 0 | 1000 | 0 | 19.13 | 6.701 | 35.47 | 21.51 |
-| `public_goods` | 20.25 | 0.434 | 0 | 1000 | 0 | 9.564 | 2.615 | 8.91 | 6.069 |
-| `push_pull` | 47.7 | 0 | 1 | 1000 | 0 | 0.093 | 0.2904 | 0.57 | 0.4951 |
-| `trust_banker` | 19.35 | 0.52 | 0 | 1000 | 0 | 82.18 | 24.51 | 55.9 | 37.4 |
-| `trust_investor` | 20.26 | 0.292 | 0 | 1000 | 0 | 41.74 | 27.65 | 42.19 | 39.89 |
-| `ultimatum_proposer` | 7.633 | 0.182 | 0 | 1000 | 0 | 45.33 | 5.796 | 44.92 | 18.33 |
-| `ultimatum_responder` | 14.83 | 0.501 | 0 | 1000 | 0 | 18.55 | 10.48 | 33.29 | 17.8 |
-
-### acrossgame_behavior
-
-*Predict a player's action in one game from their behaviour in others.*
-
-| task | MAE | MAE (raw) | Wasserstein | KS stat | KS pass | Spearman | Accuracy | F1 macro | n | parse fails |
-|---|---|---|---|---|---|---|---|---|---|---|
-| `bomb` | 18.08 | 18.08 | 16.62 | 0.436 | 0 | 0.02153 |  |  | 750 | 0 |
-| `dictator` | 21.64 | 21.64 | 8.712 | 0.26 | 0 | -0.02062 |  |  | 750 | 0 |
-| `guessing` | 19.92 | 19.92 | 18.39 | 0.5093 | 0 | 0.02407 |  |  | 750 | 0 |
-| `public_goods` | 25.93 | 5.185 | 15.61 | 0.2187 | 0 | 0.08791 |  |  | 750 | 0 |
-| `push_pull` | 54.4 | 0.544 | 50.13 | 0 | 1 |  | 0.456 | 0.3649 | 750 | 0 |
-| `trust_banker` | 25.65 | 38.47 | 17 | 0.5267 | 0 | 0.01629 |  |  | 262 | 0 |
-| `trust_investor` | 35.96 | 35.96 | 21.98 | 0.3333 | 0 | 0.03708 |  |  | 750 | 0 |
-| `ultimatum_proposer` | 13.29 | 13.29 | 6.565 | 0.1295 | 0 | 0.234 |  |  | 750 | 1 |
-| `ultimatum_responder` | 16.79 | 16.79 | 13.23 | 0.4853 | 0 | 0.2947 |  |  | 750 | 0 |
-
-### multiround_behavior
-
-*Predict a specific player's next action across rounds.*
-
-| task | MAE | MAE (raw) | Wasserstein | KS stat | KS pass | Spearman | Accuracy | F1 macro | n | parse fails |
-|---|---|---|---|---|---|---|---|---|---|---|
-| `bomb` | 16.5 | 16.5 | 16.23 | 0.4449 | 0 | 0.2381 |  |  | 500 | 1 |
-| `dictator` | 10.27 | 10.27 | 3.592 | 0.086 | 0 | 0.6581 |  |  | 500 | 0 |
-| `guessing` | 11.12 | 11.12 | 8.866 | 0.238 | 0 | 0.623 |  |  | 500 | 0 |
-| `public_goods` | 24.31 | 4.862 | 16.77 | 0.228 | 0 | 0.4207 |  |  | 500 | 0 |
-| `push_pull` | 30.4 | 0.304 | 4.4 | 0 | 1 |  | 0.696 | 0.6793 | 500 | 0 |
-| `trust_banker_inv100` | 11.97 | 35.9 | 7.893 | 0.1847 | 0 | 0.5237 |  |  | 498 | 0 |
-| `trust_banker_inv50` | 22.37 | 33.55 | 19.95 | 0.472 | 0 | 0.277 |  |  | 125 | 0 |
-| `trust_investor` | 23.85 | 23.85 | 3.198 | 0.032 | 1 | 0.5402 |  |  | 500 | 0 |
-
-### big_five
-
-*Personality / survey-response prediction.*
-
-| task | MAE | Wasserstein | KS stat | KS pass | Spearman | Accuracy | F1 macro | n | parse fails |
-|---|---|---|---|---|---|---|---|---|---|
-| `acrossdim_pers_score` | 7.397 | 4.512 | 0.2873 | 0 | 0.2873 |  |  | 1000 | 31 |
-| `demo_pred_age` | 10.52 | 4.266 | 0.2402 | 0 | 0.1812 |  |  | 1000 | 1 |
-| `missing_surv_resp` | 0.7735 | 0.3841 | 0 | 1 | 0.502 | 0.4594 | 0.3667 | 1000 | 3 |
-| `pers_score_pred` | 6.957 | 5.472 | 0.3545 | 0 | 0.1216 |  |  | 1000 | 0 |
-| `seq_surv_resp` | 0.8475 | 0.4539 | 0 | 1 | 0.4088 | 0.4116 | 0.3344 | 1000 | 0 |
-| `surv_resp_pred` | 1.016 | 0.7652 | 0 | 1 | 0.02905 | 0.2703 | 0.1236 | 1000 | 2 |
-
-### strategic_gameplay
-
-*Head-to-head strategic play.*
-
-| task | MAE | MAE (raw) | Wasserstein | KS stat | KS pass | Spearman | Win rate | n | parse fails |
-|---|---|---|---|---|---|---|---|---|---|
-| `guessing` | 5.057 | 5.057 | 1.801 | 0.04614 | 1 | 0.5214 | 0.1565 | 1000 | 3 |
-
-### economics
-
-*Economics-olympiad multiple choice.*
-
-| task | Accuracy | F1 macro | n | parse fails |
-|---|---|---|---|---|
-| `economics` | 0.9113 | 0.7376 | 124 | 1 |
-
-### workflow
-
-*Free-text research-workflow generation (BLEURT / ROUGE).*
-
-| task | BLEURT | ROUGE-1 | n | parse fails |
-|---|---|---|---|---|
-| `idea_generation` | 0.4053 | 0.2813 | 244 | 0 |
-| `impact_prediction` | 0.4709 | 0.2469 | 116 | 0 |
-| `method_recommendation` | 0.3926 | 0.3079 | 240 | 0 |
-| `outcome_prediction` | 0.5271 | 0.396 | 240 | 0 |
-| `title_prediction` | 0.4948 | 0.5138 | 244 | 0 |
