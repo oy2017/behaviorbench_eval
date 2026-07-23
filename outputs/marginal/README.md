@@ -1,4 +1,4 @@
-# Reference baselines: how well can these tasks be scored without knowing the person?
+# A sampler baseline: how well can these tasks be scored without knowing the person?
 
 *One page — 2026-07-22. Full per-task results (every prompt, answer, and metric) are in
 [`marginal-sampler-test/`](marginal-sampler-test/).*
@@ -8,32 +8,25 @@
 Models on BehaviorBench do two things at once: they match what people **in general** do (the
 distributional level, scored by Wasserstein distance), and they predict what **one specific
 person** will do (the individual level, scored by MAE and accuracy). Today the
-individual-level scores are only compared model against model. This note adds two reference
-numbers per task, both computed with **no information about the person**, from the human
-answer pools (per survey item, per Big Five dimension, per game — the same grouping the
-metrics already use):
+individual-level scores are only compared model against model. This note adds a fixed
+reference point:
 
-- **Constant** — always give the pool's most common answer (the median for number answers).
-  This is provably the best score any person-blind strategy can reach. **A model above it must
-  be using something about the person.** A model below it hasn't shown that — the score is
-  reachable without knowing anyone.
-- **Sampler** — answer each question with a random draw from real people's answers, run
-  through the released pipeline unchanged (`--model-type marginal`, seed 42, full test files).
-  This is what pure population-matching scores. A model near it is behaving like random draws
-  from the crowd; a model below it is not even reproducing what the crowd answers.
+- **Marginal sampler** — a pseudo-model that answers each question with a random draw from
+  real people's answers to that task (per survey item, per Big Five dimension, per game — the
+  same grouping the metrics already use). It runs through the released pipeline unchanged
+  (`--model-type marginal`, seed 42, full test files). It knows the population perfectly and
+  knows nothing about the person.
 
-**Is the constant a fair ceiling?** Two checks. First, it only bounds *demonstrated* signal
-under these metrics: a model that samples its answers (arguably the right behavior for
-simulation) can hold person-level knowledge in its distribution yet score below the constant —
-likelihood-based or argmax scoring would separate that. Second, the ceiling depends on the
-grouping: a person-blind strategy could also use non-person context such as the round number.
-Checked for multi-round: refining the constant to per-(game, round) medians moves the bar only
-from 21.1 to 20.3, so Be.FM-1.5's 16.2 clears even the finer ceiling — its edge really comes
-from the person's history. For the five columns no model beats, finer grouping can only raise
-the ceiling, so those findings are conservative.
+How to read it: a model scoring **near the sampler** is doing what the sampler does —
+population knowledge, no person knowledge. A model scoring **below** it is not even
+reproducing what people answer. A model scoring **well above** it is using more than random
+population draws — with one caution: on MAE and accuracy, part of a margin over the sampler
+can come simply from answering near the population average. The strongest evidence of real
+individual-level prediction is therefore a **large margin over the sampler combined with a
+Wasserstein distance near the sampler's** (see the last section).
 
-**Caveats.** (1) Ideally the answer pools should come from the *training* population. I did not
-have the training data, so the pools come from the released test files, assuming the training
+**Caveats.** (1) Ideally the answer pool should come from the *training* population. I did not
+have the training data, so the pool comes from the released test files, assuming the training
 and test populations are close (they come from the same sources, split at random). Happy to
 redo this with training-side pools. (2) My runs use the full test files; the leaderboard uses
 its n_v1 sampling. Small differences should be read as ties. (3) Push/Pull columns are left
@@ -43,51 +36,48 @@ out, following the paper's held-out treatment.
 
 Leaderboard values from the public site (2026-05-07). Be.FM-1.5-70B = 5-run mean.
 
-| task (metric)                  | constant | sampler | Be.FM-1.5-70B | best on leaderboard | vs the constant |
-|--------------------------------|:-----:|:-----:|:-------------:|:-------------------:|---|
-| Multi-Round Pred. (MAE ↓)      | 21.1 | 28.8 | **16.2** | GPT 4.1 — **16.1** | **clearly better** |
-| Masked Resp. (acc ↑)           | 0.386 | 0.302 | **0.449** | Gemini 3.1 Pro — **0.485** | **clearly better** |
-| Strategic play (win rate ↑)    | — | 0.079 (a random human's guess) | **0.501** | Be.FM-1.5-70B | **6× the human rate** |
-| Seq. Resp. (acc ↑)             | 0.397 | 0.314 | 0.404 | Gemini 3.1 Pro — **0.425** | at the constant; top models better |
-| Across-Ctx Pred. (MAE ↓)       | 20.0 | 28.0 | 25.0 | Claude Sonnet 4.6 — 21.6 | no model better |
-| Demo. To Resp. (acc ↑)         | 0.394 | 0.279 | 0.286 | Gemini 3.1 Pro — 0.305 | no model better |
-| Demo. To Pers. (MAE ↓)         | 6.33 | 9.18 | 7.17 | Gemini 3.1 Pro — 6.40 | no model better (best ties it) |
-| Across-Dim Pers. (MAE ↓)       | 6.21 | 8.92 | 6.77 | Claude Opus 4.6 — 6.73 | no model better |
-| Pers. To Demo. age (MAE ↓)     | 8.48 | 12.34 | 9.38 | Llama3.3-70B — 9.29 | no model better |
+| task (metric)                  | sampler | Be.FM-1.5-70B | best on leaderboard | margin over sampler |
+|--------------------------------|:-----:|:-------------:|:-------------------:|---|
+| Multi-Round Pred. (MAE ↓)      | 28.8 | **16.2** | GPT 4.1 — **16.1** | large |
+| Masked Resp. (acc ↑)           | 0.302 | **0.449** | Gemini 3.1 Pro — **0.485** | large |
+| Strategic play (win rate ↑)    | 0.079 (a random human's guess) | **0.501** | Be.FM-1.5-70B | large (6× the human rate) |
+| Seq. Resp. (acc ↑)             | 0.314 | 0.404 | Gemini 3.1 Pro — 0.425 | moderate |
+| Demo. To Pers. (MAE ↓)         | 9.18 | 7.17 | Gemini 3.1 Pro — 6.40 | moderate |
+| Across-Dim Pers. (MAE ↓)       | 8.92 | 6.77 | Claude Opus 4.6 — 6.73 | moderate |
+| Pers. To Demo. age (MAE ↓)     | 12.34 | 9.38 | Llama3.3-70B — 9.29 | moderate |
+| Across-Ctx Pred. (MAE ↓)       | 28.0 | 25.0 | Claude Sonnet 4.6 — 21.6 | small |
+| Demo. To Resp. (acc ↑)         | 0.279 | 0.286 | Gemini 3.1 Pro — 0.305 | **none — models ≈ sampler** |
 
-The split is clean, and it follows **what the prompt gives the model**:
+Two patterns stand out:
 
-- **When the prompt shows the person's own earlier behavior** (past game rounds, their other
-  questionnaire answers), models clearly beat the constant. This is real individual-level
-  prediction, and it is the benchmark's strongest demonstrated result.
-- **When the prompt gives only indirect information** (demographics, scores from other
-  dimensions, play in *other* games), no model on the leaderboard beats the constant — a
-  simple person-blind lookup table — on any of the five columns.
+- **The large margins all occur where the prompt shows the person's own earlier behavior** —
+  past rounds of the same game, the person's other questionnaire answers. This is the
+  benchmark's strongest demonstrated result: real individual-level prediction.
+- **Where the prompt gives only indirect information** (demographics, scores from other
+  dimensions, play in *other* games), margins shrink — and on Demo. To Resp. they vanish:
+  all 24 models score 0.24–0.31, clustered around the sampler's 0.279 (random 1–5 guessing
+  would score 0.20). Every model on that column behaves, in effect, like the sampler:
+  knowing the population, not the person. This may say more about the data than the models —
+  demographics are known to be weak predictors of single answers.
 
-**Demo. To Resp. in one line.** Guessing 1–5 at random scores 0.20. A random draw from real
-answers scores 0.279. Always giving the most common answer scores 0.394. All 24 models land
-between 0.24 and 0.31 — between the two random strategies, below the lookup table. This may
-say more about the data than the models: demographics are known to be weak predictors of
-single answers. Either way, this column today mostly rewards knowing the population, not
-knowing the person.
+The "moderate" MAE margins in the middle of the table should be read with the caution above:
+they are consistent with answering near the population average and do not by themselves
+demonstrate person-level knowledge.
 
-## One useful thing the distributional (Wasserstein) scores add
+## Reading margins together with Wasserstein distance
 
-By itself the sampler's Wasserstein distance proves nothing — it draws from the real answers,
-so its distance is only sampling noise (0.2–1.3 across tasks; call this the noise floor). But
-read next to the individual scores, Wasserstein distance shows **how** a model is being
-person-blind:
+The sampler's own Wasserstein distance is only sampling noise (0.2–1.3 across tasks — the
+noise floor). Next to the individual scores, it separates three behaviors:
 
-- **Wasserstein near the floor + accuracy near the sampler** → the model behaves like the
-  sampler: it has learned what people answer, and draws from it. Be.FM-1.5 on Demo. To Resp.
-  is the clearest case (acc 0.286 vs sampler's 0.279, and the lowest Wasserstein distance of
-  any model on that task).
-- **Good MAE + high Wasserstein distance** → the model is hedging toward the average (most
-  general-purpose models on the MAE columns).
-- **Better than the constant + Wasserstein near the floor** → the model knows individuals
-  *and* keeps a realistic answer distribution. Be.FM-1.5 on multi-round (MAE 16.2, Wasserstein
-  ~2.7× the floor) is the only case of this on the leaderboard — arguably a stronger statement
-  of its contribution than either score alone.
+- **Wasserstein near the floor + accuracy near the sampler** → the model has learned what
+  people answer and draws from it. Be.FM-1.5 on Demo. To Resp. is the clearest case
+  (acc 0.286 vs the sampler's 0.279, and the lowest Wasserstein of any model on that task).
+- **Better MAE + high Wasserstein** → the model hedges toward the average — population
+  knowledge again, differently packaged (most general-purpose models on the MAE columns).
+- **Large margin + Wasserstein near the floor** → real individual signal *and* a realistic
+  answer distribution at once. Be.FM-1.5 on multi-round (MAE 16.2 vs sampler 28.8,
+  Wasserstein ~2.7× the floor) is the only case of this on the leaderboard — arguably a
+  stronger statement of its contribution than either score alone.
 
 ## Reproduce
 
@@ -97,6 +87,5 @@ uv run behaviorbench-eval --task <tasks...> --model-type marginal \
 ```
 
 Same seed → same results. The sampler replays real answer strings word-for-word, so no answers
-fail to parse (0 failures across all 33 tasks). The constant reference is a two-line
-calculation per task on the same pools. Comparison script and parsed leaderboard data
+fail to parse (0 failures across all 33 tasks). Comparison script and parsed leaderboard data
 available on request.
