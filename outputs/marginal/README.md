@@ -69,3 +69,22 @@ uv run behaviorbench-eval --task <tasks...> --model-type marginal \
 Same seed → same results. The sampler replays real answer strings word-for-word, so no answers
 fail to parse (0 failures across all 33 tasks). Comparison script and parsed leaderboard data
 available on request.
+
+## Code changes
+
+All in one commit on this branch, on top of the released code:
+
+- **`src/behaviorbench/models/marginal_model.py`** (new) — `MarginalSamplerModel`. On
+  `bind_task(task)` it reads the task's data file and builds answer pools from the
+  `assistant` fields, split by the task's metric grouping (survey item / Big Five dimension;
+  one pool per game file otherwise). Each call returns a random pool entry, word-for-word,
+  from a seeded RNG, so runs are reproducible and every answer parses.
+- **`src/behaviorbench/eval/main.py`** — adds `--model-type marginal`; the runner calls
+  `bind_task` on any model that has it before evaluating a task. Workflow and IEO tasks are
+  rejected (no population answer distribution to draw from), as is `--resume`. The result
+  JSON records the pool source and seed under `inference_settings`.
+- **`src/behaviorbench/eval/base.py`** — the prompt→group logic (`extract_group`) moves from
+  a `ConfigurableTask` method to a module-level function, so the sampler groups answers
+  exactly the way the metrics do, with no duplicated parsing.
+- **`tests/test_marginal_model.py`** (new) — covers CLI wiring, per-group pool building and
+  fallback, verbatim/deterministic draws, and an end-to-end run through the real pipeline.
