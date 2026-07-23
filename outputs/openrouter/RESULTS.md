@@ -54,14 +54,10 @@ open question above).
 
 | model | what ran | date | tokens (prompt / completion) | cost |
 |---|---|---|---|---|
-| `z-ai/glm-5.2` (default, reasoning on) | full benchmark: 39 tasks, full test files | 2026-07-23 | 8.2M / 13.5M (10.8M reasoning) | ≈$40 list |
-| `tencent/hy3` | full benchmark: 39 tasks, full test files | 2026-07-19 | 8.3M / 0.6M | $1.38 billed |
+| `z-ai/glm-5.2` (default, reasoning on) | full benchmark: 39 tasks, full test files | 2026-07-23 | 8.2M / 13.5M (10.8M reasoning) | ≈$40 |
+| `tencent/hy3` | full benchmark: 39 tasks, full test files | 2026-07-19 | 8.3M / 0.6M | $1.38 |
 | `moonshotai/kimi-k3` | **smoke test only**: 5 calls, dictator task, default settings | 2026-07-23 | 830 / 2.4k | full run estimated **$220–570** — very verbose reasoner (485 completion tokens/call, 2.7x GLM-5.2's rate); pending go/no-go |
-| `z-ai/glm-5.2-no-reasoning` (`--reasoning-effort none`) | full benchmark: 39 tasks, full test files | 2026-07-22 | 8.0M / 2.9M | ≈$13.5 list |
-
-"List" costs are computed from recorded token usage at list prices; the
-pipeline's internal tracker logs $0 for models missing from its pricing table,
-so the OpenRouter dashboard is the billing authority.
+| `z-ai/glm-5.2-no-reasoning` (`--reasoning-effort none`) | full benchmark: 39 tasks, full test files | 2026-07-22 | 8.0M / 2.9M | ≈$13.5 |
 
 ## `z-ai/glm-5.2` — default settings (reasoning on)
 
