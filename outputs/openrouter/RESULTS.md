@@ -2,6 +2,26 @@
 
 All 39 tasks per model, grouped by family. Values are copied from each result JSON's `metrics` and `metadata`; blank cells mean the metric does not apply to that task.
 
+## Open question for the leaderboard maintainers
+
+These runs produce the same per-task result JSONs the leaderboard consumes, but
+the step that turns those JSONs into `data.js` scenario values
+(`generate_leaderboard_data.py`) is not public. To make new entries comparable
+with the board, we need to know:
+
+1. **The `n_v1` subsample** used for the MobLab and Big Five families: its
+   definition (which subjects/rows per task, or the seed plus sampling code),
+   and whether it subsamples the prompts, the human reference distributions,
+   or both. The runs below use the full test files everywhere.
+2. **The task-to-column aggregation**: which metric variant feeds each
+   `data.js` column (e.g. normalized vs raw MAE) and which tasks average into
+   each scenario.
+3. Alternatively, and simplest: **could these result JSONs be run through
+   `generate_leaderboard_data.py` directly?**
+
+(The ranking math after `data.js` — mean win rate, ELO — is client-side
+JavaScript on the leaderboard page and fully reproducible.)
+
 ## Summary — family means, side by side
 
 Raw per-family metric means computed from the section tables below (not the
@@ -23,10 +43,8 @@ HELM-style mean win rate / ELO over per-scenario columns (Individual /
 Distributional), not family-mean raw metrics, and its MobLab and BigFive
 numbers are computed on its own `n_v1` subsample of the test data (IEO and
 workflow are full-set). The runs here use the full test files everywhere, so
-the two sets of numbers are computed on slightly different data. Open
-question for the leaderboard maintainers: how should new entries be computed
-for comparability — on the `n_v1` subsample (and if so, what is its
-definition), or on the full test files?
+the two sets of numbers are computed on slightly different data (see the
+open question above).
 
 ## `tencent/hy3`
 
