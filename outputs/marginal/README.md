@@ -20,8 +20,7 @@ baseline — the score of knowing the population but not the person:
 How to read it: a model scoring **near the sampler** is doing what the sampler does —
 population knowledge, no person knowledge. A model scoring **below** it is not even
 reproducing what people answer. A model scoring **well above** it is using more than random
-population draws — with one caution: on MAE and accuracy, part of a margin over the sampler
-can come simply from answering near the population average.
+population draws.
 
 **Caveats.** (1) Ideally the answer pool should come from the *training* population. I did not
 have the training data, so the pool comes from the released test files, assuming the training
@@ -58,9 +57,8 @@ Two patterns stand out:
   knowing the population, not the person. This may say more about the data than the models —
   demographics are known to be weak predictors of single answers.
 
-The "moderate" MAE margins in the middle of the table should be read with the caution above:
-they are consistent with answering near the population average and do not by themselves
-demonstrate person-level knowledge.
+The "moderate" MAE margins in the middle of the table are consistent with answering near the
+population average and do not by themselves demonstrate person-level knowledge.
 
 ## Reproduce
 
