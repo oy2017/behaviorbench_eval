@@ -1,0 +1,295 @@
+===== game_behavior_dictator =====
+Running game_behavior_dictator
+  Wasserstein_with_ks_distance: 39.5600
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/game_behavior_dictator_20260722_143029.json
+
+===== game_behavior_bomb =====
+Running game_behavior_bomb
+  Wasserstein_with_ks_distance: 7.9990
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/game_behavior_bomb_20260722_143750.json
+
+===== game_behavior_guessing =====
+Running game_behavior_guessing
+  Wasserstein_with_ks_distance: 17.5120
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/game_behavior_guessing_20260722_144607.json
+
+===== game_behavior_public_goods =====
+Running game_behavior_public_goods
+  Wasserstein_with_ks_distance: 13.8850
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/game_behavior_public_goods_20260722_145336.json
+
+===== game_behavior_push_pull =====
+Running game_behavior_push_pull
+  Wasserstein_with_ks_distance: 48.4000
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/game_behavior_push_pull_20260722_150436.json
+
+===== game_behavior_trust_banker =====
+Running game_behavior_trust_banker
+  Wasserstein_with_ks_distance: 12.5913
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/game_behavior_trust_banker_20260722_150803.json
+
+===== game_behavior_trust_investor =====
+Running game_behavior_trust_investor
+  Wasserstein_with_ks_distance: 16.6320
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/game_behavior_trust_investor_20260722_151008.json
+
+===== game_behavior_ultimatum_proposer =====
+Running game_behavior_ultimatum_proposer
+  Wasserstein_with_ks_distance: 11.6700
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/game_behavior_ultimatum_proposer_20260722_151246.json
+
+===== game_behavior_ultimatum_responder =====
+Running game_behavior_ultimatum_responder
+  Wasserstein_with_ks_distance: 11.0100
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/game_behavior_ultimatum_responder_20260722_151551.json
+
+===== acrossgame_behavior_dictator =====
+Running acrossgame_behavior_dictator
+  MAE_with_normalization_mae: 24.1027
+  MAE_with_normalization_mae_raw: 24.1027
+  Wasserstein_with_ks_distance: 20.4467
+  num_samples: 750
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/acrossgame_behavior_dictator_20260722_152240.json
+
+===== acrossgame_behavior_ultimatum_proposer =====
+Running acrossgame_behavior_ultimatum_proposer
+  MAE_with_normalization_mae: 14.0253
+  MAE_with_normalization_mae_raw: 14.0253
+  Wasserstein_with_ks_distance: 4.8573
+  num_samples: 750
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/acrossgame_behavior_ultimatum_proposer_20260722_153227.json
+
+===== acrossgame_behavior_ultimatum_responder =====
+Running acrossgame_behavior_ultimatum_responder
+  MAE_with_normalization_mae: 17.6453
+  MAE_with_normalization_mae_raw: 17.6453
+  Wasserstein_with_ks_distance: 13.7360
+  num_samples: 750
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/acrossgame_behavior_ultimatum_responder_20260722_154227.json
+
+===== acrossgame_behavior_trust_investor =====
+Running acrossgame_behavior_trust_investor
+  MAE_with_normalization_mae: 39.0641
+  MAE_with_normalization_mae_raw: 39.0641
+  Wasserstein_with_ks_distance: 12.6422
+  num_samples: 750
+  num_failed_parses: 1
+Saved results to outputs/openrouter/z-ai/glm-5.2/acrossgame_behavior_trust_investor_20260722_155000.json
+
+===== acrossgame_behavior_trust_banker =====
+Running acrossgame_behavior_trust_banker
+  MAE_with_normalization_mae: 24.7634
+  MAE_with_normalization_mae_raw: 37.1450
+  Wasserstein_with_ks_distance: 18.0254
+  num_samples: 262
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/acrossgame_behavior_trust_banker_20260722_155412.json
+
+===== acrossgame_behavior_public_goods =====
+Running acrossgame_behavior_public_goods
+  MAE_with_normalization_mae: 26.7800
+  MAE_with_normalization_mae_raw: 5.3560
+  Wasserstein_with_ks_distance: 11.3400
+  num_samples: 750
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/acrossgame_behavior_public_goods_20260722_160743.json
+
+===== acrossgame_behavior_bomb =====
+Running acrossgame_behavior_bomb
+  MAE_with_normalization_mae: 27.1562
+  MAE_with_normalization_mae_raw: 27.1562
+  Wasserstein_with_ks_distance: 10.9372
+  num_samples: 750
+  num_failed_parses: 1
+Saved results to outputs/openrouter/z-ai/glm-5.2/acrossgame_behavior_bomb_20260722_161618.json
+
+===== acrossgame_behavior_guessing =====
+Running acrossgame_behavior_guessing
+  MAE_with_normalization_mae: 21.1467
+  MAE_with_normalization_mae_raw: 21.1467
+  Wasserstein_with_ks_distance: 16.3707
+  num_samples: 750
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/acrossgame_behavior_guessing_20260722_162627.json
+
+===== acrossgame_behavior_push_pull =====
+Running acrossgame_behavior_push_pull
+  Accuracy: 0.4467
+  MAE_with_normalization_mae: 55.3333
+  MAE_with_normalization_mae_raw: 0.5533
+  Wasserstein_with_ks_distance: 48.9333
+  num_samples: 750
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/acrossgame_behavior_push_pull_20260722_164247.json
+
+===== multiround_behavior_dictator =====
+Running multiround_behavior_dictator
+  MAE_with_normalization_mae: 14.5300
+  MAE_with_normalization_mae_raw: 14.5300
+  Wasserstein_with_ks_distance: 8.9060
+  num_samples: 500
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/multiround_behavior_dictator_20260722_164534.json
+
+===== multiround_behavior_trust_investor =====
+Running multiround_behavior_trust_investor
+  MAE_with_normalization_mae: 23.8720
+  MAE_with_normalization_mae_raw: 23.8720
+  Wasserstein_with_ks_distance: 5.5840
+  num_samples: 500
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/multiround_behavior_trust_investor_20260722_165530.json
+
+===== multiround_behavior_trust_banker_inv50 =====
+Running multiround_behavior_trust_banker_inv50
+  MAE_with_normalization_mae: 22.1760
+  MAE_with_normalization_mae_raw: 33.2640
+  Wasserstein_with_ks_distance: 14.8587
+  num_samples: 125
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/multiround_behavior_trust_banker_inv50_20260722_165810.json
+
+===== multiround_behavior_trust_banker_inv100 =====
+Running multiround_behavior_trust_banker_inv100
+  MAE_with_normalization_mae: 15.1031
+  MAE_with_normalization_mae_raw: 45.3092
+  Wasserstein_with_ks_distance: 7.0442
+  num_samples: 498
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/multiround_behavior_trust_banker_inv100_20260722_170234.json
+
+===== multiround_behavior_public_goods =====
+Running multiround_behavior_public_goods
+  MAE_with_normalization_mae: 19.8700
+  MAE_with_normalization_mae_raw: 3.9740
+  Wasserstein_with_ks_distance: 8.1100
+  num_samples: 500
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/multiround_behavior_public_goods_20260722_170713.json
+
+===== multiround_behavior_bomb =====
+Running multiround_behavior_bomb
+  MAE_with_normalization_mae: 17.1700
+  MAE_with_normalization_mae_raw: 17.1700
+  Wasserstein_with_ks_distance: 6.3420
+  num_samples: 500
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/multiround_behavior_bomb_20260722_171107.json
+
+===== multiround_behavior_guessing =====
+Running multiround_behavior_guessing
+  MAE_with_normalization_mae: 11.0500
+  MAE_with_normalization_mae_raw: 11.0500
+  Wasserstein_with_ks_distance: 8.4220
+  num_samples: 500
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/multiround_behavior_guessing_20260722_172051.json
+
+===== multiround_behavior_push_pull =====
+Running multiround_behavior_push_pull
+  Accuracy: 0.6380
+  MAE_with_normalization_mae: 36.2000
+  MAE_with_normalization_mae_raw: 0.3620
+  Wasserstein_with_ks_distance: 16.2000
+  num_samples: 500
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/multiround_behavior_push_pull_20260722_172737.json
+
+===== acrossdim_pers_score =====
+  Spearman_with_pvalue_pvalue_averaged: 0.0853
+  Wasserstein_with_ks_distance_averaged: 3.7514
+  Wasserstein_with_ks_distance_raw_averaged: 3.7514
+  Wasserstein_with_ks_ks_pvalue_averaged: 0.0920
+  Wasserstein_with_ks_ks_statistic_averaged: 0.2134
+  num_samples: 1000
+  num_failed_parses: 9
+Saved results to outputs/openrouter/z-ai/glm-5.2/acrossdim_pers_score_20260722_174608.json
+
+===== demo_pred_age =====
+Running demo_pred_age
+  MAE: 9.6507
+  Wasserstein_with_ks_distance: 4.8719
+  num_samples: 1000
+  num_failed_parses: 1
+Saved results to outputs/openrouter/z-ai/glm-5.2/demo_pred_age_20260722_175206.json
+
+===== missing_surv_resp =====
+  Spearman_with_pvalue_pvalue_averaged: 0.1226
+  Wasserstein_with_ks_distance_averaged: 0.4059
+  Wasserstein_with_ks_distance_raw_averaged: 0.4059
+  Wasserstein_with_ks_ks_pvalue_averaged: 1.0000
+  Wasserstein_with_ks_ks_statistic_averaged: 0.0000
+  num_samples: 1000
+  num_failed_parses: 2
+Saved results to outputs/openrouter/z-ai/glm-5.2/missing_surv_resp_20260722_180920.json
+
+===== pers_score_pred =====
+  Spearman_with_pvalue_pvalue_averaged: 0.2595
+  Wasserstein_with_ks_distance_averaged: 5.3547
+  Wasserstein_with_ks_distance_raw_averaged: 5.3547
+  Wasserstein_with_ks_ks_pvalue_averaged: 0.0005
+  Wasserstein_with_ks_ks_statistic_averaged: 0.3174
+  num_samples: 1000
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/pers_score_pred_20260722_181358.json
+
+===== seq_surv_resp =====
+  Spearman_with_pvalue_pvalue_averaged: 0.1803
+  Wasserstein_with_ks_distance_averaged: 0.4177
+  Wasserstein_with_ks_distance_raw_averaged: 0.4177
+  Wasserstein_with_ks_ks_pvalue_averaged: 1.0000
+  Wasserstein_with_ks_ks_statistic_averaged: 0.0000
+  num_samples: 1000
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/seq_surv_resp_20260722_182105.json
+
+===== surv_resp_pred =====
+  Spearman_with_pvalue_pvalue_averaged: 0.4700
+  Wasserstein_with_ks_distance_averaged: 0.7535
+  Wasserstein_with_ks_distance_raw_averaged: 0.7535
+  Wasserstein_with_ks_ks_pvalue_averaged: 1.0000
+  Wasserstein_with_ks_ks_statistic_averaged: 0.0000
+  num_samples: 1000
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/surv_resp_pred_20260722_182514.json
+
+===== strategic_gameplay_guessing =====
+Running strategic_gameplay_guessing
+  MAE_with_normalization_mae: 7.2558
+  MAE_with_normalization_mae_raw: 7.2558
+  Wasserstein_with_ks_distance: 3.9264
+  win_rate: 0.1431
+  num_samples: 1000
+  num_failed_parses: 1
+Saved results to outputs/openrouter/z-ai/glm-5.2/strategic_gameplay_guessing_20260722_184210.json
+
+===== ieo_economics =====
+Running ieo_economics
+  accuracy_multi_choice: 0.7742
+  num_samples: 124
+  num_failed_parses: 1
+Saved results to outputs/openrouter/z-ai/glm-5.2/ieo_economics_20260722_185846.json
+
+===== workflow_idea_generation workflow_method_recommendation workflow_outcome_prediction workflow_title_prediction workflow_impact_prediction =====
+  num_samples: 244
+  num_failed_parses: 0
+Running workflow_impact_prediction
+  BLEURT: 0.4565
+  ROUGE-1: 0.2494
+  num_samples: 116
+  num_failed_parses: 0
+Saved results to outputs/openrouter/z-ai/glm-5.2/combined_5subtasks_20260722_201938.json
+
+===== RUN DONE: ok=35 failed=0  failed:[] =====
