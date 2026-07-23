@@ -25,9 +25,8 @@ population draws.
 **Caveats.** (1) Ideally the answer pool should come from the *training* population. I did not
 have the training data, so the pool comes from the released test files, assuming the training
 and test populations are close (they come from the same sources, split at random). Happy to
-redo this with training-side pools. (2) My runs use the full test files; the leaderboard uses
-its n_v1 sampling. Small differences should be read as ties. (3) Push/Pull columns are left
-out, following the paper's held-out treatment.
+redo this with training-side pools. (2) Push/Pull columns are left out, following the paper's
+held-out treatment.
 
 ## Results: nine individual-level columns
 
@@ -50,8 +49,8 @@ Two patterns stand out:
 - **The large margins all occur where the prompt shows the person's own earlier behavior** —
   past rounds of the same game, the person's other questionnaire answers. This is the
   benchmark's strongest demonstrated result: real individual-level prediction.
-- **Where the prompt gives only indirect information (demographics, scores from other
-  dimensions, play in *other* games), margins shrink — and on Demo. To Resp. they vanish:**
+- **Where the prompt gives only indirect information (e.g. demographics), margins shrink —
+  and on Demo. To Resp. they vanish:**
   all 24 models score 0.24–0.31, clustered around the sampler's 0.279 (random 1–5 guessing
   would score 0.20). Every model on that column behaves, in effect, like the sampler:
   knowing the population, not the person. This may say more about the data than the models —
