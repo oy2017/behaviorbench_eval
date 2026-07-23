@@ -21,9 +21,7 @@ How to read it: a model scoring **near the sampler** is doing what the sampler d
 population knowledge, no person knowledge. A model scoring **below** it is not even
 reproducing what people answer. A model scoring **well above** it is using more than random
 population draws — with one caution: on MAE and accuracy, part of a margin over the sampler
-can come simply from answering near the population average. The strongest evidence of real
-individual-level prediction is therefore a **large margin over the sampler combined with a
-Wasserstein distance near the sampler's** (see the last section).
+can come simply from answering near the population average.
 
 **Caveats.** (1) Ideally the answer pool should come from the *training* population. I did not
 have the training data, so the pool comes from the released test files, assuming the training
@@ -63,21 +61,6 @@ Two patterns stand out:
 The "moderate" MAE margins in the middle of the table should be read with the caution above:
 they are consistent with answering near the population average and do not by themselves
 demonstrate person-level knowledge.
-
-## Reading margins together with Wasserstein distance
-
-The sampler's own Wasserstein distance is only sampling noise (0.2–1.3 across tasks — the
-noise floor). Next to the individual scores, it separates three behaviors:
-
-- **Wasserstein near the floor + accuracy near the sampler** → the model has learned what
-  people answer and draws from it. Be.FM-1.5 on Demo. To Resp. is the clearest case
-  (acc 0.286 vs the sampler's 0.279, and the lowest Wasserstein of any model on that task).
-- **Better MAE + high Wasserstein** → the model hedges toward the average — population
-  knowledge again, differently packaged (most general-purpose models on the MAE columns).
-- **Large margin + Wasserstein near the floor** → real individual signal *and* a realistic
-  answer distribution at once. Be.FM-1.5 on multi-round (MAE 16.2 vs sampler 28.8,
-  Wasserstein ~2.7× the floor) is the only case of this on the leaderboard — arguably a
-  stronger statement of its contribution than either score alone.
 
 ## Reproduce
 
