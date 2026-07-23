@@ -23,7 +23,10 @@ HELM-style mean win rate / ELO over per-scenario columns (Individual /
 Distributional), not family-mean raw metrics, and its MobLab and BigFive
 numbers are computed on its own `n_v1` subsample of the test data (IEO and
 workflow are full-set). The runs here use the full test files everywhere, so
-small differences against leaderboard entries should be read as ties.
+the two sets of numbers are computed on slightly different data. Open
+question for the leaderboard maintainers: how should new entries be computed
+for comparability — on the `n_v1` subsample (and if so, what is its
+definition), or on the full test files?
 
 ## `tencent/hy3`
 
