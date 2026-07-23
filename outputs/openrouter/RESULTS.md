@@ -140,7 +140,7 @@ Provider-default settings. Full detail, including every per-sample prompt and mo
 
 ## `z-ai/glm-5.2` — reasoning disabled
 
-Run with `--reasoning-effort none` (GLM-5.2 reasons by default; disabled here for cross-model consistency). Full detail in [`reasoning/z-ai/glm-5.2/no-reasoning/`](reasoning/z-ai/glm-5.2/no-reasoning).
+Run with `--reasoning-effort none` (GLM-5.2 reasons by default; disabled here for cross-model consistency). Full detail in [`z-ai/glm-5.2-no-reasoning/`](z-ai/glm-5.2-no-reasoning).
 
 ### game_behavior
 
@@ -232,7 +232,7 @@ Run with `--reasoning-effort none` (GLM-5.2 reasons by default; disabled here fo
 
 ## `z-ai/glm-5.2` — default settings (reasoning on)
 
-Provider-default inference settings, matching the paper convention; GLM-5.2 reasons by default. Full detail in [`reasoning/z-ai/glm-5.2/`](reasoning/z-ai/glm-5.2).
+Provider-default inference settings, matching the paper convention; GLM-5.2 reasons by default. Full detail in [`z-ai/glm-5.2/`](z-ai/glm-5.2).
 
 ### game_behavior
 

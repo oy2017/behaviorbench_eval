@@ -5,9 +5,9 @@
 # reasoning-disabled run in z-ai/glm-5.2/ (which passed --reasoning-effort none).
 #
 # All 39 tasks at full sample sizes. Results live at
-# outputs/openrouter/reasoning/z-ai/glm-5.2/ (the pipeline appends the model
+# outputs/openrouter/z-ai/glm-5.2/ (relocated post-run) (the pipeline appends the model
 # name to --output-dir); the reasoning-disabled run sits beside them in
-# no-reasoning/.
+# outputs/openrouter/z-ai/glm-5.2-no-reasoning/.
 #
 # Resumable: invocations whose result JSON already exists are skipped, so
 # after an interruption (e.g. OpenRouter credit exhaustion) rerunning the
