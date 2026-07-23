@@ -38,8 +38,8 @@ direction.
 | economics accuracy ↑ | **0.911** | 0.831 | 0.774 |
 | workflow BLEURT ↑ | 0.458 | 0.443 | 0.458 |
 
-A `moonshotai/kimi-k3` run is pending and will slot in between hy3 and the
-no-reasoning column. The no-reasoning variant is a non-default side run, kept
+A `moonshotai/kimi-k3` run is pending (smoke-tested only; see Runs and cost)
+and will slot in between hy3 and the no-reasoning column. The no-reasoning variant is a non-default side run, kept
 for the reasoning-effect comparison.
 
 Note on leaderboard comparability: the public leaderboard summarizes with
@@ -49,6 +49,19 @@ numbers are computed on its own `n_v1` subsample of the test data (IEO and
 workflow are full-set). The runs here use the full test files everywhere, so
 the two sets of numbers are computed on slightly different data (see the
 open question above).
+
+## Runs and cost
+
+| model | what ran | date | tokens (prompt / completion) | cost |
+|---|---|---|---|---|
+| `z-ai/glm-5.2` (default, reasoning on) | full benchmark: 39 tasks, full test files | 2026-07-23 | 8.2M / 13.5M (10.8M reasoning) | ≈$40 list |
+| `tencent/hy3` | full benchmark: 39 tasks, full test files | 2026-07-19 | 8.3M / 0.6M | $1.38 billed |
+| `moonshotai/kimi-k3` | **smoke test only**: 5 calls, dictator task, default settings | 2026-07-23 | 830 / 2.4k | full run estimated **$220–570** — very verbose reasoner (485 completion tokens/call, 2.7x GLM-5.2's rate); pending go/no-go |
+| `z-ai/glm-5.2-no-reasoning` (`--reasoning-effort none`) | full benchmark: 39 tasks, full test files | 2026-07-22 | 8.0M / 2.9M | ≈$13.5 list |
+
+"List" costs are computed from recorded token usage at list prices; the
+pipeline's internal tracker logs $0 for models missing from its pricing table,
+so the OpenRouter dashboard is the billing authority.
 
 ## `z-ai/glm-5.2` — default settings (reasoning on)
 
