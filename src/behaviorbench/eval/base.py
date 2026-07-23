@@ -245,6 +245,64 @@ OUTPUT_PARSERS = {
 }
 
 
+def extract_group(prompt: dict[str, str], group_by: str | None) -> str | None:
+    """
+    Extract group label from a prompt based on a group_by strategy.
+
+    Shared by ConfigurableTask (per-group metrics) and models that need to
+    condition on the group, e.g. the marginal-sampler baseline.
+
+    Args:
+        prompt: Prompt dict with 'system'/'user' and optional 'metadata'
+        group_by: Grouping strategy name, or None for no grouping
+
+    Returns:
+        Group label string, or None if no grouping
+    """
+    if group_by is None:
+        return None
+
+    if group_by == "bigfive_dimension":
+        # Extract BigFive TARGET dimension from the user prompt
+        # Target dimension is marked with asterisks: *DimensionName*
+        user_text = prompt.get("user", "")
+        dimensions = [
+            "Extraversion",
+            "Neuroticism",
+            "Agreeableness",
+            "Conscientiousness",
+            "Openness",
+        ]
+        for dim in dimensions:
+            # Look for the target dimension pattern (with asterisks)
+            if f"*{dim}*" in user_text:
+                return dim
+            # Also try parenthetical pattern: (DimensionName Dimension)
+            if f"({dim}" in user_text:
+                return dim
+        return "Unknown"
+
+    if group_by == "target_item":
+        # 1. Try metadata field first (seq_surv_resp, missing_surv_resp_* have it)
+        metadata = prompt.get("metadata", {})
+        if metadata and "target_item" in metadata:
+            return metadata["target_item"]
+
+        # 2. Fallback: extract question text from prompt (surv_resp_pred has no metadata)
+        #    Pattern: text between "or [5]):" and "Only output"
+        user_text = prompt.get("user", "")
+        match = re.search(r"or \[5\]\):\s*(.+?)\s*Only output", user_text)
+        if match:
+            return match.group(1).strip()
+        return "Unknown"
+
+    if group_by == "journal":
+        metadata = prompt.get("metadata", {})
+        return metadata.get("journal", "Unknown")
+
+    return None
+
+
 # =============================================================================
 # Base Evaluation Task
 # =============================================================================
@@ -798,48 +856,7 @@ class ConfigurableTask(BaseEvaluationTask):
         Returns:
             Group label string, or None if no grouping
         """
-        if self._group_by is None:
-            return None
-
-        if self._group_by == "bigfive_dimension":
-            # Extract BigFive TARGET dimension from the user prompt
-            # Target dimension is marked with asterisks: *DimensionName*
-            user_text = prompt.get("user", "")
-            dimensions = [
-                "Extraversion",
-                "Neuroticism",
-                "Agreeableness",
-                "Conscientiousness",
-                "Openness",
-            ]
-            for dim in dimensions:
-                # Look for the target dimension pattern (with asterisks)
-                if f"*{dim}*" in user_text:
-                    return dim
-                # Also try parenthetical pattern: (DimensionName Dimension)
-                if f"({dim}" in user_text:
-                    return dim
-            return "Unknown"
-
-        if self._group_by == "target_item":
-            # 1. Try metadata field first (seq_surv_resp, missing_surv_resp_* have it)
-            metadata = prompt.get("metadata", {})
-            if metadata and "target_item" in metadata:
-                return metadata["target_item"]
-
-            # 2. Fallback: extract question text from prompt (surv_resp_pred has no metadata)
-            #    Pattern: text between "or [5]):" and "Only output"
-            user_text = prompt.get("user", "")
-            match = re.search(r"or \[5\]\):\s*(.+?)\s*Only output", user_text)
-            if match:
-                return match.group(1).strip()
-            return "Unknown"
-
-        if self._group_by == "journal":
-            metadata = prompt.get("metadata", {})
-            return metadata.get("journal", "Unknown")
-
-        return None
+        return extract_group(prompt, self._group_by)
 
     def run_evaluation(self, model: Any, **kwargs) -> EvaluationResult:
         """

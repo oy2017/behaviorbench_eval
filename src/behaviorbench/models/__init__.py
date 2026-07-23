@@ -9,6 +9,7 @@ from behaviorbench.models.api_model import (
 )
 from behaviorbench.models.azure_batch_model import AzureBatchModel
 from behaviorbench.models.heuristic_model import HeuristicModel
+from behaviorbench.models.marginal_model import MarginalSamplerModel
 from behaviorbench.models.utils import TokenTracker
 
 __all__ = [
@@ -20,4 +21,5 @@ __all__ = [
     "AzureBatchModel",
     "TokenTracker",
     "HeuristicModel",
+    "MarginalSamplerModel",
 ]

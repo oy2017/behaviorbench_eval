@@ -202,6 +202,8 @@ class EvaluationRunner:
         if task_name not in TASK_REGISTRY:
             raise ValueError(f"Unknown task: {task_name}")
         task = TASK_REGISTRY[task_name](data_path=str(data_path), name=task_name, **task_kwargs)
+        if hasattr(model, "bind_task"):
+            model.bind_task(task)
         print(f"\nRunning {task_name}")
         print(f"Data: {data_path}")
         result = task.run_evaluation(model)
@@ -282,11 +284,21 @@ def create_dummy_model() -> Callable:
 DEFAULT_LOCAL_API_BASE = "http://localhost:8000/v1"
 
 
+# Tasks with no meaningful population answer distribution: free-text generation
+# (workflows) and gold-answer knowledge questions (IEO). The marginal sampler
+# refuses to run on these rather than produce a nonsense baseline.
+MARGINAL_UNSUPPORTED_TASKS = WORKFLOW_TASKS | {"ieo_economics"}
+
+
 def build_model(args: argparse.Namespace) -> Callable:
     """Build a model callable from CLI arguments."""
     if args.dummy_model:
         print("Using dummy model")
         return create_dummy_model()
+    if args.model_type == "marginal":
+        from behaviorbench.models import MarginalSamplerModel
+
+        return MarginalSamplerModel(seed=args.seed)
     if not args.model_name:
         raise ValueError("--model-name is required unless --dummy-model is set")
 
@@ -402,6 +414,7 @@ def parse_args() -> argparse.Namespace:
             "anthropic",
             "vertex",
             "heuristic",
+            "marginal",
         ],
     )
     parser.add_argument("--model-name")
@@ -446,6 +459,15 @@ def main() -> None:
             "Workflow evaluation must run all five canonical workflow tasks together: "
             f"{sorted(WORKFLOW_TASKS)}"
         )
+    if args.model_type == "marginal":
+        unsupported = MARGINAL_UNSUPPORTED_TASKS & set(tasks)
+        if unsupported:
+            raise ValueError(
+                "The marginal sampler has no population answer distribution for: "
+                f"{sorted(unsupported)}"
+            )
+        if args.resume:
+            raise ValueError("--resume is not supported with --model-type marginal")
 
     task_kwargs: dict[str, Any] = {}
     if args.num_samples is not None:
@@ -477,19 +499,25 @@ def main() -> None:
 
         token_usage = TokenTracker.get_summary()
 
+    inference_settings = {
+        "model_name": args.model_name,
+        "model_type": args.model_type,
+        "temperature": args.temperature,
+        "top_p": args.top_p,
+        "top_k": args.top_k,
+        "min_p": args.min_p,
+        "max_tokens": args.max_tokens,
+        "concurrency": args.concurrency,
+        "reasoning_effort": args.reasoning_effort,
+    }
+    if args.model_type == "marginal":
+        # Record pool provenance: "test" marks this run as an oracle marginal.
+        inference_settings["marginal_source"] = model.source
+        inference_settings["seed"] = args.seed
+
     runner.save_results(
         filename,
-        inference_settings={
-            "model_name": args.model_name,
-            "model_type": args.model_type,
-            "temperature": args.temperature,
-            "top_p": args.top_p,
-            "top_k": args.top_k,
-            "min_p": args.min_p,
-            "max_tokens": args.max_tokens,
-            "concurrency": args.concurrency,
-            "reasoning_effort": args.reasoning_effort,
-        },
+        inference_settings=inference_settings,
         token_usage=token_usage,
     )
 
