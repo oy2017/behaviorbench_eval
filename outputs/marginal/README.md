@@ -28,7 +28,7 @@ and test populations are close (they come from the same sources, split at random
 redo this with training-side pools. (2) Push/Pull columns are left out, following the paper's
 held-out treatment.
 
-## Results: nine individual-level columns
+## Results
 
 Leaderboard values from the public site (2026-05-07). Be.FM-1.5-70B = 5-run mean.
 
