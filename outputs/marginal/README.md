@@ -53,8 +53,8 @@ Two patterns stand out:
 - **The large margins all occur where the prompt shows the person's own earlier behavior** —
   past rounds of the same game, the person's other questionnaire answers. This is the
   benchmark's strongest demonstrated result: real individual-level prediction.
-- **Where the prompt gives only indirect information** (demographics, scores from other
-  dimensions, play in *other* games), margins shrink — and on Demo. To Resp. they vanish:
+- **Where the prompt gives only indirect information (demographics, scores from other
+  dimensions, play in *other* games), margins shrink — and on Demo. To Resp. they vanish:**
   all 24 models score 0.24–0.31, clustered around the sampler's 0.279 (random 1–5 guessing
   would score 0.20). Every model on that column behaves, in effect, like the sampler:
   knowing the population, not the person. This may say more about the data than the models —
