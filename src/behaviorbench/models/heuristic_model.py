@@ -70,10 +70,12 @@ class HeuristicModel:
     def _parse_multiround_history(text: str) -> list[float]:
         """Extract round choice values from multiround prompt text.
 
-        Parses lines like: ``- Round 1: Your choice: [40].``
+        Parses lines like: ``- Round 1: Your choice: [40].`` The guessing game
+        writes ``- Round 1. Your choice: [54]`` (period, not colon), so both
+        separators are accepted.
         """
         return [
-            float(v) for v in re.findall(r"- Round \d+: Your choice: \[(\d+(?:\.\d+)?)\]", text)
+            float(v) for v in re.findall(r"- Round \d+[.:] Your choice: \[(\d+(?:\.\d+)?)\]", text)
         ]
 
     # ── Predict dispatch ─────────────────────────────────────────────────
